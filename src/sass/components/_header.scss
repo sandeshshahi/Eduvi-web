@@ -1,0 +1,158 @@
+@use "../utils/" as utils;
+
+// navbar components
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: utils.rem(80);
+  margin-top: utils.rem(30);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: utils.rem(114);
+  height: utils.rem(30);
+  border-radius: utils.rem(5);
+  gap: utils.rem(6);
+
+  .upperNav__logo-text {
+    // font-family: "Metropolis Regular";
+    // font-weight: 600;
+    // font-size: utils.rem(30);
+    @include utils.font(600, 30);
+  }
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: utils.rem(713);
+  &-item {
+    display: flex;
+    align-items: center;
+    gap: utils.rem(2);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.account,
+.cart {
+  display: flex;
+  align-items: center;
+  gap: utils.rem(10);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cart-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: utils.rem(30);
+}
+
+// text component
+.text__container {
+  width: utils.rem(607);
+  height: utils.rem(510);
+  margin-top: utils.rem(131);
+
+  .text-1 {
+    display: flex;
+    width: utils.rem(239);
+    height: utils.rem(50);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(255, 102, 82, 1);
+    @include utils.font(500, 20);
+    justify-content: center;
+    align-items: center;
+    border-radius: utils.rem(10);
+  }
+
+  .text-heading {
+    @include utils.font(700, 65, 75);
+  }
+
+  .text-description {
+    @include utils.font(400, 16, 30);
+    color: rgba(93, 90, 111, 1);
+  }
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: utils.rem(607);
+  height: utils.rem(60);
+  border-radius: utils.rem(10);
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: utils.rem(40);
+
+  .search__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: utils.rem(128);
+    margin-left: utils.rem(20);
+    :hover {
+      cursor: pointer;
+    }
+    &-text {
+      @include utils.font(500, 16, 16);
+      color: rgba(93, 90, 111, 0.6);
+    }
+    &-icon {
+      height: utils.rem(24);
+      width: utils.rem(24);
+    }
+  }
+
+  .search__line {
+    width: utils.rem(1);
+    height: utils.rem(30);
+    background-color: rgba(218, 218, 218, 1);
+  }
+
+  .search__input {
+    width: utils.rem(270);
+    height: utils.rem(24);
+    outline: none;
+    border: none;
+    &::placeholder {
+      color: rgba(93, 90, 111, 0.6);
+      @include utils.font(500, 16, 16);
+    }
+  }
+
+  .search__button {
+    width: utils.rem(143);
+    height: utils.rem(50);
+    border-radius: utils.rem(10);
+    background-color: rgba(156, 77, 244, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: utils.rem(5);
+    outline: none;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-text {
+      font-family: utils.$font-Inter;
+      font-weight: 500;
+      font-size: utils.rem(16);
+      line-height: utils.rem(20);
+    }
+  }
+}

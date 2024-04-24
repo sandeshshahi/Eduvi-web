@@ -1,0 +1,31 @@
+import downArrow from "../../../assets/icons/downArrowColored.svg";
+import searchMagnifier from "../../../assets/icons/magnifier.svg";
+
+const Search = () => {
+  return (
+    <div className="search-container">
+      <div className="search__menu">
+        <span className="search__menu-text">Kindergarden</span>
+        <img
+          className="search__menu-icon"
+          src={downArrow}
+          alt="down arrow"
+          style={{ color: "rgba(156, 77, 244, 1)" }}
+        />
+      </div>
+      <span className="search__line"></span>
+      <input className="search__input" placeholder="Class/Course"></input>
+      <button className="search__button">
+        <img
+          className="search__button-icon"
+          height={24}
+          width={24}
+          src={searchMagnifier}
+          alt="search icon"
+        />
+        <span className="search__button-text">Search</span>
+      </button>
+    </div>
+  );
+};
+export default Search;
