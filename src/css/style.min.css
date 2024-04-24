@@ -191,7 +191,6 @@ ul {
 .image__section {
   width: 41.75rem;
   height: 43.6875rem;
-  border: 0.125rem solid rgb(236, 236, 236);
   position: relative;
 }
 .image__section-gradient {
