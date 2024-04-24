@@ -87,6 +87,7 @@ ul {
   width: 37.9375rem;
   height: 31.875rem;
   margin-top: 8.1875rem;
+  position: relative;
 }
 .text__container .text-1 {
   display: flex;
@@ -237,7 +238,7 @@ ul {
 }
 .image__section-icon.icon-3 {
   position: absolute;
-  top: 3.75rem;
+  top: 1.25rem;
   left: 31.25rem;
 }
 .image__section-icon.icon-4 {
@@ -246,6 +247,51 @@ ul {
   left: 4.375rem;
 }
 
+.landingPage {
+  position: relative;
+}
+.landingPage-box1 {
+  height: 27.25rem;
+  width: 27.25rem;
+  position: absolute;
+  top: -1.875rem;
+  right: 0rem;
+}
+.landingPage-box1 .landingPage-ellipse {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 102, 82, 0.15);
+  opacity: 0.15;
+}
+.landingPage-box2 {
+  height: 27.25rem;
+  width: 27.25rem;
+  position: absolute;
+  top: 32.5rem;
+  left: 0rem;
+}
+.landingPage-box2 .landingPage-ellipse {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 102, 82, 0.15);
+  opacity: 0.15;
+}
+.landingPage-box3 {
+  height: 27.25rem;
+  width: 27.25rem;
+  position: absolute;
+  top: 32.5rem;
+  left: 16.25rem;
+}
+.landingPage-box3 .landingPage-ellipse {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 102, 82, 0.15);
+  opacity: 0.15;
+}
 .landingPage__main {
   margin-top: 6.5rem;
   display: flex;

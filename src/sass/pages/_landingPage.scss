@@ -1,6 +1,49 @@
 @use "../utils/" as utils;
 
 .landingPage {
+  position: relative;
+  &-box1 {
+    height: utils.rem(436);
+    width: utils.rem(436);
+    position: absolute;
+    top: utils.rem(-30);
+    right: utils.rem(0);
+    .landingPage-ellipse {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      background-color: rgba(255, 102, 82, 0.15);
+      opacity: 0.15;
+    }
+  }
+  &-box2 {
+    height: utils.rem(436);
+    width: utils.rem(436);
+    position: absolute;
+    top: utils.rem(520);
+    left: utils.rem(0);
+    .landingPage-ellipse {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      background-color: rgba(255, 102, 82, 0.15);
+      opacity: 0.15;
+    }
+  }
+  &-box3 {
+    height: utils.rem(436);
+    width: utils.rem(436);
+    position: absolute;
+    top: utils.rem(520);
+    left: utils.rem(260);
+    .landingPage-ellipse {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      background-color: rgba(255, 102, 82, 0.15);
+      opacity: 0.15;
+    }
+  }
   &__main {
     margin-top: utils.rem(104);
     display: flex;

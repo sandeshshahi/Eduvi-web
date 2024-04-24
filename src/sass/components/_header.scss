@@ -60,7 +60,7 @@
   width: utils.rem(607);
   height: utils.rem(510);
   margin-top: utils.rem(131);
-
+  position: relative;
   .text-1 {
     display: flex;
     width: utils.rem(239);
@@ -214,7 +214,7 @@
     }
     &.icon-3 {
       position: absolute;
-      top: utils.rem(60);
+      top: utils.rem(20);
       left: utils.rem(500);
     }
     &.icon-4 {

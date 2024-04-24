@@ -10,6 +10,17 @@ const LandingPage = () => {
         <Text />
         <ImageSection />
       </div>
+
+      {/* for bg gradient colors */}
+      <div className="landingPage-box1">
+        <div className="landingPage-ellipse"></div>
+      </div>
+      <div className="landingPage-box2">
+        <div className="landingPage-ellipse"></div>
+      </div>
+      <div className="landingPage-box3">
+        <div className="landingPage-ellipse"></div>
+      </div>
     </div>
   );
 };
