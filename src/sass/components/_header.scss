@@ -19,9 +19,6 @@
   gap: utils.rem(6);
 
   .upperNav__logo-text {
-    // font-family: "Metropolis Regular";
-    // font-weight: 600;
-    // font-size: utils.rem(30);
     @include utils.font(600, 30);
   }
 }
@@ -176,20 +173,12 @@
       rgba(255, 102, 82, 0)
     );
     margin-top: utils.rem(28);
-    // clip-path: polygon(0 0, 100% 48%, 100% 100%, 0 100%, 0% 38%);
-    // border-radius: utils.rem(25);
     clip-path: polygon(utils.$curvedPolygonClipPath);
-    .flt_svg {
-      visibility: hidden;
-      position: absolute;
-      width: 0px;
-      height: 0px;
-    }
   }
   &-image {
     margin-left: utils.rem(50);
     position: absolute;
-    top: utils.rem(28);
+    top: utils.rem(0);
     left: utils.rem(110);
   }
   &-vector {
@@ -198,6 +187,12 @@
     position: absolute;
     top: utils.rem(40);
     left: utils.rem(39);
+    clip-path: polygon(
+      0.168% 0.177%,
+      12.374% 57.345%,
+      84.848% 9.204%,
+      99.832% 99.912%
+    );
   }
   &-icon {
     height: utils.rem(80);

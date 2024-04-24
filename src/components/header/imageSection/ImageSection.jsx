@@ -7,26 +7,7 @@ import icon4 from "../../../assets/icons/presentationImage.svg";
 const ImageSection = () => {
   return (
     <div className="image__section">
-      <div className="image__section-gradient">
-        <svg className="flt_svg" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <filter id="flt_tag">
-              <feGaussianBlur
-                in="SourceGraphic"
-                stdDeviation="8"
-                result="blur"
-              />
-              <feColorMatrix
-                in="blur"
-                mode="matrix"
-                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                result="flt_tag"
-              />
-              <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
+      <div className="image__section-gradient"></div>
       <img
         className="image__section-image"
         src={schoolBoyImage}

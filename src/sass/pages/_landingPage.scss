@@ -1,0 +1,10 @@
+@use "../utils/" as utils;
+
+.landingPage {
+  &__main {
+    margin-top: utils.rem(104);
+    display: flex;
+    justify-content: center;
+    gap: utils.rem(42);
+  }
+}
