@@ -26,6 +26,58 @@ ul {
   font-weight: normal;
   src: url("../../../public/fonts/Metropolis-Regular.woff");
 }
+.landingPage {
+  position: relative;
+}
+.landingPage-box1 {
+  height: 27.25rem;
+  width: 27.25rem;
+  position: absolute;
+  top: -1.875rem;
+  right: 0rem;
+}
+.landingPage-box1 .landingPage-ellipse {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 102, 82, 0.15);
+  opacity: 0.15;
+}
+.landingPage-box2 {
+  height: 27.25rem;
+  width: 27.25rem;
+  position: absolute;
+  top: 32.5rem;
+  left: 0rem;
+}
+.landingPage-box2 .landingPage-ellipse {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 102, 82, 0.15);
+  opacity: 0.15;
+}
+.landingPage-box3 {
+  height: 27.25rem;
+  width: 27.25rem;
+  position: absolute;
+  top: 32.5rem;
+  left: 16.25rem;
+}
+.landingPage-box3 .landingPage-ellipse {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(255, 102, 82, 0.15);
+  opacity: 0.15;
+}
+.landingPage__main {
+  margin-top: 6.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.625rem;
+}
+
 .navBar {
   display: flex;
   align-items: center;
@@ -166,28 +218,6 @@ ul {
   font-size: 1rem;
   line-height: 1rem;
 }
-.search-container .search__button {
-  width: 8.9375rem;
-  height: 3.125rem;
-  border-radius: 0.625rem;
-  background-color: rgb(156, 77, 244);
-  color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.3125rem;
-  outline: none;
-  border: none;
-}
-.search-container .search__button:hover {
-  cursor: pointer;
-}
-.search-container .search__button-text {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
 
 .image__section {
   width: 41.75rem;
@@ -247,54 +277,24 @@ ul {
   left: 4.375rem;
 }
 
-.landingPage {
-  position: relative;
-}
-.landingPage-box1 {
-  height: 27.25rem;
-  width: 27.25rem;
-  position: absolute;
-  top: -1.875rem;
-  right: 0rem;
-}
-.landingPage-box1 .landingPage-ellipse {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  background-color: rgba(255, 102, 82, 0.15);
-  opacity: 0.15;
-}
-.landingPage-box2 {
-  height: 27.25rem;
-  width: 27.25rem;
-  position: absolute;
-  top: 32.5rem;
-  left: 0rem;
-}
-.landingPage-box2 .landingPage-ellipse {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  background-color: rgba(255, 102, 82, 0.15);
-  opacity: 0.15;
-}
-.landingPage-box3 {
-  height: 27.25rem;
-  width: 27.25rem;
-  position: absolute;
-  top: 32.5rem;
-  left: 16.25rem;
-}
-.landingPage-box3 .landingPage-ellipse {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  background-color: rgba(255, 102, 82, 0.15);
-  opacity: 0.15;
-}
-.landingPage__main {
-  margin-top: 6.5rem;
+.button__btn {
+  border-radius: 0.625rem;
+  padding: auto;
+  background-color: rgb(156, 77, 244);
+  color: rgb(255, 255, 255);
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 2.625rem;
+  gap: 0.3125rem;
+  outline: none;
+  border: none;
+}
+.button__btn:hover {
+  cursor: pointer;
+}
+.button__btn-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
 }/*# sourceMappingURL=style.min.css.map */

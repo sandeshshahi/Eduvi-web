@@ -128,30 +128,6 @@
       @include utils.font(500, 16, 16);
     }
   }
-
-  .search__button {
-    width: utils.rem(143);
-    height: utils.rem(50);
-    border-radius: utils.rem(10);
-    background-color: rgba(156, 77, 244, 1);
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: utils.rem(5);
-    outline: none;
-    border: none;
-    &:hover {
-      cursor: pointer;
-    }
-
-    &-text {
-      font-family: utils.$font-Inter;
-      font-weight: 500;
-      font-size: utils.rem(16);
-      line-height: utils.rem(20);
-    }
-  }
 }
 
 // image section

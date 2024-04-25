@@ -1,5 +1,6 @@
 import downArrow from "../../../assets/icons/downArrowColored.svg";
 import searchMagnifier from "../../../assets/icons/magnifier.svg";
+import Button from "../../controls/button/Button";
 
 const Search = () => {
   return (
@@ -14,8 +15,8 @@ const Search = () => {
         />
       </div>
       <span className="search__line"></span>
-      <input className="search__input" placeholder="Class/Course"></input>
-      <button className="search__button">
+      <input className="search__input" placeholder="Class/Course" />
+      <Button text={"search"} width={"143px"} height={"50px"}>
         <img
           className="search__button-icon"
           height={24}
@@ -23,8 +24,7 @@ const Search = () => {
           src={searchMagnifier}
           alt="search icon"
         />
-        <span className="search__button-text">Search</span>
-      </button>
+      </Button>
     </div>
   );
 };
