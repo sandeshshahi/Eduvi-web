@@ -277,6 +277,59 @@ ul {
   left: 4.375rem;
 }
 
+.videoCallSection {
+  height: 43.75rem;
+  width: 71rem;
+  border: 2px solid black;
+  position: relative;
+}
+.videoCallSection-boardImage {
+  position: absolute;
+  height: 37.5rem;
+  width: 66.25rem;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1.25rem;
+  box-shadow: 0px 50px 170px 0px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+.videoCallSection-boardImage-image {
+  background-color: rgb(0, 0, 0);
+  border-radius: 1.25rem;
+  object-fit: cover;
+}
+.videoCallSection-babyImage {
+  height: 13.5rem;
+  width: 11.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.625rem;
+  box-shadow: 0px 50px 170px 0px rgba(0, 0, 0, 0.05);
+}
+.videoCallSection-babyImage-image {
+  background-color: rgb(0, 0, 0);
+  border-radius: 0.625rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+.videoCallSection__pattern {
+  position: absolute;
+  right: 0;
+}
+.videoCallSection-boardImage-buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  width: 66.25rem;
+  bottom: 3.4375rem;
+}
+
 .button__btn {
   border-radius: 0.625rem;
   padding: auto;

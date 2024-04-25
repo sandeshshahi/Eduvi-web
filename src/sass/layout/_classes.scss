@@ -1,0 +1,61 @@
+@use "../utils/" as utils;
+@use "../globals/" as globals;
+
+.videoCallSection {
+  height: utils.rem(700);
+  width: utils.rem(1136);
+  border: 2px solid black;
+  position: relative;
+  &-boardImage {
+    position: absolute;
+    height: utils.rem(600);
+    width: utils.rem(1060);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: globals.$background-color-white;
+    border-radius: utils.rem(20);
+    box-shadow: 0px 50px 170px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    &-image {
+      background-color: rgba(0, 0, 0, 1);
+      border-radius: utils.rem(20);
+      object-fit: cover;
+    }
+  }
+
+  &-babyImage {
+    // position: absolute;
+    height: utils.rem(216);
+    width: utils.rem(180);
+    // bottom: utils.rem(55);
+    // left: utils.rem(55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: globals.$background-color-white;
+    border-radius: utils.rem(10);
+    box-shadow: 0px 50px 170px 0px rgba(0, 0, 0, 0.05);
+    &-image {
+      background-color: rgba(0, 0, 0, 1);
+      border-radius: utils.rem(10);
+      overflow: hidden;
+      object-fit: cover;
+    }
+  }
+
+  &__pattern {
+    position: absolute;
+    right: 0;
+  }
+
+  &-boardImage-buttons {
+    position: absolute;
+    @include utils.flexDisplay(space-around, end);
+    width: utils.rem(1060);
+    bottom: utils.rem(55);
+    // gap: ;
+    // justify-content: space-between;
+  }
+}

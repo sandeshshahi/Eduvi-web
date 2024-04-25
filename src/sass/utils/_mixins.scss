@@ -6,3 +6,9 @@
   font-size: function.rem($font-size);
   line-height: function.rem($line-height);
 }
+
+@mixin flexDisplay($justify-content: center, $align-item: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}
