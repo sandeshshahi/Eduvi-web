@@ -1,3 +1,4 @@
+import SubscribeBanner from "./components/banner/SubscribeBanner";
 import VideoCallSection from "./components/classes/videoCall/VideoCallSection";
 import Footer from "./components/footer/Footer";
 import "./css/style.min.css";
@@ -8,7 +9,8 @@ function App() {
     <>
       {/* <LandingPage /> */}
       {/* <VideoCallSection /> */}
-      <Footer />
+      {/* <Footer /> */}
+      <SubscribeBanner />
     </>
   );
 }
