@@ -3,6 +3,7 @@
 .landingPage {
   position: relative;
   &-box1 {
+    z-index: -10;
     height: utils.rem(436);
     width: utils.rem(436);
     position: absolute;
@@ -17,6 +18,7 @@
     }
   }
   &-box2 {
+    z-index: -10;
     height: utils.rem(436);
     width: utils.rem(436);
     position: absolute;
@@ -31,6 +33,7 @@
     }
   }
   &-box3 {
+    z-index: -10;
     height: utils.rem(436);
     width: utils.rem(436);
     position: absolute;
@@ -49,5 +52,17 @@
     display: flex;
     justify-content: center;
     gap: utils.rem(42);
+  }
+
+  .main__section {
+    margin-top: utils.rem(150);
+    @include utils.flexDisplay(column, center, center);
+
+    &-classes {
+      width: utils.rem(1136);
+      position: relative;
+      @include utils.flexDisplay(column, center, center);
+      height: utils.rem(1120);
+    }
   }
 }

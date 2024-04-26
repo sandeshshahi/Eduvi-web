@@ -10,9 +10,7 @@
 }
 
 .header__logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include utils.flexDisplay;
   width: utils.rem(114);
   height: utils.rem(30);
   border-radius: utils.rem(5);
@@ -150,12 +148,14 @@
     );
     margin-top: utils.rem(28);
     clip-path: polygon(utils.$curvedPolygonClipPath);
+    z-index: 1;
   }
   &-image {
     margin-left: utils.rem(50);
     position: absolute;
     top: utils.rem(0);
     left: utils.rem(110);
+    z-index: 5;
   }
   &-vector {
     height: utils.rem(563.5);
@@ -163,12 +163,8 @@
     position: absolute;
     top: utils.rem(40);
     left: utils.rem(39);
-    clip-path: polygon(
-      0.168% 0.177%,
-      12.374% 57.345%,
-      84.848% 9.204%,
-      99.832% 99.912%
-    );
+    color: rgba(236, 236, 236, 1);
+    z-index: 0;
   }
   &-icon {
     height: utils.rem(80);
@@ -178,6 +174,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
     &.icon-1 {
       position: absolute;
       top: utils.rem(561.5);
@@ -190,12 +187,12 @@
     }
     &.icon-3 {
       position: absolute;
-      top: utils.rem(20);
+      top: utils.rem(50);
       left: utils.rem(500);
     }
     &.icon-4 {
       position: absolute;
-      top: utils.rem(350);
+      top: utils.rem(320);
       left: utils.rem(70);
     }
   }
