@@ -39,7 +39,6 @@
   height: utils.rem(587);
   width: utils.rem(689);
   z-index: 1;
-  border: 2px solid black;
   // background-image: url("../../../public//images/table&person.png");
   // object-fit: cover;
   // background-repeat: no-repeat;
@@ -72,7 +71,7 @@
 
   &-pattern {
     position: absolute;
-    right: utils.rem(304);
+    right: utils.rem(306);
     top: utils.rem(56);
   }
 
@@ -86,7 +85,7 @@
   }
   .html {
     position: absolute;
-    left: utils.rem(710);
+    left: utils.rem(690);
     top: utils.rem(164);
   }
   .java {
