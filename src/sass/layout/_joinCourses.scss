@@ -1,7 +1,101 @@
 @use "../utils/" as utils;
+@use "../globals/" as globals;
 
 .text__section {
   height: utils.rem(440);
   width: utils.rem(500);
-  border: 2px solid black;
+  @include utils.flexDisplay(column, start, start);
+  margin-left: utils.rem(70);
+
+  &-title {
+    @include utils.flexDisplay;
+    height: utils.rem(50);
+    width: utils.rem(170);
+    background-color: rgba(228, 226, 244, 1);
+    border-radius: utils.rem(10);
+    color: rgba(156, 77, 244, 1);
+    @include utils.font-Metropolis(500, 20, 20);
+  }
+  &-heading {
+    @include utils.font-Metropolis(700, 45, 55);
+    color: globals.$text-color;
+    margin-top: utils.rem(15);
+  }
+  &-description {
+    @include utils.font-Metropolis(400, 16, 30);
+    color: globals.$text-color-light;
+    margin-top: utils.rem(20);
+  }
+  &-buttonWrapper {
+    margin-top: utils.rem(40);
+  }
+}
+
+.imageSection {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  // overflow: visible;
+  height: utils.rem(587);
+  width: utils.rem(689);
+  z-index: 1;
+  // background-image: url("../../../public//images/table&person.png");
+  // object-fit: cover;
+  // background-repeat: no-repeat;
+  // background-position: right;
+  // background-size: cover;
+  // transform: rotateY(-180deg);
+  &-personImage {
+    transform: rotateY(-180deg);
+    object-fit: cover;
+    object-position: 120%;
+  }
+
+  &-ellipse {
+    position: absolute;
+    right: 0;
+    bottom: utils.rem(0);
+    border-radius: 50%;
+    z-index: 5;
+  }
+}
+
+.joinCoursesSection {
+  position: relative;
+  height: utils.rem(667);
+  width: utils.rem(1280);
+  @include utils.flexDisplay(row, space-between, center);
+  background-color: rgba(237, 233, 242, 1);
+  border-radius: utils.rem(20);
+  overflow: hidden;
+
+  &-pattern {
+    position: absolute;
+    right: utils.rem(320);
+    top: utils.rem(56);
+  }
+
+  &-icon {
+    height: utils.rem(50);
+    width: utils.rem(50);
+    @include utils.flexDisplay;
+    background-color: globals.$background-color-white;
+    border-radius: utils.rem(5);
+    box-shadow: 0px 25px 70px 0px rgba(10, 3, 60, 0.15);
+  }
+  .html {
+    position: absolute;
+    left: utils.rem(680);
+    top: utils.rem(164);
+  }
+  .java {
+    position: absolute;
+    right: utils.rem(65);
+    top: utils.rem(50);
+  }
+  .php {
+    position: absolute;
+    right: utils.rem(150);
+    top: utils.rem(190);
+  }
 }

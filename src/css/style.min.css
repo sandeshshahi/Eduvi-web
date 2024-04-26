@@ -9,6 +9,10 @@ html {
   box-sizing: inherit;
 }
 
+* {
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -20,11 +24,124 @@ ul {
   list-style: none;
 }
 
+/* Avoid text overflows*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
 @font-face {
   font-family: "Metropolis Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("../../../public/fonts/Metropolis-Regular.woff");
+  src: url("../../../public/fonts/Metropolis/Metropolis-Regular.woff");
+}
+@font-face {
+  font-family: "Metropolis Regular Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-RegularItalic.woff");
+}
+@font-face {
+  font-family: "Metropolis Extra Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-ExtraLight.woff");
+}
+@font-face {
+  font-family: "Metropolis Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-Light.woff");
+}
+@font-face {
+  font-family: "Metropolis Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-Thin.woff");
+}
+@font-face {
+  font-family: "Metropolis Extra Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-ExtraLightItalic.woff");
+}
+@font-face {
+  font-family: "Metropolis Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-LightItalic.woff");
+}
+@font-face {
+  font-family: "Metropolis Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-ThinItalic.woff");
+}
+@font-face {
+  font-family: "Metropolis Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-Medium.woff");
+}
+@font-face {
+  font-family: "Metropolis Semi Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-SemiBold.woff");
+}
+@font-face {
+  font-family: "Metropolis Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-Bold.woff");
+}
+@font-face {
+  font-family: "Metropolis Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-BoldItalic.woff");
+}
+@font-face {
+  font-family: "Metropolis Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-MediumItalic.woff");
+}
+@font-face {
+  font-family: "Metropolis Semi Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-SemiBoldItalic.woff");
+}
+@font-face {
+  font-family: "Metropolis Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-ExtraBold.woff");
+}
+@font-face {
+  font-family: "Metropolis Extra Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-ExtraBoldItalic.woff");
+}
+@font-face {
+  font-family: "Metropolis Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-Black.woff");
+}
+@font-face {
+  font-family: "Metropolis Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../public/fonts/Metropolis/Metropolis-BlackItalic.woff");
 }
 .landingPage {
   position: relative;
@@ -117,7 +234,7 @@ ul {
   gap: 0.375rem;
 }
 .header__logo .upperNav__logo-text {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 1.875rem;
@@ -173,20 +290,20 @@ ul {
   height: 3.125rem;
   background-color: rgb(255, 255, 255);
   color: rgb(255, 102, 82);
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.25rem;
   border-radius: 0.625rem;
 }
 .text__container .text-heading {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 700;
   font-size: 4.0625rem;
   line-height: 4.6875rem;
 }
 .text__container .text-description {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.875rem;
@@ -216,7 +333,7 @@ ul {
   cursor: pointer;
 }
 .search-container .search__menu-text {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 500;
   font-size: 1rem;
   line-height: 1rem;
@@ -239,7 +356,7 @@ ul {
 }
 .search-container .search__input::placeholder {
   color: rgba(93, 90, 111, 0.6);
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 500;
   font-size: 1rem;
   line-height: 1rem;
@@ -319,7 +436,7 @@ ul {
   top: 0rem;
 }
 .title__heading {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 700;
   font-size: 2.8125rem;
   line-height: 3.4375rem;
@@ -327,7 +444,7 @@ ul {
   margin: 0;
 }
 .title__description {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.875rem;
@@ -433,7 +550,7 @@ ul {
   cursor: pointer;
 }
 .classes__button .class__button-text {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 600;
   font-size: 1.5625rem;
   line-height: 1.5625rem;
@@ -459,7 +576,7 @@ ul {
   width: 7.125rem;
 }
 .footer__left-logo_text {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 1.875rem;
@@ -483,7 +600,7 @@ ul {
 }
 .footer__left-trademark {
   width: 10.625rem;
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.625rem;
@@ -502,7 +619,7 @@ ul {
 }
 
 .footer__item {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1rem;
@@ -534,7 +651,7 @@ ul {
   align-items: center;
 }
 .subscribe__banner-contents-h1 {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 700;
   font-size: 2.8125rem;
   line-height: 3.4375rem;
@@ -543,7 +660,7 @@ ul {
   margin: 0;
 }
 .subscribe__banner-contents-p {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.875rem;
@@ -569,7 +686,7 @@ ul {
   padding-left: 1.25rem;
 }
 .subscribe__banner-contents_controls-input::placeholder {
-  font-family: "Metropolis Regular";
+  font-family: "Metropolis";
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.875rem;
@@ -636,7 +753,110 @@ ul {
 .text__section {
   height: 27.5rem;
   width: 31.25rem;
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  margin-left: 4.375rem;
+}
+.text__section-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 3.125rem;
+  width: 10.625rem;
+  background-color: rgb(228, 226, 244);
+  border-radius: 0.625rem;
+  color: rgb(156, 77, 244);
+  font-family: "Metropolis";
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+}
+.text__section-heading {
+  font-family: "Metropolis";
+  font-weight: 700;
+  font-size: 2.8125rem;
+  line-height: 3.4375rem;
+  color: rgb(10, 3, 60);
+  margin-top: 0.9375rem;
+}
+.text__section-description {
+  font-family: "Metropolis";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: rgb(93, 90, 111);
+  margin-top: 1.25rem;
+}
+.text__section-buttonWrapper {
+  margin-top: 2.5rem;
+}
+
+.imageSection {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 36.6875rem;
+  width: 43.0625rem;
+  z-index: 1;
+}
+.imageSection-personImage {
+  transform: rotateY(-180deg);
+  object-fit: cover;
+  object-position: 120%;
+}
+.imageSection-ellipse {
+  position: absolute;
+  right: 0;
+  bottom: 0rem;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.joinCoursesSection {
+  position: relative;
+  height: 41.6875rem;
+  width: 80rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(237, 233, 242);
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.joinCoursesSection-pattern {
+  position: absolute;
+  right: 20rem;
+  top: 3.5rem;
+}
+.joinCoursesSection-icon {
+  height: 3.125rem;
+  width: 3.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.3125rem;
+  box-shadow: 0px 25px 70px 0px rgba(10, 3, 60, 0.15);
+}
+.joinCoursesSection .html {
+  position: absolute;
+  left: 42.5rem;
+  top: 10.25rem;
+}
+.joinCoursesSection .java {
+  position: absolute;
+  right: 4.0625rem;
+  top: 3.125rem;
+}
+.joinCoursesSection .php {
+  position: absolute;
+  right: 9.375rem;
+  top: 11.875rem;
 }
 
 .button__btn {

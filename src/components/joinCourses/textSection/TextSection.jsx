@@ -12,7 +12,10 @@ const TextSection = () => {
         standard-definition. While there is no standardized meaning for
         high-definition, generally any video.
       </p>
-      <Button />
+
+      <div className="text__section-buttonWrapper">
+        <Button text={"Registation Now"} width={"185px"} height={"60px"} />
+      </div>
     </div>
   );
 };
