@@ -39,6 +39,7 @@
   height: utils.rem(587);
   width: utils.rem(689);
   z-index: 1;
+  border: 2px solid black;
   // background-image: url("../../../public//images/table&person.png");
   // object-fit: cover;
   // background-repeat: no-repeat;
@@ -48,7 +49,7 @@
   &-personImage {
     transform: rotateY(-180deg);
     object-fit: cover;
-    object-position: 120%;
+    object-position: 130%;
   }
 
   &-ellipse {
@@ -67,10 +68,11 @@
   background-color: rgba(237, 233, 242, 1);
   border-radius: utils.rem(20);
   overflow: hidden;
+  z-index: 5;
 
   &-pattern {
     position: absolute;
-    right: utils.rem(320);
+    right: utils.rem(304);
     top: utils.rem(56);
   }
 
@@ -84,7 +86,7 @@
   }
   .html {
     position: absolute;
-    left: utils.rem(680);
+    left: utils.rem(710);
     top: utils.rem(164);
   }
   .java {

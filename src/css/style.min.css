@@ -801,11 +801,12 @@ h6 {
   height: 36.6875rem;
   width: 43.0625rem;
   z-index: 1;
+  border: 2px solid black;
 }
 .imageSection-personImage {
   transform: rotateY(-180deg);
   object-fit: cover;
-  object-position: 120%;
+  object-position: 130%;
 }
 .imageSection-ellipse {
   position: absolute;
@@ -825,10 +826,11 @@ h6 {
   background-color: rgb(237, 233, 242);
   border-radius: 1.25rem;
   overflow: hidden;
+  z-index: 5;
 }
 .joinCoursesSection-pattern {
   position: absolute;
-  right: 20rem;
+  right: 19rem;
   top: 3.5rem;
 }
 .joinCoursesSection-icon {
@@ -844,7 +846,7 @@ h6 {
 }
 .joinCoursesSection .html {
   position: absolute;
-  left: 42.5rem;
+  left: 44.375rem;
   top: 10.25rem;
 }
 .joinCoursesSection .java {
