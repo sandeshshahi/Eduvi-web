@@ -805,7 +805,7 @@ h6 {
 .imageSection-personImage {
   transform: rotateY(-180deg);
   object-fit: cover;
-  object-position: 120%;
+  object-position: 130%;
 }
 .imageSection-ellipse {
   position: absolute;
@@ -828,7 +828,7 @@ h6 {
 }
 .joinCoursesSection-pattern {
   position: absolute;
-  right: 20rem;
+  right: 19.125rem;
   top: 3.5rem;
 }
 .joinCoursesSection-icon {
@@ -844,7 +844,7 @@ h6 {
 }
 .joinCoursesSection .html {
   position: absolute;
-  left: 42.5rem;
+  left: 43.125rem;
   top: 10.25rem;
 }
 .joinCoursesSection .java {

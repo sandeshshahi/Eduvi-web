@@ -48,7 +48,7 @@
   &-personImage {
     transform: rotateY(-180deg);
     object-fit: cover;
-    object-position: 120%;
+    object-position: 130%;
   }
 
   &-ellipse {
@@ -70,7 +70,7 @@
 
   &-pattern {
     position: absolute;
-    right: utils.rem(320);
+    right: utils.rem(306);
     top: utils.rem(56);
   }
 
@@ -84,7 +84,7 @@
   }
   .html {
     position: absolute;
-    left: utils.rem(680);
+    left: utils.rem(690);
     top: utils.rem(164);
   }
   .java {
