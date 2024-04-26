@@ -825,6 +825,7 @@ h6 {
   background-color: rgb(237, 233, 242);
   border-radius: 1.25rem;
   overflow: hidden;
+  z-index: 5;
 }
 .joinCoursesSection-pattern {
   position: absolute;

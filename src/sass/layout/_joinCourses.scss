@@ -67,6 +67,7 @@
   background-color: rgba(237, 233, 242, 1);
   border-radius: utils.rem(20);
   overflow: hidden;
+  z-index: 5;
 
   &-pattern {
     position: absolute;
