@@ -507,6 +507,126 @@ ul {
   cursor: pointer;
 }
 
+.subscribe__banner {
+  height: 26.25rem;
+  width: 80rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(10, 3, 60);
+  border-radius: 1.25rem;
+}
+.subscribe__banner-contents {
+  position: relative;
+  height: 18.375rem;
+  width: 73.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe__banner-contents-h1 {
+  font-family: "Metropolis Regular";
+  font-weight: 700;
+  font-size: 2.8125rem;
+  line-height: 3.4375rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+.subscribe__banner-contents-p {
+  font-family: "Metropolis Regular";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1.25rem;
+}
+.subscribe__banner-contents_controls {
+  height: 3.75rem;
+  width: 31.8125rem;
+  margin-top: 2.5rem;
+}
+.subscribe__banner-contents_controls-input {
+  height: 3.75rem;
+  width: 22.9375rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-top-left-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
+  caret-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  line-height: 1.875rem;
+  padding-left: 1.25rem;
+}
+.subscribe__banner-contents_controls-input::placeholder {
+  font-family: "Metropolis Regular";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: rgb(255, 255, 255);
+}
+.subscribe__banner-contents_controls-input:focus {
+  outline: none;
+}
+.subscribe__banner-contents_controls-button {
+  height: 3.75rem;
+  width: 8.875rem;
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.21rem;
+  color: rgb(255, 255, 255);
+  background-color: rgb(156, 77, 244);
+  border: none;
+}
+.subscribe__banner-contents_controls-button:hover {
+  cursor: pointer;
+}
+.subscribe__banner-image {
+  height: 3.75rem;
+  width: 3.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.subscribe__banner .image-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.subscribe__banner .image-2 {
+  position: absolute;
+  left: 11.6875rem;
+  top: 6.5625rem;
+  transform: rotateY(-180deg);
+}
+.subscribe__banner .image-3 {
+  position: absolute;
+  left: 5.625rem;
+  bottom: 0;
+  transform: rotateY(-180deg);
+}
+.subscribe__banner .image-4 {
+  position: absolute;
+  right: 1.875rem;
+  top: 0;
+}
+.subscribe__banner .image-5 {
+  position: absolute;
+  right: 7.9375rem;
+  top: 8.0625rem;
+}
+.subscribe__banner .image-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 .button__btn {
   border-radius: 0.625rem;
   padding: auto;
