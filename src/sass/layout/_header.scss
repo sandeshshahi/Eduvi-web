@@ -2,9 +2,7 @@
 
 // navbar components
 .navBar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include utils.flexDisplay(row, space-between, center);
   margin-inline: utils.rem(80);
   margin-top: utils.rem(30);
 }
@@ -17,14 +15,12 @@
   gap: utils.rem(6);
 
   .upperNav__logo-text {
-    @include utils.font(600, 30);
+    @include utils.font-Metropolis(600, 30);
   }
 }
 
 .menu__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include utils.flexDisplay(row, space-between, center);
   min-width: utils.rem(713);
   &-item {
     display: flex;
@@ -47,9 +43,7 @@
 }
 
 .cart-account {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include utils.flexDisplay;
   gap: utils.rem(30);
 }
 
@@ -60,31 +54,27 @@
   margin-top: utils.rem(131);
   position: relative;
   .text-1 {
-    display: flex;
+    @include utils.flexDisplay;
     width: utils.rem(239);
     height: utils.rem(50);
     background-color: rgba(255, 255, 255, 1);
     color: rgba(255, 102, 82, 1);
-    @include utils.font(500, 20);
-    justify-content: center;
-    align-items: center;
+    @include utils.font-Metropolis(500, 20);
     border-radius: utils.rem(10);
   }
 
   .text-heading {
-    @include utils.font(700, 65, 75);
+    @include utils.font-Metropolis(700, 65, 75);
   }
 
   .text-description {
-    @include utils.font(400, 16, 30);
+    @include utils.font-Metropolis(400, 16, 30);
     color: rgba(93, 90, 111, 1);
   }
 }
 
 .search-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  @include utils.flexDisplay(row, space-around, center);
   width: utils.rem(607);
   height: utils.rem(60);
   border-radius: utils.rem(10);
@@ -92,16 +82,14 @@
   margin-top: utils.rem(40);
 
   .search__menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include utils.flexDisplay;
     width: utils.rem(128);
     margin-left: utils.rem(20);
     :hover {
       cursor: pointer;
     }
     &-text {
-      @include utils.font(500, 16, 16);
+      @include utils.font-Metropolis(500, 16, 16);
       color: rgba(93, 90, 111, 0.6);
     }
     &-icon {
@@ -123,7 +111,7 @@
     border: none;
     &::placeholder {
       color: rgba(93, 90, 111, 0.6);
-      @include utils.font(500, 16, 16);
+      @include utils.font-Metropolis(500, 16, 16);
     }
   }
 }

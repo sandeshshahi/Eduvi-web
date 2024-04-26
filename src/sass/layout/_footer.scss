@@ -15,7 +15,7 @@
     width: utils.rem(114);
   }
   &-logo_text {
-    @include utils.font(600, 30, 30);
+    @include utils.font-Metropolis(600, 30, 30);
   }
   &-socialIcons {
     @include utils.flexDisplay(row, space-between, center);
@@ -24,16 +24,13 @@
     width: utils.rem(147);
   }
   &-copy_right {
-    font-family: utils.$font-Inter;
-    font-weight: 400;
-    font-size: utils.rem(16);
-    line-height: utils.rem(16);
+    @include utils.font-Inter(400, 16, 16);
     color: globals.$text-color-light;
     margin-top: utils.rem(40);
   }
   &-trademark {
     width: utils.rem(170);
-    @include utils.font(400, 16, 26);
+    @include utils.font-Metropolis(400, 16, 26);
     color: globals.$text-color-light;
     margin-top: utils.rem(15);
   }
@@ -41,17 +38,14 @@
 
 .footer__items {
   &-header {
-    font-family: utils.$font-Inter;
+    @include utils.font-Inter(600, 22, 26.63);
     margin-bottom: utils.rem(20);
-    font-weight: 600;
-    font-size: utils.rem(22);
-    line-height: utils.rem(26.63);
     margin: 0;
     margin-bottom: utils.rem(20);
   }
 }
 .footer__item {
-  @include utils.font(400, 16, 16);
+  @include utils.font-Metropolis(400, 16, 16);
   color: globals.$text-color-light;
   margin-bottom: utils.rem(20);
   &:hover {

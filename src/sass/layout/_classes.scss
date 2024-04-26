@@ -10,13 +10,13 @@
   position: absolute;
   top: utils.rem(0);
   &__heading {
-    @include utils.font(700, 45, 55);
+    @include utils.font-Metropolis(700, 45, 55);
     text-align: center;
     margin: 0;
   }
 
   &__description {
-    @include utils.font(400, 16, 30);
+    @include utils.font-Metropolis(400, 16, 30);
     color: rgba(93, 90, 111, 1);
     text-align: center;
     margin: 0;
@@ -118,7 +118,7 @@
     }
 
     &-text {
-      @include utils.font(600, 25);
+      @include utils.font-Metropolis(600, 25);
       color: globals.$text-color;
     }
   }

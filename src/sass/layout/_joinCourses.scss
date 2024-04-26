@@ -1,0 +1,7 @@
+@use "../utils/" as utils;
+
+.text__section {
+  height: utils.rem(440);
+  width: utils.rem(500);
+  border: 2px solid black;
+}
