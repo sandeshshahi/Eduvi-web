@@ -15,13 +15,13 @@
     width: utils.rem(1180);
     @include utils.flexDisplay(column, center, center);
     &-h1 {
-      @include utils.font(700, 45, 55);
+      @include utils.font-Metropolis(700, 45, 55);
       text-align: center;
       color: globals.$text-color-white;
       margin: 0;
     }
     &-p {
-      @include utils.font(400, 16, 30);
+      @include utils.font-Metropolis(400, 16, 30);
       color: rgba(255, 255, 255, 0.7);
       margin-top: utils.rem(20);
     }
@@ -43,7 +43,7 @@
         line-height: utils.rem(30);
         padding-left: utils.rem(20);
         &::placeholder {
-          @include utils.font(500, 16, 30);
+          @include utils.font-Metropolis(500, 16, 30);
           color: globals.$text-color-white;
         }
         &:focus {
@@ -55,10 +55,7 @@
         width: utils.rem(142);
         border-top-right-radius: utils.rem(10);
         border-bottom-right-radius: utils.rem(10);
-        font-family: utils.$font-Inter;
-        font-weight: 500;
-        font-size: utils.rem(16);
-        line-height: utils.rem(19.36);
+        @include utils.font-Inter(500, 16, 19.36);
         color: globals.$text-color-white;
         background-color: globals.$button-color;
         border: none;

@@ -16,9 +16,6 @@
   }
 
   &-text {
-    font-family: utils.$font-Inter;
-    font-weight: 500;
-    font-size: utils.rem(16);
-    line-height: utils.rem(20);
+    @include utils.font-Inter(500, 16, 20);
   }
 }
