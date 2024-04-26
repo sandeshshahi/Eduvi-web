@@ -1,3 +1,6 @@
+import ButtonGroup from "../components/classes/classesButtons/ButtonGroup";
+import Title from "../components/classes/title/Title";
+import VideoCallSection from "../components/classes/videoCall/VideoCallSection";
 import ImageSection from "../components/header/imageSection/ImageSection";
 import Text from "../components/header/text/Text";
 import UpperNav from "../components/header/upperNav/UpperNav";
@@ -21,6 +24,14 @@ const LandingPage = () => {
       <div className="landingPage-box3">
         <div className="landingPage-ellipse"></div>
       </div>
+
+      <main className="main__section">
+        <div className="main__section-classes">
+          <Title />
+          <VideoCallSection />
+          <ButtonGroup />
+        </div>
+      </main>
     </div>
   );
 };

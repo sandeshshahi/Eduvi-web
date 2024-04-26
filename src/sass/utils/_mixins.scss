@@ -7,8 +7,13 @@
   line-height: function.rem($line-height);
 }
 
-@mixin flexDisplay($justify-content: center, $align-item: center) {
+@mixin flexDisplay(
+  $flex-direction: row,
+  $justify-content: center,
+  $align-item: center
+) {
   display: flex;
+  flex-direction: $flex-direction;
   justify-content: $justify-content;
   align-items: $align-item;
 }

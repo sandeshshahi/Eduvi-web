@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 const UpperNav = () => {
   return (
-    <div className="navBar">
+    <nav className="navBar">
       <Logo />
       <Menu />
 
@@ -13,7 +13,7 @@ const UpperNav = () => {
         <Cart />
         <Account />
       </div>
-    </div>
+    </nav>
   );
 };
 export default UpperNav;

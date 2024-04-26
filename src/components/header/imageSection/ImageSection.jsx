@@ -3,6 +3,7 @@ import icon1 from "../../../assets/icons/blockImage.svg";
 import icon2 from "../../../assets/icons/bookImage.svg";
 import icon3 from "../../../assets/icons/lightBulbImage.svg";
 import icon4 from "../../../assets/icons/presentationImage.svg";
+import vector from "../../../assets/vectors/imageSection-vector.svg";
 
 const ImageSection = () => {
   return (
@@ -15,7 +16,9 @@ const ImageSection = () => {
         height={669}
         width={418}
       />
-      <div className="image__section-vector"></div>
+      <div className="image__section-vector">
+        <img src={vector} alt="vector" />
+      </div>
       <div className="image__section-icon icon-1">
         <img src={icon1} alt="icon 1" height={50} width={50} />
       </div>

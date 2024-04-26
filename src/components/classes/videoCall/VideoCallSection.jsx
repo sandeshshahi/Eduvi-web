@@ -17,6 +17,7 @@ const VideoCallSection = () => {
           width={1000}
         />
 
+        {/* baby image */}
         <div className="videoCallSection-boardImage-buttons">
           <div className="videoCallSection-babyImage">
             <img
@@ -27,22 +28,26 @@ const VideoCallSection = () => {
               width={158.4}
             />
           </div>
-          <div className="videoCallSection-callButton">
+
+          {/* circular call button */}
+          <button className="videoCallSection-callButton">
             <img
               src={callButton}
               alt="circular call button"
               height={60}
               width={60}
             />
-          </div>
-          <div className="videoCallSection-arrowButton">
+          </button>
+
+          {/* circular arrow button */}
+          <button className="videoCallSection-arrowButton">
             <img
               src={arrowButton}
               alt="circular arrow button"
               height={60}
               width={60}
             />
-          </div>
+          </button>
         </div>
       </div>
 

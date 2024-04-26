@@ -4,7 +4,7 @@ const Title = () => {
   return (
     <div className="title">
       <h1 className="title__heading">
-        High quality video, audio & live classes
+        High quality video, audio <br /> & live classes
       </h1>
       <p className="title__description">
         High-definition video is video of higher resolution and quality than
