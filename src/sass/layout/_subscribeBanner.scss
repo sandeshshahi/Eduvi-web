@@ -57,7 +57,7 @@
         border-bottom-right-radius: utils.rem(10);
         @include utils.font-Inter(500, 16, 19.36);
         color: globals.$text-color-white;
-        background-color: globals.$button-color;
+        background-color: globals.$button-color-primary;
         border: none;
         &:hover {
           cursor: pointer;

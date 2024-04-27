@@ -16,8 +16,8 @@ const JoinCoursesSection = () => {
         className="joinCoursesSection-pattern"
         src={pattern}
         alt="pattern"
-        height={180}
-        width={185}
+        height={185}
+        width={180}
       />
 
       {/*  icons */}

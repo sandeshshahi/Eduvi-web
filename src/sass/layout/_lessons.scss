@@ -1,0 +1,28 @@
+@use "../utils/" as utils;
+@use "../globals/" as globals;
+
+.title__section {
+  height: utils.rem(135);
+  width: utils.rem(700);
+  &-h1 {
+    @include utils.font-Metropolis(700, 45, 55);
+    text-align: center;
+    color: globals.$text-color;
+  }
+  &-p {
+    @include utils.font-Metropolis(400, 16, 30);
+    text-align: center;
+    color: globals.$text-color-light;
+  }
+}
+
+.hobberd {
+  &__list {
+    @include utils.flexDisplay;
+    gap: utils.rem(50);
+    &-item {
+      color: globals.$text-color;
+      @include utils.font-Inter(500, 16, 20);
+    }
+  }
+}
