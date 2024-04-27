@@ -1,6 +1,6 @@
-import boardImage from "../../../../public/images/boardImage.png";
-import babyImage from "../../../../public/images/babyImage.png";
-import pattern from "../../../../public/images/patternRed.png";
+import boardImage from "../../../assets/images/boardImage.png";
+import babyImage from "../../../assets/images/babyImage.png";
+import pattern from "../../../assets/images/patternRed.png";
 import callButton from "../../../assets/icons/callButton.svg";
 import arrowButton from "../../../assets/icons/circularArrowButton.svg";
 

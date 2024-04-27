@@ -1,4 +1,4 @@
-import schoolBoyImage from "../../../../public/images/school-boy-holding-copy.png";
+import schoolBoyImage from "../../../assets/images/school-boy-holding-copy.png";
 import icon1 from "../../../assets/icons/blockImage.svg";
 import icon2 from "../../../assets/icons/bookImage.svg";
 import icon3 from "../../../assets/icons/lightBulbImage.svg";

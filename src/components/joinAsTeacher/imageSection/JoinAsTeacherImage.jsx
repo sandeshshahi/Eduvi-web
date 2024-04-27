@@ -1,5 +1,5 @@
 import gradientImage from "../../../assets/icons/joinAsTeacherBG.svg";
-import studentImage from "../../../../public/images/maleStudent-holdingpen.png";
+import studentImage from "../../../assets/images/maleStudent-holdingpen.png";
 const JoinAsTeacherImage = () => {
   return (
     <div className="joinAsTeacherImage__container">
