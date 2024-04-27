@@ -1,68 +1,75 @@
 @use "../utils/" as utils;
 
-.landingPage {
+.header {
   position: relative;
-  &-box1 {
-    z-index: -10;
-    height: utils.rem(436);
-    width: utils.rem(436);
-    position: absolute;
-    top: utils.rem(-30);
-    right: utils.rem(0);
-    .landingPage-ellipse {
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
-      background-color: rgba(255, 102, 82, 0.15);
-      opacity: 0.15;
-    }
-  }
-  &-box2 {
-    z-index: -10;
-    height: utils.rem(436);
-    width: utils.rem(436);
-    position: absolute;
-    top: utils.rem(520);
-    left: utils.rem(0);
-    .landingPage-ellipse {
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
-      background-color: rgba(255, 102, 82, 0.15);
-      opacity: 0.15;
-    }
-  }
-  &-box3 {
-    z-index: -10;
-    height: utils.rem(436);
-    width: utils.rem(436);
-    position: absolute;
-    top: utils.rem(520);
-    left: utils.rem(260);
-    .landingPage-ellipse {
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
-      background-color: rgba(255, 102, 82, 0.15);
-      opacity: 0.15;
-    }
-  }
-  &__main {
+  margin-left: utils.rem(80);
+  &-section {
     margin-top: utils.rem(104);
-    display: flex;
-    justify-content: center;
-    gap: utils.rem(42);
+    @include utils.flexDisplay(row, space-between, center);
+    margin-inline: utils.rem(80);
   }
+}
+.landingPage-box1 {
+  z-index: -10;
+  height: utils.rem(436);
+  width: utils.rem(436);
+  position: absolute;
+  top: utils.rem(-30);
+  right: utils.rem(0);
+  .landingPage-ellipse {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 82, 0.15);
+    opacity: 0.15;
+  }
+}
+.landingPage-box2 {
+  z-index: -10;
+  height: utils.rem(436);
+  width: utils.rem(436);
+  position: absolute;
+  top: utils.rem(520);
+  left: utils.rem(0);
+  .landingPage-ellipse {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 82, 0.15);
+    opacity: 0.15;
+  }
+}
+.landingPage-box3 {
+  z-index: -10;
+  height: utils.rem(436);
+  width: utils.rem(436);
+  position: absolute;
+  top: utils.rem(520);
+  left: utils.rem(260);
+  .landingPage-ellipse {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(255, 102, 82, 0.15);
+    opacity: 0.15;
+  }
+}
 
-  .main__section {
-    margin-top: utils.rem(150);
-    @include utils.flexDisplay(column, center, center);
-
-    &-classes {
-      width: utils.rem(1136);
-      position: relative;
+.main {
+  @include utils.flexDisplay(column, center, center);
+  gap: utils.rem(150);
+  margin-top: utils.rem(150);
+  .section-classes {
+    &-title {
       @include utils.flexDisplay(column, center, center);
-      height: utils.rem(1120);
     }
+    position: relative;
+    @include utils.flexDisplay(column, center, center);
+    gap: utils.rem(40);
   }
+}
+
+.section-footer {
+  @include utils.flexDisplay;
+  margin-top: utils.rem(150);
 }

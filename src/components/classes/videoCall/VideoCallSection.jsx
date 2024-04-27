@@ -7,53 +7,55 @@ import arrowButton from "../../../assets/icons/circularArrowButton.svg";
 const VideoCallSection = () => {
   return (
     <div className="videoCallSection">
-      {/* board-image and baby-image  */}
-      <div className="videoCallSection-boardImage">
-        <img
-          className="videoCallSection-boardImage-image"
-          src={boardImage}
-          alt=" board image"
-          height={570}
-          width={1000}
-        />
+      <div className="videoCallSection__container">
+        {/* board-image and baby-image  */}
+        <div className="videoCallSection__container-boardImage">
+          <img
+            className="videoCallSection__container-boardImage-image"
+            src={boardImage}
+            alt=" board image"
+            height={570}
+            width={1000}
+          />
 
-        {/* baby image */}
-        <div className="videoCallSection-boardImage-buttons">
-          <div className="videoCallSection-babyImage">
-            <img
-              className="videoCallSection-babyImage-image"
-              src={babyImage}
-              alt="baby image"
-              height={194.4}
-              width={158.4}
-            />
+          {/* baby image */}
+          <div className="videoCallSection__container-boardImage-buttons">
+            <div className="videoCallSection__container-babyImage">
+              <img
+                className="videoCallSection__container-babyImage-image"
+                src={babyImage}
+                alt="baby image"
+                height={194.4}
+                width={158.4}
+              />
+            </div>
+
+            {/* circular call button */}
+            <button className="videoCallSection__container-callButton">
+              <img
+                src={callButton}
+                alt="circular call button"
+                height={60}
+                width={60}
+              />
+            </button>
+
+            {/* circular arrow button */}
+            <button className="videoCallSection__container-arrowButton">
+              <img
+                src={arrowButton}
+                alt="circular arrow button"
+                height={60}
+                width={60}
+              />
+            </button>
           </div>
-
-          {/* circular call button */}
-          <button className="videoCallSection-callButton">
-            <img
-              src={callButton}
-              alt="circular call button"
-              height={60}
-              width={60}
-            />
-          </button>
-
-          {/* circular arrow button */}
-          <button className="videoCallSection-arrowButton">
-            <img
-              src={arrowButton}
-              alt="circular arrow button"
-              height={60}
-              width={60}
-            />
-          </button>
         </div>
-      </div>
 
-      {/* for pattern */}
-      <div className="videoCallSection__pattern">
-        <img src={pattern} alt="pattern" height={185} width={180} />
+        {/* for pattern */}
+        <div className="videoCallSection__container__pattern">
+          <img src={pattern} alt="pattern" height={185} width={180} />
+        </div>
       </div>
     </div>
   );
