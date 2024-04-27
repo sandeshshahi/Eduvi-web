@@ -14,7 +14,7 @@ const TextSection = () => {
       </p>
 
       <div className="text__section-buttonWrapper">
-        <Button text={"Registation Now"} width={"185px"} height={"60px"} />
+        <Button text={"Registation Now"} className={"btn-primary"} />
       </div>
     </div>
   );

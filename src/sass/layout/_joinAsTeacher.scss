@@ -40,3 +40,8 @@
     margin-bottom: utils.rem(20);
   }
 }
+
+.joinAsTeacher__section {
+  @include utils.flexDisplay;
+  gap: utils.rem(80);
+}

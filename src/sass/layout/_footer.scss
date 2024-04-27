@@ -2,13 +2,17 @@
 @use "../utils/" as utils;
 
 .footer__section {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  // display: grid;
+  // grid-template-columns: repeat(5, auto);
+  @include utils.flexDisplay(row, space-between, start);
+  align-items: start;
+  flex-wrap: wrap;
   width: utils.rem(1278);
 }
 .footer__left {
   height: utils.rem(217);
   width: utils.rem(170);
+  padding: 0;
   &-logo {
     @include utils.flexDisplay(row, space-between, center);
     height: utils.rem(30);
