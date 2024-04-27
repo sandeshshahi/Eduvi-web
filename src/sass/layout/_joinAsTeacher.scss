@@ -1,0 +1,25 @@
+@use "../utils/" as utils;
+@use "../globals/" as globals;
+
+.joinAsTeacherImage__container {
+  height: utils.rem(521);
+  width: utils.rem(510);
+  position: relative;
+  overflow: hidden;
+  &-bg {
+    height: utils.rem(510);
+    width: utils.rem(510);
+    position: absolute;
+    bottom: 0;
+  }
+  &-image {
+    height: utils.rem(533);
+    width: utils.rem(403);
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: utils.rem(88);
+    overflow: hidden;
+    border-radius: 32%;
+  }
+}
