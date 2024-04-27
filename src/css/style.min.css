@@ -862,6 +862,29 @@ h6 {
   background-color: rgb(156, 77, 244);
 }
 
+.joinAsTeacherImage__container {
+  height: 32.5625rem;
+  width: 31.875rem;
+  position: relative;
+  overflow: hidden;
+}
+.joinAsTeacherImage__container-bg {
+  height: 31.875rem;
+  width: 31.875rem;
+  position: absolute;
+  bottom: 0;
+}
+.joinAsTeacherImage__container-image {
+  height: 33.3125rem;
+  width: 25.1875rem;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 5.5rem;
+  overflow: hidden;
+  border-radius: 32%;
+}
+
 .button__btn {
   border-radius: 0.625rem;
   padding: 1.25rem 1.875rem;

@@ -1,6 +1,7 @@
 import SubscribeBanner from "./components/banner/SubscribeBanner";
 import VideoCallSection from "./components/classes/videoCall/VideoCallSection";
 import Footer from "./components/footer/Footer";
+import JoinAsTeacherImage from "./components/joinAsTeacher/imageSection/JoinAsTeacherImage";
 import ImageSection from "./components/joinCourses/imageSection/ImageSection";
 import JoinCoursesSection from "./components/joinCourses/JoinCoursesSection";
 import TextSection from "./components/joinCourses/textSection/TextSection";
@@ -21,8 +22,9 @@ function App() {
       {/* <ImageSection /> */}
       {/* <JoinCoursesSection /> */}
       {/* <TitleSection /> */}
-      <LessonsSection />
+      {/* <LessonsSection /> */}
       {/* <LessonCard /> */}
+      <JoinAsTeacherImage />
     </>
   );
 }
