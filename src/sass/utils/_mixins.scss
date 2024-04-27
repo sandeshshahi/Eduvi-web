@@ -1,7 +1,7 @@
 @use "./function" as function;
 
 @mixin font-Metropolis($font-weight, $font-size, $line-height: $font-size) {
-  font-family: "Metropolis";
+  font-family: "Metropolis", sans-serif;
   font-weight: $font-weight;
   font-size: function.rem($font-size);
   line-height: function.rem($line-height);

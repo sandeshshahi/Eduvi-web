@@ -13,7 +13,7 @@ const Title = () => {
         480 vertical scan lines or 576 vertical lines is considered
         high-definition.
       </p>
-      <Button text={"Visit Courses "} width={"162px"} height={"60px"}></Button>
+      <Button text={"Visit Courses "} className={"btn-primary"}></Button>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Search = () => {
       </div>
       <span className="search__line"></span>
       <input className="search__input" placeholder="Class/Course" />
-      <Button text={"search"} width={"143px"} height={"50px"}>
+      <Button text={"search"} className={"btn-primary"}>
         <img
           className="search__button-icon"
           height={24}

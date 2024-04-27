@@ -21,8 +21,13 @@ body {
   color: colors.$text-color;
 }
 
-ul {
+ul,
+li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Avoid text overflows*/
