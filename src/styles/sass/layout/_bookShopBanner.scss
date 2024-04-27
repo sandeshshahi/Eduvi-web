@@ -1,0 +1,28 @@
+@use "../utils/" as utils;
+@use "../globals" as globals;
+
+.bookShopBanner {
+  background-color: rgba(239, 235, 245, 1);
+  border-radius: utils.rem(20);
+  &__link {
+    @include utils.flexDisplay(row, start, center);
+    gap: utils.rem(4);
+    padding: utils.rem(20) utils.rem(30);
+    @include utils.font-Metropolis(500, 16, 16);
+  }
+  & .active {
+    color: globals.$button-color-primary;
+  }
+  &-p {
+    @include utils.font-Metropolis(600, 45, 50);
+    color: globals.$text-color;
+  }
+  &-image {
+    height: utils.rem(210);
+    width: utils.rem(374);
+    margin-right: utils.rem(124);
+  }
+  &-content {
+    @include utils.flexDisplay(row, space-around, center);
+  }
+}
