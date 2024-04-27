@@ -1,4 +1,4 @@
-import "./css/style.min.css";
+import "./styles/css/style.min.css";
 import LandingPage from "./pages/LandingPage";
 
 function App() {
