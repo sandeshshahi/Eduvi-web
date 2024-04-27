@@ -21,8 +21,8 @@ function App() {
       {/* <ImageSection /> */}
       {/* <JoinCoursesSection /> */}
       {/* <TitleSection /> */}
-      {/* <LessonsSection /> */}
-      <LessonCard />
+      <LessonsSection />
+      {/* <LessonCard /> */}
     </>
   );
 }

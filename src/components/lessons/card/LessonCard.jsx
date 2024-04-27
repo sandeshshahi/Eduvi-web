@@ -1,21 +1,20 @@
-import icon1 from "../../../assets/icons/1.svg";
+/* eslint-disable react/prop-types */
 
-const LessonCard = () => {
+const LessonCard = ({ item }) => {
   return (
-    <div className="lessoncard">
+    <div className={`lessoncard ${item.status}`}>
       <img
         className="lessoncard-icon"
-        src={icon1}
+        src={item.image}
         alt=""
         height={50}
         width={50}
       />
-      <h3 className="lessoncard-h3">Standard Three</h3>
-      <p className="lessoncard-p">
-        Standard 3 of the Aged Care Quality Standards applies to all services
-        delivering personal...
-      </p>
-      <button className="lessoncard-button ">Class Details</button>
+      <h3 className="lessoncard-h3">{item.title}</h3>
+      <p className="lessoncard-p">{item.description}</p>
+      <button className={`lessoncard-button ${item.status}`}>
+        Class Details
+      </button>
     </div>
   );
 };

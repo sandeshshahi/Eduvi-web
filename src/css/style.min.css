@@ -756,6 +756,19 @@ h6 {
   top: 11.875rem;
 }
 
+.lessons__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+.lessons__section-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
 .title__section {
   height: 8.4375rem;
   width: 43.75rem;
@@ -775,6 +788,7 @@ h6 {
   line-height: 1.875rem;
   text-align: center;
   color: rgb(93, 90, 111);
+  margin-top: 1.25rem;
 }
 
 .hobberd__list {
@@ -798,10 +812,15 @@ h6 {
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 50px 80px 0px rgba(0, 0, 0, 0.05);
   border-radius: 0.9375rem;
+  padding: 0 0.9375rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 0.0625rem solid rgb(156, 77, 244);
+}
+.lessoncard.active {
+  border: none;
 }
 .lessoncard-h3 {
   font-family: "Metropolis", sans-serif;
@@ -820,6 +839,7 @@ h6 {
   text-align: center;
   color: rgb(93, 90, 111);
   margin-top: 0.9375rem;
+  text-overflow: ellipsis;
 }
 .lessoncard-button {
   font-family: "Inter", sans-serif;
@@ -833,6 +853,9 @@ h6 {
   color: rgb(156, 77, 244);
   background-color: rgb(255, 255, 255);
   margin-top: 1.5625rem;
+}
+.lessoncard-button:hover {
+  cursor: pointer;
 }
 .lessoncard-button.active {
   color: rgb(255, 255, 255);
@@ -850,6 +873,11 @@ h6 {
   outline: none;
   border: none;
 }
+.button__btn.active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 102, 82);
+  box-shadow: 0px 15px 50px 0px rgba(255, 102, 82, 0.2);
+}
 .button__btn:hover {
   cursor: pointer;
 }
@@ -866,10 +894,4 @@ h6 {
 
 .btn-secondary {
   color: rgb(10, 3, 60);
-}
-
-.active {
-  color: rgb(255, 255, 255);
-  background-color: rgb(255, 102, 82);
-  box-shadow: 0px 15px 50px 0px rgba(255, 102, 82, 0.2);
 }/*# sourceMappingURL=style.min.css.map */
