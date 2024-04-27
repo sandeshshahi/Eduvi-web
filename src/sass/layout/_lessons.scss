@@ -26,3 +26,43 @@
     }
   }
 }
+
+.lessoncard {
+  height: utils.rem(329);
+  width: utils.rem(290);
+  background-color: globals.$background-color-white;
+  box-shadow: 0px 50px 80px 0px rgba(0, 0, 0, 0.05);
+  border-radius: utils.rem(15);
+  @include utils.flexDisplay(column, center, center);
+
+  &-icon {
+  }
+
+  &-h3 {
+    @include utils.font-Metropolis(600, 25, 25);
+    text-align: center;
+    color: globals.$text-color;
+    margin-top: utils.rem(20);
+  }
+
+  &-p {
+    @include utils.font-Metropolis(400, 16, 30);
+    text-align: center;
+    color: globals.$text-color-light;
+    margin-top: utils.rem(15);
+  }
+  &-button {
+    @include utils.font-Inter(500, 16, 20);
+    text-align: center;
+    padding: utils.rem(12) utils.rem(32);
+    border-radius: utils.rem(5);
+    border: utils.rem(1) solid globals.$button-color-primary;
+    color: globals.$button-color-primary;
+    background-color: globals.$background-color-white;
+    margin-top: utils.rem(25);
+    &.active {
+      color: globals.$text-color-white;
+      background-color: globals.$button-color-primary;
+    }
+  }
+}

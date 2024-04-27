@@ -792,6 +792,53 @@ h6 {
   line-height: 1.25rem;
 }
 
+.lessoncard {
+  height: 20.5625rem;
+  width: 18.125rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 50px 80px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lessoncard-h3 {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 600;
+  font-size: 1.5625rem;
+  line-height: 1.5625rem;
+  text-align: center;
+  color: rgb(10, 3, 60);
+  margin-top: 1.25rem;
+}
+.lessoncard-p {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: rgb(93, 90, 111);
+  margin-top: 0.9375rem;
+}
+.lessoncard-button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: center;
+  padding: 0.75rem 2rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid rgb(156, 77, 244);
+  color: rgb(156, 77, 244);
+  background-color: rgb(255, 255, 255);
+  margin-top: 1.5625rem;
+}
+.lessoncard-button.active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(156, 77, 244);
+}
+
 .button__btn {
   border-radius: 0.625rem;
   padding: 1.25rem 1.875rem;
