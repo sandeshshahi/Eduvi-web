@@ -885,6 +885,32 @@ h6 {
   border-radius: 32%;
 }
 
+.joinAsTeacherText__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: 23.4375rem;
+  width: 31.25rem;
+  border-radius: 0.625rem;
+  gap: 1.25rem;
+}
+.joinAsTeacherText__container-h1 {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 700;
+  font-size: 2.8125rem;
+  line-height: 3.4375rem;
+  color: rgb(10, 3, 60);
+}
+.joinAsTeacherText__container-p {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: rgb(93, 90, 111);
+  margin-bottom: 1.25rem;
+}
+
 .button__btn {
   border-radius: 0.625rem;
   padding: 1.25rem 1.875rem;

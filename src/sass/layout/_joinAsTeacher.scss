@@ -23,3 +23,20 @@
     border-radius: 32%;
   }
 }
+
+.joinAsTeacherText__container {
+  @include utils.flexDisplay(column, start, start);
+  height: utils.rem(375);
+  width: utils.rem(500);
+  border-radius: utils.rem(10);
+  gap: utils.rem(20);
+  &-h1 {
+    @include utils.font-Metropolis(700, 45, 55);
+    color: globals.$text-color;
+  }
+  &-p {
+    @include utils.font-Metropolis(400, 16, 30);
+    color: globals.$text-color-light;
+    margin-bottom: utils.rem(20);
+  }
+}
