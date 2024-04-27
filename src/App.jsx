@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import ImageSection from "./components/joinCourses/imageSection/ImageSection";
 import JoinCoursesSection from "./components/joinCourses/JoinCoursesSection";
 import TextSection from "./components/joinCourses/textSection/TextSection";
+import LessonCard from "./components/lessons/card/LessonCard";
 import LessonsSection from "./components/lessons/LessonsSection";
 import TitleSection from "./components/lessons/title/TitleSection";
 import "./css/style.min.css";
@@ -20,7 +21,8 @@ function App() {
       {/* <ImageSection /> */}
       {/* <JoinCoursesSection /> */}
       {/* <TitleSection /> */}
-      <LessonsSection />
+      {/* <LessonsSection /> */}
+      <LessonCard />
     </>
   );
 }
