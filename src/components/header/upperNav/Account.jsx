@@ -3,7 +3,7 @@ import account from "../../../assets/icons/profile.svg";
 const Account = () => {
   return (
     <div className="account">
-      <span>My Account</span>
+      <span className="account-title">My Account</span>
       <img height={30} width={30} src={account} alt="account icon" />
     </div>
   );

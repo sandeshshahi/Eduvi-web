@@ -1,9 +1,10 @@
 @use "../utils/" as utils;
+@use "../globals/" as globals;
 
 // navbar components
 .navBar {
   @include utils.flexDisplay(row, space-between, center);
-  margin-inline: utils.rem(80);
+  // margin-inline: utils.rem(80);
   margin-top: utils.rem(30);
 }
 
@@ -13,6 +14,9 @@
   height: utils.rem(30);
   border-radius: utils.rem(5);
   gap: utils.rem(6);
+  &:hover {
+    cursor: pointer;
+  }
 
   .upperNav__logo-text {
     @include utils.font-Metropolis(600, 30);
@@ -23,11 +27,18 @@
   @include utils.flexDisplay(row, space-between, center);
   min-width: utils.rem(713);
   &-item {
+    @include utils.font-Metropolis(500, 16, 16);
+    color: globals.$text-color;
     display: flex;
     align-items: center;
     gap: utils.rem(2);
     &:hover {
       cursor: pointer;
+    }
+  }
+  &-link {
+    &:visited {
+      color: globals.$button-color-primary;
     }
   }
 }
@@ -39,6 +50,11 @@
   gap: utils.rem(10);
   &:hover {
     cursor: pointer;
+  }
+  &-title {
+    @include utils.font-Metropolis(500, 16, 16);
+    text-align: right;
+    color: globals.$text-color;
   }
 }
 

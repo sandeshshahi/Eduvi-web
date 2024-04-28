@@ -12,7 +12,7 @@ import LessonsSection from "../components/lessons/LessonsSection";
 
 const LandingPage = () => {
   return (
-    <>
+    <div className="landingPage">
       <header className="header">
         <nav className="nav">
           <UpperNav />
@@ -71,7 +71,7 @@ const LandingPage = () => {
       <footer className="section-footer">
         <Footer />
       </footer>
-    </>
+    </div>
   );
 };
 export default LandingPage;

@@ -1,8 +1,10 @@
 @use "../utils/" as utils;
 
+.landingPage {
+  margin-inline: utils.rem(80);
+}
 .header {
   position: relative;
-  margin-left: utils.rem(80);
   &-section {
     margin-top: utils.rem(104);
     @include utils.flexDisplay(row, space-between, center);
@@ -72,4 +74,5 @@
 .section-footer {
   @include utils.flexDisplay;
   margin-top: utils.rem(150);
+  margin-bottom: utils.rem(60);
 }

@@ -1,12 +1,17 @@
+import { NavLink } from "react-router-dom";
 import bookcaseImage from "../../assets/images/bookcase.png";
 
 const BookShopBanner = () => {
   return (
     <div className="bookShopBanner">
       <ul className="bookShopBanner__link">
-        <li className="">Home</li>
+        <li className="bookShopBanner__link-home">
+          <NavLink to={"/"}>Home</NavLink>{" "}
+        </li>
         <li>|</li>
-        <li className=" active">Shop</li>
+        <li className="bookShopBanner__link-shop active">
+          <NavLink to={"/shop"}>Shop</NavLink>
+        </li>
       </ul>
       <div>
         <div className="bookShopBanner-content">
