@@ -40,6 +40,19 @@
   }
 }
 
+.bookPage__left {
+  @include utils.flexDisplay(column, start, start);
+  gap: utils.rem(20);
+  &-heading {
+    @include utils.font-Metropolis(600, 30, 30);
+    color: globals.$text-color;
+  }
+  &-seeMore {
+    @include utils.font-Inter(500, 20, 20);
+    color: globals.$button-color-primary;
+  }
+}
+
 // shop card
 .shopCard__book {
   height: utils.rem(345);
@@ -121,6 +134,7 @@
     }
   }
   &-dropdown {
+    position: relative;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
@@ -137,7 +151,6 @@
     }
   }
   &-dropdownSelect {
-    position: relative;
     width: 100%;
     height: utils.rem(60);
     -moz-appearance: none;

@@ -1,19 +1,21 @@
 import "./styles/css/style.min.css";
 import LandingPage from "./pages/LandingPage";
-import BookShopBanner from "./components/banner/BookShopBanner";
-import PopularBook from "./components/popularAndNewBooks/PopularBook";
-import ShopButtonsAndSearchBar from "./components/shopButtonsAndSearchbar/ShopButtonsAndSearchBar";
-import RightShopSection from "./components/shopSection/RightShopSection";
+import ShopPage from "./pages/ShopPage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+const routes = {
+  landing: "/",
+  shop: "/shop",
+};
 
 function App() {
   return (
-    <>
-      {/* <LandingPage /> */}
-      {/* <BookShopBanner /> */}
-      {/* <PopularBook /> */}
-      {/* <ShopButtonsAndSearchBar /> */}
-      <RightShopSection />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path={routes.landing} element={<LandingPage />} />
+        <Route path={routes.shop} element={<ShopPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

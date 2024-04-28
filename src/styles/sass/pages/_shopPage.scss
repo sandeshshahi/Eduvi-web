@@ -1,0 +1,28 @@
+@use "../utils/" as utils;
+
+.shopPage {
+  margin-inline: utils.rem(80);
+  @include utils.flexDisplay(column, center, center);
+  gap: utils.rem(40);
+
+  &__header {
+    @include utils.flexDisplay(column, stretch, stretch);
+    width: 100%;
+    gap: utils.rem(30);
+  }
+  &__main {
+    @include utils.flexDisplay(row, start, start);
+    gap: utils.rem(40);
+    &-aside {
+      @include utils.flexDisplay(column, start, start);
+      gap: utils.rem(40);
+    }
+  }
+  &__banner {
+    margin-top: utils.rem(40);
+  }
+  &__footer {
+    margin-top: utils.rem(96);
+    margin-bottom: utils.rem(96);
+  }
+}

@@ -26,6 +26,7 @@ li {
 }
 
 a {
+  all: unset;
   text-decoration: none;
 }
 
@@ -40,9 +41,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
+.landingPage {
+  margin-inline: 5rem;
+}
+
 .header {
   position: relative;
-  margin-left: 5rem;
 }
 .header-section {
   margin-top: 6.5rem;
@@ -130,6 +134,45 @@ h6 {
   justify-content: center;
   align-items: center;
   margin-top: 9.375rem;
+  margin-bottom: 3.75rem;
+}
+
+.shopPage {
+  margin-inline: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.shopPage__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  width: 100%;
+  gap: 1.875rem;
+}
+.shopPage__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 2.5rem;
+}
+.shopPage__main-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2.5rem;
+}
+.shopPage__banner {
+  margin-top: 2.5rem;
+}
+.shopPage__footer {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .navBar {
@@ -137,7 +180,6 @@ h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 5rem;
   margin-top: 1.875rem;
 }
 
@@ -150,6 +192,9 @@ h6 {
   height: 1.875rem;
   border-radius: 0.3125rem;
   gap: 0.375rem;
+}
+.header__logo:hover {
+  cursor: pointer;
 }
 .header__logo .upperNav__logo-text {
   font-family: "Metropolis", sans-serif;
@@ -166,12 +211,20 @@ h6 {
   min-width: 44.5625rem;
 }
 .menu__list-item {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(10, 3, 60);
   display: flex;
   align-items: center;
   gap: 0.125rem;
 }
 .menu__list-item:hover {
   cursor: pointer;
+}
+.menu__list-link:visited {
+  color: rgb(156, 77, 244);
 }
 
 .account,
@@ -183,6 +236,15 @@ h6 {
 .account:hover,
 .cart:hover {
   cursor: pointer;
+}
+.account-title,
+.cart-title {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: right;
+  color: rgb(10, 3, 60);
 }
 
 .cart-account {
@@ -958,6 +1020,12 @@ h6 {
   font-size: 1rem;
   line-height: 1rem;
 }
+.bookShopBanner__link-home :hover {
+  cursor: pointer;
+}
+.bookShopBanner__link-shop :hover {
+  cursor: pointer;
+}
 .bookShopBanner .active {
   color: rgb(156, 77, 244);
 }
@@ -1027,6 +1095,28 @@ h6 {
   font-size: 1.125rem;
   line-height: 1.25rem;
   color: rgb(255, 102, 82);
+}
+
+.bookPage__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.25rem;
+}
+.bookPage__left-heading {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  color: rgb(10, 3, 60);
+}
+.bookPage__left-seeMore {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: rgb(156, 77, 244);
 }
 
 .shopCard__book {
@@ -1142,6 +1232,7 @@ h6 {
   padding-left: 1.25rem;
 }
 .shopSection__right-dropdown {
+  position: relative;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0;
@@ -1164,7 +1255,6 @@ h6 {
   color: rgb(93, 90, 111);
 }
 .shopSection__right-dropdownSelect {
-  position: relative;
   width: 100%;
   height: 3.75rem;
   -moz-appearance: none;

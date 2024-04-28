@@ -9,6 +9,16 @@
     gap: utils.rem(4);
     padding: utils.rem(20) utils.rem(30);
     @include utils.font-Metropolis(500, 16, 16);
+    &-home {
+      :hover {
+        cursor: pointer;
+      }
+    }
+    &-shop {
+      :hover {
+        cursor: pointer;
+      }
+    }
   }
   & .active {
     color: globals.$button-color-primary;
