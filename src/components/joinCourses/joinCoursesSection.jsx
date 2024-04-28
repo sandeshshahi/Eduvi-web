@@ -1,6 +1,6 @@
 import ImageSection from "./imageSection/ImageSection";
 import TextSection from "./textSection/TextSection";
-import pattern from "../../../public/images/patternBlue.png";
+import pattern from "../../assets/images/patternBlue.png";
 import html from "../../assets/icons/html.svg";
 import java from "../../assets/icons/java.svg";
 import php from "../../assets/icons/php.svg";
