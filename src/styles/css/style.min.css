@@ -980,6 +980,249 @@ h6 {
   align-items: center;
 }
 
+.bookCard__small-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.9375rem;
+  width: 25rem;
+  height: 8.75rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.625rem;
+  padding-inline: 1.5625rem;
+}
+.bookCard__small-wrapper-img {
+  height: 5.625rem;
+  width: 4.73rem;
+  border-radius: 0.3125rem;
+  mix-blend-mode: darken;
+}
+.bookCard__small-wrapper-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0.625rem;
+}
+.bookCard__small-wrapper-stars {
+  display: flex;
+  flex-direction: row;
+}
+.bookCard__small-wrapper-star {
+  color: rgb(255, 193, 7);
+  background-color: none;
+  line-height: 1rem;
+}
+.bookCard__small-wrapper-title {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: rgb(10, 3, 60);
+}
+.bookCard__small-wrapper-price {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: rgb(255, 102, 82);
+}
+
+.shopCard__book {
+  height: 21.5625rem;
+  width: 16.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.9375rem;
+}
+.shopCard__book-imageWrapper {
+  background-color: rgb(255, 255, 255);
+  height: 17.5rem;
+  width: 16.875rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+}
+.shopCard__book-image {
+  border-radius: 0.625rem;
+  height: 15rem;
+  width: 14.375rem;
+}
+.shopCard__book-title {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: rgb(10, 3, 60);
+}
+.shopCard__book-priceAndStar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.shopCard__book-priceAndStar-price {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  color: rgb(255, 102, 82);
+}
+.shopCard__book-priceAndStar-stars {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.shopCard__book-priceAndStar-stars-star {
+  color: rgb(255, 193, 7);
+  background-color: none;
+  line-height: 1rem;
+}
+
+.shopSection__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.875rem;
+}
+.shopSection__right-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  gap: 1.875rem;
+}
+.shopSection__right-buttonGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1.25rem;
+}
+.shopSection__right-searchBarAndDropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.9375rem;
+  width: 100%;
+}
+.shopSection__right-searchBarGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 2;
+  flex-shrink: 1;
+  flex-basis: 0;
+  height: 3.75rem;
+  border-radius: 0.625rem;
+  background-color: rgb(255, 255, 255);
+  padding: 0.625rem 0.625rem;
+}
+.shopSection__right-searchBar {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.shopSection__right-searchBar::placeholder {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-left: 1.25rem;
+}
+.shopSection__right-dropdown {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  height: 3.75rem;
+  border-radius: 0.625rem;
+  background-color: rgb(255, 255, 255);
+  padding: 1.375rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopSection__right-dropdown .sortbySpan {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(93, 90, 111);
+}
+.shopSection__right-dropdownSelect {
+  position: relative;
+  width: 100%;
+  height: 3.75rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(10, 3, 60);
+}
+.shopSection__right-dropdownSelect:hover {
+  cursor: pointer;
+}
+.shopSection__right-dropdownSelect-image {
+  position: absolute;
+  right: 1.375rem;
+}
+.shopSection__right-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.9375rem;
+  row-gap: 1.5625rem;
+}
+.shopSection__right-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.8125rem;
+}
+.shopSection__right-pagination-pageSpan {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(10, 3, 60);
+}
+.shopSection__right-pagination-pageNumber {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(10, 3, 60);
+}
+.shopSection__right-pagination-pageNumber.active {
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .button__btn {
   border-radius: 0.625rem;
   padding: 1.25rem 1.875rem;
@@ -1009,7 +1252,15 @@ h6 {
 .btn-primary {
   background-color: rgb(156, 77, 244);
 }
+.btn-primary.inactive {
+  background-color: rgb(242, 229, 255);
+  color: rgb(156, 77, 244);
+}
 
 .btn-secondary {
   color: rgb(10, 3, 60);
+}
+.btn-secondary.background-white {
+  border-radius: 0.625rem;
+  background-color: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.min.css.map */

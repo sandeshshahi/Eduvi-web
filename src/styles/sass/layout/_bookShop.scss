@@ -1,0 +1,186 @@
+@use "../utils/" as utils;
+@use "../globals/" as globals;
+
+// left section book card
+.bookCard__small-wrapper {
+  @include utils.flexDisplay(row, start, center);
+  gap: utils.rem(15);
+  width: utils.rem(400);
+  height: utils.rem(140);
+  background-color: globals.$background-color-white;
+  border-radius: utils.rem(10);
+  padding-inline: utils.rem(25);
+
+  &-img {
+    height: utils.rem(90);
+    width: utils.rem(75.68);
+    border-radius: utils.rem(5);
+    mix-blend-mode: darken;
+  }
+  &-text {
+    @include utils.flexDisplay(column, start, start);
+    gap: utils.rem(10);
+  }
+  &-stars {
+    display: flex;
+    flex-direction: row;
+  }
+  &-star {
+    color: globals.$star-color;
+    background-color: none;
+    line-height: utils.rem(16);
+  }
+  &-title {
+    @include utils.font-Metropolis(600, 18, 20);
+    color: globals.$text-color;
+  }
+  &-price {
+    @include utils.font-Metropolis(600, 18, 20);
+    color: globals.$button-color-secondary;
+  }
+}
+
+// shop card
+.shopCard__book {
+  height: utils.rem(345);
+  width: utils.rem(270);
+  @include utils.flexDisplay(column, center, start);
+  gap: utils.rem(15);
+  &-imageWrapper {
+    background-color: globals.$background-color-white;
+    height: utils.rem(280);
+    width: utils.rem(270);
+    @include utils.flexDisplay;
+    border-radius: utils.rem(10);
+  }
+  &-image {
+    border-radius: utils.rem(10);
+    height: utils.rem(240);
+    width: utils.rem(230);
+  }
+  &-title {
+    @include utils.font-Metropolis(600, 18, 20);
+    color: globals.$text-color;
+  }
+  &-priceAndStar {
+    @include utils.flexDisplay(row, space-between, center);
+    width: 100%;
+    &-price {
+      @include utils.font-Metropolis(600, 18, 20);
+      color: globals.$button-color-secondary;
+    }
+    &-stars {
+      @include utils.flexDisplay;
+      &-star {
+        color: globals.$star-color;
+        background-color: none;
+        line-height: utils.rem(16);
+      }
+    }
+  }
+}
+
+// shop section button and searchbar
+.shopSection__right {
+  @include utils.flexDisplay(column, start, start);
+  gap: utils.rem(30);
+
+  &-controls {
+    @include utils.flexDisplay(column, center, start);
+    width: 100%;
+    gap: utils.rem(30);
+  }
+  &-buttonGroup {
+    @include utils.flexDisplay(row, start, center);
+    gap: utils.rem(20);
+  }
+  &-searchBarAndDropdown {
+    @include utils.flexDisplay(row, space-between, center);
+    gap: utils.rem(15);
+    width: 100%;
+  }
+
+  &-searchBarGroup {
+    @include utils.flexDisplay(row, space-between, center);
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0;
+    height: utils.rem(60);
+    border-radius: utils.rem(10);
+    background-color: globals.$background-color-white;
+    padding: utils.rem(10) utils.rem(10);
+  }
+  &-searchBar {
+    width: 100%;
+    height: 100%;
+    border: none;
+
+    &::placeholder {
+      @include utils.font-Metropolis(500, 16, 16);
+      padding-left: utils.rem(20);
+    }
+  }
+  &-dropdown {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    height: utils.rem(60);
+    border-radius: utils.rem(10);
+    background-color: globals.$background-color-white;
+    padding: utils.rem(22) utils.rem(20);
+    @include utils.flexDisplay(row, space-between, center);
+    .sortbySpan {
+      display: inline-block;
+      white-space: nowrap;
+      @include utils.font-Metropolis(500, 16, 16);
+      color: globals.$text-color-light;
+    }
+  }
+  &-dropdownSelect {
+    position: relative;
+    width: 100%;
+    height: utils.rem(60);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    @include utils.font-Metropolis(500, 16, 16);
+    color: globals.$text-color;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-image {
+      position: absolute;
+      right: utils.rem(22);
+    }
+  }
+
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: utils.rem(15);
+    row-gap: utils.rem(25);
+  }
+  &-pagination {
+    @include utils.flexDisplay(row, center, center);
+    width: 100%;
+    gap: utils.rem(29);
+    &-pageSpan {
+      @include utils.font-Metropolis(500, 16, 16);
+      color: globals.$text-color;
+    }
+    &-pageNumber {
+      @include utils.font-Metropolis(500, 16, 16);
+      color: globals.$text-color;
+
+      &.active {
+        height: utils.rem(44);
+        width: utils.rem(44);
+        border-radius: utils.rem(8);
+        background-color: globals.$background-color-white;
+        @include utils.flexDisplay;
+      }
+    }
+  }
+}

@@ -26,7 +26,15 @@
 }
 .btn-primary {
   background-color: globals.$button-color-primary;
+  &.inactive {
+    background-color: globals.$button-color-primary-inactive;
+    color: globals.$button-color-primary;
+  }
 }
 .btn-secondary {
   color: globals.$text-color;
+  &.background-white {
+    border-radius: utils.rem(10);
+    background-color: globals.$background-color-white;
+  }
 }
