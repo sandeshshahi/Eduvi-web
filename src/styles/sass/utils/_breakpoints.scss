@@ -1,0 +1,23 @@
+@use "function" as f;
+
+@mixin media-sm {
+  @media screen and (max-width: f.em(699.98)) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: f.em(899)) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (max-width: f.em(1024)) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (max-width: f.em(1024)) {
+    @content;
+  }
+}

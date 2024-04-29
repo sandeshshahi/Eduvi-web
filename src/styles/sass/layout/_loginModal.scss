@@ -1,0 +1,222 @@
+@use "../globals/" as globals;
+@use "../utils/" as utils;
+
+.loginModalForm {
+  @include utils.flexDisplay(column, center, center);
+  gap: utils.rem(20);
+  // width: utils.rem(370);
+
+  &__button-google {
+    width: utils.rem(340);
+    height: utils.rem(50);
+    border: 1px solid rgba(222, 221, 228, 1);
+    @include utils.flexDisplay(row, start, center);
+    gap: utils.rem(20);
+    border-radius: utils.rem(10);
+    background-color: globals.$background-color-white;
+    &-text {
+      @include utils.font-Metropolis(400, 16, 30);
+      color: globals.$text-color-light;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__option {
+    @include utils.flexDisplay;
+    gap: utils.rem(10);
+    &-span {
+      height: utils.rem(1);
+      width: utils.rem(20);
+      background-color: globals.$text-color-light;
+    }
+    &-p {
+      @include utils.font-Metropolis(400, 16, 30);
+      text-align: center;
+      color: globals.$text-color-light;
+    }
+  }
+
+  &__input {
+    @include utils.flexDisplay(column, start, start);
+
+    &-label {
+      @include utils.font-Metropolis(500, 16, 30);
+      color: globals.$text-color;
+    }
+    &-field {
+      height: utils.rem(50);
+      width: utils.rem(370);
+      border: 1px solid rgba(222, 221, 228, 1);
+      @include utils.flexDisplay;
+      border-radius: utils.rem(10);
+      padding-left: utils.rem(18);
+      background-color: globals.$background-color-white;
+      gap: utils.rem(15);
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-email {
+      border-radius: utils.rem(10);
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        @include utils.font-Metropolis(400, 16, 30);
+        color: globals.$text-color-light;
+        text-justify: center;
+      }
+    }
+    &-password {
+      border-radius: utils.rem(10);
+      height: 100%;
+      width: 100%;
+      @include utils.flexDisplay;
+      border: none;
+      outline: none;
+      &::placeholder {
+        @include utils.font-Metropolis(400, 16);
+        color: globals.$text-color-light;
+      }
+      &-img {
+        padding-right: utils.rem(18);
+      }
+    }
+    &-password-field {
+      @include utils.flexDisplay;
+      border-radius: utils.rem(10);
+      border: 1px solid rgba(222, 221, 228, 1);
+      height: utils.rem(50);
+      width: utils.rem(370);
+      background-color: globals.$background-color-white;
+      &-label {
+        width: utils.rem(370);
+        @include utils.flexDisplay;
+        border-radius: utils.rem(10);
+        padding-left: utils.rem(18);
+        background-color: globals.$background-color-white;
+        gap: utils.rem(15);
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &-checkbox {
+    @include utils.flexDisplay(row, space-between, center);
+    width: 100%;
+    &-wrapper {
+    }
+    &-label {
+      @include utils.font-Metropolis(500, 16, 30);
+      color: globals.$text-color-light;
+    }
+  }
+
+  &-forgotPassword {
+    @include utils.font-Metropolis(500, 16, 30);
+    text-align: right;
+    color: globals.$text-color-light;
+  }
+}
+
+// custom checkbox
+.loginModalForm-checkbox {
+  &-input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  &-label {
+    position: relative;
+    display: block;
+    padding-left: utils.rem(30);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      margin-top: utils.rem(-10);
+      left: 0;
+      display: block;
+      height: utils.rem(20);
+      width: utils.rem(20);
+      background-color: globals.$background-color-white;
+      border: utils.rem(2) solid globals.$button-color-primary;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: utils.rem(8);
+      top: utils.rem(8);
+      width: utils.rem(5);
+      height: utils.rem(10);
+      border: utils.rem(2) solid globals.$button-color-primary;
+      border-width: 0 utils.rem(3) utils.rem(3) 0;
+      transform: rotate(45deg);
+      opacity: 0;
+    }
+  }
+  &-input:checked + &-label::after {
+    opacity: 1;
+  }
+}
+
+.loginModelLeft {
+  &-heading {
+    @include utils.font-Metropolis(700, 40, 50);
+    color: globals.$text-color;
+    padding-left: utils.rem(16);
+    margin-top: utils.rem(15);
+  }
+  &-image {
+    height: utils.rem(336);
+    width: utils.rem(332);
+    margin-top: utils.rem(15);
+  }
+
+  &-slider {
+    @include utils.flexDisplay;
+    gap: utils.rem(5);
+    margin-top: utils.rem(15);
+
+    &-end {
+      height: utils.rem(8);
+      width: utils.rem(8);
+      border-radius: 50%;
+      background-color: rgba(255, 102, 82, 0.5);
+      outline: none;
+      border: none;
+    }
+    &-mid {
+      height: utils.rem(10);
+      width: utils.rem(10);
+      border-radius: 50%;
+      border: utils.rem(1) solid rgba(255, 102, 82, 1);
+      background-color: globals.$background-color-white;
+      outline: none;
+    }
+  }
+}
+
+.loginModal {
+  @include utils.flexDisplay(row, space-around, center);
+  // gap: utils.rem(80);
+  &-line {
+    width: utils.rem(1);
+    height: utils.rem(641);
+    background: linear-gradient(
+      180deg,
+      rgba(10, 3, 60, 0) 0%,
+      #0a033c 51.56%,
+      rgba(10, 3, 60, 0) 100%
+    );
+  }
+}

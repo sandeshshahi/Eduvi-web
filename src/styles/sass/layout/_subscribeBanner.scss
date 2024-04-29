@@ -4,26 +4,43 @@
 .subscribe__banner {
   height: utils.rem(420);
   width: utils.rem(1280);
-  border: 2px solid black;
   @include utils.flexDisplay;
   background-color: rgba(10, 3, 60, 1);
   border-radius: utils.rem(20);
+  @include utils.media-lg {
+    transform: scale(0.5);
+    width: 100vw;
+    height: utils.rem(420);
+  }
+  @include utils.media-sm {
+    width: 100vw;
+    padding: utils.rem(20);
+  }
 
   &-contents {
     position: relative;
     height: utils.rem(294);
     width: utils.rem(1180);
     @include utils.flexDisplay(column, center, center);
+    @include utils.media-sm {
+      width: 100%;
+    }
     &-h1 {
       @include utils.font-Metropolis(700, 45, 55);
       text-align: center;
       color: globals.$text-color-white;
       margin: 0;
+      @include utils.media-sm {
+        width: 100%;
+      }
     }
     &-p {
       @include utils.font-Metropolis(400, 16, 30);
       color: rgba(255, 255, 255, 0.7);
       margin-top: utils.rem(20);
+      @include utils.media-sm {
+        width: 100%;
+      }
     }
 
     &_controls {
@@ -70,6 +87,9 @@
     width: utils.rem(60);
     border-radius: 50%;
     object-fit: cover;
+    @include utils.media-lg {
+      display: none;
+    }
   }
   .image-1 {
     position: absolute;

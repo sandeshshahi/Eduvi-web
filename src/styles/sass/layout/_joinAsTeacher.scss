@@ -44,4 +44,14 @@
 .joinAsTeacher__section {
   @include utils.flexDisplay;
   gap: utils.rem(80);
+
+  @include utils.media-lg {
+    @include utils.flexDisplay(column, center, center);
+    gap: utils.rem(80);
+  }
+  @include utils.media-lg {
+    width: 100vw;
+    @include utils.flexDisplay(column, center, center);
+    gap: utils.rem(80);
+  }
 }

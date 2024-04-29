@@ -4,6 +4,7 @@
 .bookShopBanner {
   background-color: rgba(239, 235, 245, 1);
   border-radius: utils.rem(20);
+
   &__link {
     @include utils.flexDisplay(row, start, center);
     gap: utils.rem(4);

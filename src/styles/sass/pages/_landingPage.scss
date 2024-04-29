@@ -1,7 +1,19 @@
 @use "../utils/" as utils;
 
 .landingPage {
+  width: 100vw;
   margin-inline: utils.rem(80);
+  @include utils.media-lg {
+    max-width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+  }
+  @include utils.media-sm {
+    max-width: 100%;
+  }
 }
 .header {
   position: relative;
@@ -9,6 +21,13 @@
     margin-top: utils.rem(104);
     @include utils.flexDisplay(row, space-between, center);
     margin-inline: utils.rem(80);
+    @include utils.media-lg {
+      @include utils.flexDisplay(column, center, center);
+      gap: utils.rem(80);
+    }
+    @include utils.media-sm {
+      max-width: 100vw;
+    }
   }
 }
 .landingPage-box1 {
@@ -62,12 +81,20 @@
   gap: utils.rem(150);
   margin-top: utils.rem(150);
   .section-classes {
+    max-width: 100%;
     &-title {
       @include utils.flexDisplay(column, center, center);
+      @include utils.media-sm {
+        max-width: 100vw;
+        padding: utils.rem(10);
+      }
     }
     position: relative;
     @include utils.flexDisplay(column, center, center);
     gap: utils.rem(40);
+    @include utils.media-sm {
+      max-width: 100vw;
+    }
   }
 }
 

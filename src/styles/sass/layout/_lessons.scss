@@ -4,15 +4,33 @@
 .lessons__section {
   @include utils.flexDisplay(column, center, center);
   gap: utils.rem(50);
+  @include utils.media-sm {
+    width: 100vw;
+  }
   &-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: utils.rem(40);
+    @include utils.media-lg {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: utils.rem(40);
+    }
+    @include utils.media-sm {
+      width: 100vw;
+      grid-template-columns: auto;
+      align-items: center;
+      justify-content: center;
+      gap: utils.rem(40);
+    }
   }
 }
 .title__section {
   height: utils.rem(135);
   width: utils.rem(700);
+  @include utils.media-sm {
+    width: 100vw;
+  }
   &-h1 {
     @include utils.font-Metropolis(700, 45, 55);
     text-align: center;
@@ -29,7 +47,13 @@
 .hobberd {
   &__list {
     @include utils.flexDisplay;
+    flex-wrap: wrap;
     gap: utils.rem(50);
+    @include utils.media-sm {
+      width: 100vw;
+      margin-top: utils.rem(80);
+      @include utils.flexDisplay(row, center, start);
+    }
     &-item {
       color: globals.$text-color;
       @include utils.font-Inter(500, 16, 20);

@@ -7,7 +7,14 @@
   position: relative;
   gap: utils.rem(20);
   height: utils.rem(320);
-  width: utils.rem(840);
+  max-width: 100%;
+  overflow-wrap: break-word;
+  @include utils.media-sm {
+    max-width: 100vw;
+    padding: utils.rem(10);
+  }
+
+  // width: utils.rem(840);
   text-align: center;
   &__heading {
     @include utils.font-Metropolis(700, 45, 55);
@@ -18,21 +25,44 @@
     @include utils.font-Metropolis(400, 16, 30);
     color: rgba(93, 90, 111, 1);
     text-align: center;
+    @include utils.media-lg {
+      overflow-wrap: break-word;
+    }
   }
 
   &__button {
     position: absolute;
     bottom: utils.rem(-40);
+    @include utils.media-sm {
+      bottom: utils.rem(-80);
+    }
   }
 }
 
 // videocall section css
 .videoCallSection {
+  position: relative;
+  @include utils.media-sm {
+    margin-top: utils.rem(40);
+    height: utils.rem(450);
+  }
+
+  @include utils.media-sm {
+    max-width: 100vw;
+  }
   &__container {
     height: utils.rem(700);
     width: utils.rem(1136);
     left: 0;
-    position: relative;
+    // position: relative;
+    @include utils.media-lg {
+      transform: scale(0.6);
+    }
+    @include utils.media-sm {
+      max-width: 100vw;
+      height: utils.rem(500);
+      width: utils.rem(600);
+    }
     &-boardImage {
       position: absolute;
       height: utils.rem(600);
@@ -43,8 +73,16 @@
       border-radius: utils.rem(20);
       box-shadow: 0px 50px 170px 0px rgba(0, 0, 0, 0.05);
       z-index: 1;
+      @include utils.media-sm {
+        transform: scale(0.8);
+        position: absolute;
+        left: utils.rem(-290);
+        bottom: utils.rem(-165);
+      }
       &-image {
         background-color: rgba(0, 0, 0, 1);
+        height: utils.rem(570);
+        width: utils.rem(1000);
         border-radius: utils.rem(20);
         object-fit: cover;
       }
@@ -73,6 +111,11 @@
     &__pattern {
       position: absolute;
       right: 0;
+      @include utils.media-sm {
+        position: absolute;
+        right: utils.rem(-220);
+        top: utils.rem(30);
+      }
     }
 
     &-boardImage-buttons {
@@ -99,9 +142,19 @@
 //  buttons css
 .classes__button {
   @include utils.flexDisplay(row, center, center);
-  width: utils.rem(1060);
+  max-width: 100vw;
   gap: utils.rem(30);
   margin-right: utils.rem(75);
+  @include utils.media-lg {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+  }
+  @include utils.media-sm {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+  }
   .class__button {
     height: utils.rem(100);
     width: utils.rem(333.33);

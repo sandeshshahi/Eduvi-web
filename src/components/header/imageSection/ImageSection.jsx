@@ -13,8 +13,6 @@ const ImageSection = () => {
         className="image__section-image"
         src={schoolBoyImage}
         alt="school-boy image"
-        height={669}
-        width={418}
       />
       <div className="image__section-vector">
         <img src={vector} alt="vector" />

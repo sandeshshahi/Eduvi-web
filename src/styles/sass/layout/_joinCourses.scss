@@ -3,9 +3,14 @@
 
 .text__section {
   height: utils.rem(440);
+  max-width: 100%;
   width: utils.rem(500);
   @include utils.flexDisplay(column, start, start);
   margin-left: utils.rem(70);
+  @include utils.media-sm {
+    padding: utils.rem(10);
+    margin: 0;
+  }
 
   &-title {
     @include utils.flexDisplay;
@@ -25,6 +30,10 @@
     @include utils.font-Metropolis(400, 16, 30);
     color: globals.$text-color-light;
     margin-top: utils.rem(20);
+    @include utils.media-sm {
+      padding: utils.rem(10) 0;
+      text-align: center;
+    }
   }
   &-buttonWrapper {
     margin-top: utils.rem(40);
@@ -32,19 +41,18 @@
 }
 
 .imageSection {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  // overflow: visible;
+  position: relative;
+  margin-top: utils.rem(80);
   height: utils.rem(587);
   width: utils.rem(689);
   z-index: 1;
-  // background-image: url("../../../public//images/table&person.png");
-  // object-fit: cover;
-  // background-repeat: no-repeat;
-  // background-position: right;
-  // background-size: cover;
-  // transform: rotateY(-180deg);
+  @include utils.media-sm {
+    width: 100vw;
+    transform: scale(0.9);
+    left: 10px;
+    margin-top: 0;
+  }
+
   &-personImage {
     transform: rotateY(-180deg);
     object-fit: cover;
@@ -57,22 +65,11 @@
     bottom: utils.rem(0);
     border-radius: 50%;
   }
-}
-
-.joinCoursesSection {
-  position: relative;
-  height: utils.rem(667);
-  width: utils.rem(1280);
-  @include utils.flexDisplay(row, space-between, center);
-  background-color: rgba(237, 233, 242, 1);
-  border-radius: utils.rem(20);
-  overflow: hidden;
-  z-index: 5;
-
   &-pattern {
     position: absolute;
-    right: utils.rem(304);
-    top: utils.rem(56);
+    top: utils.rem(-26);
+    left: utils.rem(200);
+    z-index: -5;
   }
 
   &-icon {
@@ -85,17 +82,36 @@
   }
   .html {
     position: absolute;
-    left: utils.rem(710);
-    top: utils.rem(164);
+    left: utils.rem(100);
+    top: utils.rem(86);
   }
   .java {
     position: absolute;
-    right: utils.rem(65);
-    top: utils.rem(50);
+    right: utils.rem(80);
+    top: utils.rem(-25);
   }
   .php {
     position: absolute;
-    right: utils.rem(150);
-    top: utils.rem(190);
+    right: utils.rem(130);
+    top: utils.rem(100);
+  }
+}
+
+.joinCoursesSection {
+  // width: utils.rem(1280);
+  max-width: 100%;
+  @include utils.flexDisplay(row, space-between, center);
+  background-color: rgba(237, 233, 242, 1);
+  border-radius: utils.rem(20);
+  overflow: hidden;
+  z-index: 5;
+  @include utils.media-sm {
+    width: 100vw;
+  }
+
+  @include utils.media-lg {
+    @include utils.flexDisplay(column, center, center);
+    gap: utils.rem(60);
+    padding-top: utils.rem(60);
   }
 }
