@@ -1,7 +1,6 @@
 @use "../utils/" as utils;
 
 .landingPage {
-  width: 100vw;
   margin-inline: utils.rem(80);
   @include utils.media-lg {
     max-width: 100%;

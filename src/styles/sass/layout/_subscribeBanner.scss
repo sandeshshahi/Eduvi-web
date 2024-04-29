@@ -79,6 +79,14 @@
         &:hover {
           cursor: pointer;
         }
+        @include utils.media-sm {
+          border-radius: utils.rem(10);
+        }
+      }
+
+      @include utils.media-sm {
+        @include utils.flexDisplay(column, center, center);
+        gap: utils.rem(15);
       }
     }
   }
