@@ -7,7 +7,7 @@ import Button from "../../components/controls/button/Button";
 const LoginModalForm = () => {
   return (
     <div className="loginModalForm">
-      <button className="loginModalForm__button-google">
+      <button role="button" className="loginModalForm__button-google">
         <img src={GoogleIcon} alt="google icon" />
         <span className="loginModalForm__button-google-text">
           Sign in with google
@@ -33,6 +33,7 @@ const LoginModalForm = () => {
             alt="message icon"
           />
           <input
+            role="input"
             id="email"
             className="loginModalForm__input-email"
             type="text"
@@ -54,6 +55,7 @@ const LoginModalForm = () => {
               alt="lock icon"
             />
             <input
+              role="input"
               id="password"
               className="loginModalForm__input-password"
               type="password"
@@ -80,6 +82,8 @@ const LoginModalForm = () => {
       <div className="loginModalForm-checkbox">
         <div className="loginModalForm-checkbox-wrapper">
           <input
+            role="checkbox"
+            aria-checked
             className="loginModalForm-checkbox-input"
             type="checkbox"
             id="checkbox"

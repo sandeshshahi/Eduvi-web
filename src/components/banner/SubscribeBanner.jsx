@@ -52,11 +52,15 @@ const SubscribeBanner = () => {
 
         <div className="subscribe__banner-contents_controls">
           <input
+            role="input"
             className="subscribe__banner-contents_controls-input"
             placeholder="enter your email"
             type="text"
           />
-          <button className="subscribe__banner-contents_controls-button">
+          <button
+            role="button"
+            className="subscribe__banner-contents_controls-button"
+          >
             Subscribe
           </button>
         </div>

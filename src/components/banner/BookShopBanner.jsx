@@ -5,11 +5,11 @@ const BookShopBanner = () => {
   return (
     <div className="bookShopBanner">
       <ul className="bookShopBanner__link">
-        <li className="bookShopBanner__link-home">
+        <li role="listitem" className="bookShopBanner__link-home">
           <NavLink to={"/"}>Home</NavLink>{" "}
         </li>
-        <li>|</li>
-        <li className="bookShopBanner__link-shop active">
+        <li role="listitem">|</li>
+        <li role="listitem" className="bookShopBanner__link-shop active">
           <NavLink to={"/shop"}>Shop</NavLink>
         </li>
       </ul>
