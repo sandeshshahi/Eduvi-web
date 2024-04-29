@@ -1,0 +1,11 @@
+@use "../utils/" as utils;
+
+h1 {
+  // clamp(minimum number it to allow,preferred value,maximum value allowd)
+  font-size: clamp(utils.rem(28), utils.rem(16) + 2vw, utils.rem(40));
+}
+
+h2 {
+  // clamp(minimum number it to allow,preferred value,maximum value allowd)
+  font-size: clamp(utils.rem(22), utils.rem(14) + 1.5vw, utils.rem(36));
+}

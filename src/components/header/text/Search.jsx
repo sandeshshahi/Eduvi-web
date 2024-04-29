@@ -16,15 +16,21 @@ const Search = () => {
       </div>
       <span className="search__line"></span>
       <input className="search__input" placeholder="Class/Course" />
-      <Button text={"search"} className={"btn-primary"}>
-        <img
-          className="search__button-icon"
-          height={24}
-          width={24}
-          src={searchMagnifier}
-          alt="search icon"
-        />
-      </Button>
+      <span>
+        <Button
+          text={"search"}
+          className={"btn-primary"}
+          style={{ padding: "15px 30px" }}
+        >
+          <img
+            className="search__button-icon"
+            height={24}
+            width={24}
+            src={searchMagnifier}
+            alt="search icon"
+          />
+        </Button>
+      </span>
     </div>
   );
 };

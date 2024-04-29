@@ -43,6 +43,15 @@
 .bookPage__left {
   @include utils.flexDisplay(column, start, start);
   gap: utils.rem(20);
+
+  &-items {
+    @include utils.flexDisplay(column, start, start);
+    gap: utils.rem(20);
+    @include utils.media-sm {
+      @include utils.flexDisplay(row, center, start);
+      flex-wrap: wrap;
+    }
+  }
   &-heading {
     @include utils.font-Metropolis(600, 30, 30);
     color: globals.$text-color;
@@ -97,6 +106,7 @@
 .shopSection__right {
   @include utils.flexDisplay(column, start, start);
   gap: utils.rem(30);
+  width: 100vw;
 
   &-controls {
     @include utils.flexDisplay(column, center, start);
@@ -106,11 +116,19 @@
   &-buttonGroup {
     @include utils.flexDisplay(row, start, center);
     gap: utils.rem(20);
+    @include utils.media-sm {
+      @include utils.flexDisplay(row, start, center);
+      flex-wrap: wrap;
+    }
   }
   &-searchBarAndDropdown {
     @include utils.flexDisplay(row, space-between, center);
     gap: utils.rem(15);
     width: 100%;
+    @include utils.media-sm {
+      width: 100%;
+      @include utils.flexDisplay(column, stretch, stretch);
+    }
   }
 
   &-searchBarGroup {
@@ -170,10 +188,15 @@
   }
 
   &-cards {
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: utils.rem(15);
     row-gap: utils.rem(25);
+    @include utils.media-sm {
+      @include utils.flexDisplay(row, center, center);
+      flex-wrap: wrap;
+    }
   }
   &-pagination {
     @include utils.flexDisplay(row, center, center);

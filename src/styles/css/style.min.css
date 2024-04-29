@@ -41,8 +41,32 @@ h6 {
   overflow-wrap: break-word;
 }
 
+h1 {
+  font-size: clamp(1.75rem, 1rem + 2vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.375rem, 0.875rem + 1.5vw, 2.25rem);
+}
+
 .landingPage {
+  width: 100vw;
   margin-inline: 5rem;
+}
+@media screen and (max-width: 64em) {
+  .landingPage {
+    max-width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .landingPage {
+    max-width: 100%;
+  }
 }
 
 .header {
@@ -55,6 +79,20 @@ h6 {
   justify-content: space-between;
   align-items: center;
   margin-inline: 5rem;
+}
+@media screen and (max-width: 64em) {
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .header-section {
+    max-width: 100vw;
+  }
 }
 
 .landingPage-box1 {
@@ -114,6 +152,7 @@ h6 {
   margin-top: 9.375rem;
 }
 .main .section-classes {
+  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -127,6 +166,17 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 43.74875em) {
+  .main .section-classes-title {
+    max-width: 100vw;
+    padding: 0.625rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .main .section-classes {
+    max-width: 100vw;
+  }
+}
 
 .section-footer {
   display: flex;
@@ -138,12 +188,19 @@ h6 {
 }
 
 .shopPage {
+  max-width: 100%;
   margin-inline: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2.5rem;
+}
+@media screen and (max-width: 43.74875em) {
+  .shopPage {
+    width: 100vw;
+    margin-inline: 2.5rem;
+  }
 }
 .shopPage__header {
   display: flex;
@@ -167,6 +224,15 @@ h6 {
   align-items: start;
   gap: 2.5rem;
 }
+@media screen and (max-width: 43.74875em) {
+  .shopPage__main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
 .shopPage__banner {
   margin-top: 2.5rem;
 }
@@ -181,6 +247,28 @@ h6 {
   justify-content: space-between;
   align-items: center;
   margin-top: 1.875rem;
+  width: 100vw;
+}
+@media screen and (max-width: 64em) {
+  .navBar {
+    width: 100%;
+    padding-inline: 1.25rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .navBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4.375rem;
+  }
+}
+.navBar__logo-hamburger {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .header__logo {
@@ -210,6 +298,26 @@ h6 {
   align-items: center;
   min-width: 44.5625rem;
 }
+@media screen and (max-width: 64em) {
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2.5rem;
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2.5rem;
+    margin-top: 5rem;
+  }
+}
 .menu__list-item {
   font-family: "Metropolis", sans-serif;
   font-weight: 500;
@@ -229,6 +337,7 @@ h6 {
 
 .account,
 .cart {
+  z-index: 5;
   display: flex;
   align-items: center;
   gap: 0.625rem;
@@ -246,6 +355,15 @@ h6 {
   text-align: right;
   color: rgb(10, 3, 60);
 }
+@media screen and (max-width: 64em) {
+  .account,
+  .cart {
+    display: flex;
+    flex-direction: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
 
 .cart-account {
   display: flex;
@@ -256,10 +374,15 @@ h6 {
 }
 
 .text__container {
-  width: 37.9375rem;
+  max-width: 100%;
   height: 31.875rem;
   margin-top: 8.1875rem;
   position: relative;
+}
+@media screen and (max-width: 43.74875em) {
+  .text__container {
+    max-width: 100vw;
+  }
 }
 .text__container .text-1 {
   display: flex;
@@ -282,6 +405,15 @@ h6 {
   font-size: 4.0625rem;
   line-height: 4.6875rem;
 }
+@media screen and (max-width: 43.74875em) {
+  .text__container .text-heading {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 4.6875rem;
+    text-wrap: wrap;
+  }
+}
 .text__container .text-description {
   font-family: "Metropolis", sans-serif;
   font-weight: 400;
@@ -300,6 +432,12 @@ h6 {
   border-radius: 0.625rem;
   background-color: rgb(255, 255, 255);
   margin-top: 2.5rem;
+  padding: 0.3125rem 0;
+}
+@media screen and (max-width: 43.74875em) {
+  .search-container {
+    max-width: 100vw;
+  }
 }
 .search-container .search__menu {
   display: flex;
@@ -343,12 +481,24 @@ h6 {
 }
 
 .image__section {
-  width: 41.75rem;
+  max-width: 100%;
   height: 43.6875rem;
   position: relative;
 }
+@media screen and (max-width: 64em) {
+  .image__section {
+    margin-left: -5rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .image__section {
+    max-width: 100vw;
+    transform: scale(0.9);
+  }
+}
 .image__section-gradient {
   position: relative;
+  max-width: 100%;
   height: 41.8125rem;
   width: 32.375rem;
   margin-left: 7.0625rem;
@@ -362,6 +512,8 @@ h6 {
   position: absolute;
   top: 0rem;
   left: 6.875rem;
+  height: 41.8125rem;
+  width: 26.125rem;
   z-index: 5;
 }
 .image__section-vector {
@@ -404,6 +556,32 @@ h6 {
   left: 4.375rem;
 }
 
+.drawer_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2.5rem;
+}
+.drawer_menu-cartAccount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2.5rem;
+  padding-left: 2.5rem;
+}
+.drawer-cross {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  color: black;
+  position: absolute;
+  right: 1.25rem;
+  top: 0.9375rem;
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -412,8 +590,15 @@ h6 {
   position: relative;
   gap: 1.25rem;
   height: 20rem;
-  width: 52.5rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
   text-align: center;
+}
+@media screen and (max-width: 43.74875em) {
+  .title {
+    max-width: 100vw;
+    padding: 0.625rem;
+  }
 }
 .title__heading {
   font-family: "Metropolis", sans-serif;
@@ -430,16 +615,51 @@ h6 {
   color: rgb(93, 90, 111);
   text-align: center;
 }
+@media screen and (max-width: 64em) {
+  .title__description {
+    overflow-wrap: break-word;
+  }
+}
 .title__button {
   position: absolute;
   bottom: -2.5rem;
 }
+@media screen and (max-width: 43.74875em) {
+  .title__button {
+    bottom: -5rem;
+  }
+}
 
+.videoCallSection {
+  position: relative;
+}
+@media screen and (max-width: 43.74875em) {
+  .videoCallSection {
+    margin-top: 2.5rem;
+    height: 28.125rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .videoCallSection {
+    max-width: 100vw;
+  }
+}
 .videoCallSection__container {
   height: 43.75rem;
   width: 71rem;
   left: 0;
-  position: relative;
+}
+@media screen and (max-width: 64em) {
+  .videoCallSection__container {
+    transform: scale(0.6);
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .videoCallSection__container {
+    max-width: 100vw;
+    height: 31.25rem;
+    width: 37.5rem;
+  }
 }
 .videoCallSection__container-boardImage {
   position: absolute;
@@ -455,8 +675,18 @@ h6 {
   box-shadow: 0px 50px 170px 0px rgba(0, 0, 0, 0.05);
   z-index: 1;
 }
+@media screen and (max-width: 43.74875em) {
+  .videoCallSection__container-boardImage {
+    transform: scale(0.8);
+    position: absolute;
+    left: -18.125rem;
+    bottom: -10.3125rem;
+  }
+}
 .videoCallSection__container-boardImage-image {
   background-color: rgb(0, 0, 0);
+  height: 35.625rem;
+  width: 62.5rem;
   border-radius: 1.25rem;
   object-fit: cover;
 }
@@ -479,6 +709,13 @@ h6 {
 .videoCallSection__container__pattern {
   position: absolute;
   right: 0;
+}
+@media screen and (max-width: 43.74875em) {
+  .videoCallSection__container__pattern {
+    position: absolute;
+    right: -13.75rem;
+    top: 1.875rem;
+  }
 }
 .videoCallSection__container-boardImage-buttons {
   position: absolute;
@@ -506,9 +743,23 @@ h6 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 66.25rem;
+  max-width: 100vw;
   gap: 1.875rem;
   margin-right: 4.6875rem;
+}
+@media screen and (max-width: 64em) {
+  .classes__button {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .classes__button {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+  }
 }
 .classes__button .class__button {
   height: 6.25rem;
@@ -535,20 +786,22 @@ h6 {
 }
 
 .footer__section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-  align-items: start;
-  flex-wrap: wrap;
-  width: 79.875rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid: 2.5rem;
+  width: 100%;
+}
+@media screen and (max-width: 64em) {
+  .footer__section {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    justify-items: start;
+    gap: 2.5rem;
+  }
 }
 
-.footer__left {
-  height: 13.5625rem;
-  width: 10.625rem;
-  padding: 0;
-}
 .footer__left-logo {
   display: flex;
   flex-direction: row;
@@ -596,8 +849,6 @@ h6 {
   font-size: 1.375rem;
   line-height: 1.664375rem;
   margin-bottom: 1.25rem;
-  margin: 0;
-  margin-bottom: 1.25rem;
 }
 
 .footer__item {
@@ -615,13 +866,25 @@ h6 {
 .subscribe__banner {
   height: 26.25rem;
   width: 80rem;
-  border: 2px solid black;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: rgb(10, 3, 60);
   border-radius: 1.25rem;
+}
+@media screen and (max-width: 64em) {
+  .subscribe__banner {
+    transform: scale(0.5);
+    width: 100vw;
+    height: 26.25rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .subscribe__banner {
+    width: 100vw;
+    padding: 1.25rem;
+  }
 }
 .subscribe__banner-contents {
   position: relative;
@@ -632,6 +895,11 @@ h6 {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 43.74875em) {
+  .subscribe__banner-contents {
+    width: 100%;
+  }
+}
 .subscribe__banner-contents-h1 {
   font-family: "Metropolis", sans-serif;
   font-weight: 700;
@@ -641,6 +909,11 @@ h6 {
   color: rgb(255, 255, 255);
   margin: 0;
 }
+@media screen and (max-width: 43.74875em) {
+  .subscribe__banner-contents-h1 {
+    width: 100%;
+  }
+}
 .subscribe__banner-contents-p {
   font-family: "Metropolis", sans-serif;
   font-weight: 400;
@@ -648,6 +921,11 @@ h6 {
   line-height: 1.875rem;
   color: rgba(255, 255, 255, 0.7);
   margin-top: 1.25rem;
+}
+@media screen and (max-width: 43.74875em) {
+  .subscribe__banner-contents-p {
+    width: 100%;
+  }
 }
 .subscribe__banner-contents_controls {
   height: 3.75rem;
@@ -699,6 +977,11 @@ h6 {
   border-radius: 50%;
   object-fit: cover;
 }
+@media screen and (max-width: 64em) {
+  .subscribe__banner-image {
+    display: none;
+  }
+}
 .subscribe__banner .image-1 {
   position: absolute;
   left: 0;
@@ -734,12 +1017,19 @@ h6 {
 
 .text__section {
   height: 27.5rem;
+  max-width: 100%;
   width: 31.25rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   margin-left: 4.375rem;
+}
+@media screen and (max-width: 43.74875em) {
+  .text__section {
+    padding: 0.625rem;
+    margin: 0;
+  }
 }
 .text__section-title {
   display: flex;
@@ -772,17 +1062,30 @@ h6 {
   color: rgb(93, 90, 111);
   margin-top: 1.25rem;
 }
+@media screen and (max-width: 43.74875em) {
+  .text__section-description {
+    padding: 0.625rem 0;
+    text-align: center;
+  }
+}
 .text__section-buttonWrapper {
   margin-top: 2.5rem;
 }
 
 .imageSection {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  margin-top: 5rem;
   height: 36.6875rem;
   width: 43.0625rem;
   z-index: 1;
+}
+@media screen and (max-width: 43.74875em) {
+  .imageSection {
+    width: 100vw;
+    transform: scale(0.9);
+    left: 10px;
+    margin-top: 0;
+  }
 }
 .imageSection-personImage {
   transform: rotateY(-180deg);
@@ -795,26 +1098,13 @@ h6 {
   bottom: 0rem;
   border-radius: 50%;
 }
-
-.joinCoursesSection {
-  position: relative;
-  height: 41.6875rem;
-  width: 80rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(237, 233, 242);
-  border-radius: 1.25rem;
-  overflow: hidden;
-  z-index: 5;
-}
-.joinCoursesSection-pattern {
+.imageSection-pattern {
   position: absolute;
-  right: 19rem;
-  top: 3.5rem;
+  top: -1.625rem;
+  left: 12.5rem;
+  z-index: -5;
 }
-.joinCoursesSection-icon {
+.imageSection-icon {
   height: 3.125rem;
   width: 3.125rem;
   display: flex;
@@ -825,20 +1115,47 @@ h6 {
   border-radius: 0.3125rem;
   box-shadow: 0px 25px 70px 0px rgba(10, 3, 60, 0.15);
 }
-.joinCoursesSection .html {
+.imageSection .html {
   position: absolute;
-  left: 44.375rem;
-  top: 10.25rem;
+  left: 6.25rem;
+  top: 5.375rem;
 }
-.joinCoursesSection .java {
+.imageSection .java {
   position: absolute;
-  right: 4.0625rem;
-  top: 3.125rem;
+  right: 5rem;
+  top: -1.5625rem;
 }
-.joinCoursesSection .php {
+.imageSection .php {
   position: absolute;
-  right: 9.375rem;
-  top: 11.875rem;
+  right: 8.125rem;
+  top: 6.25rem;
+}
+
+.joinCoursesSection {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(237, 233, 242);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  z-index: 5;
+}
+@media screen and (max-width: 43.74875em) {
+  .joinCoursesSection {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 64em) {
+  .joinCoursesSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.75rem;
+    padding-top: 3.75rem;
+  }
 }
 
 .lessons__section {
@@ -848,15 +1165,41 @@ h6 {
   align-items: center;
   gap: 3.125rem;
 }
+@media screen and (max-width: 43.74875em) {
+  .lessons__section {
+    width: 100vw;
+  }
+}
 .lessons__section-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
 }
+@media screen and (max-width: 64em) {
+  .lessons__section-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .lessons__section-cards {
+    width: 100vw;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+}
 
 .title__section {
   height: 8.4375rem;
   width: 43.75rem;
+}
+@media screen and (max-width: 43.74875em) {
+  .title__section {
+    width: 100vw;
+  }
 }
 .title__section-h1 {
   font-family: "Metropolis", sans-serif;
@@ -881,7 +1224,18 @@ h6 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 3.125rem;
+}
+@media screen and (max-width: 43.74875em) {
+  .hobberd__list {
+    width: 100vw;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
 }
 .hobberd__list-item {
   color: rgb(10, 3, 60);
@@ -1003,6 +1357,25 @@ h6 {
   align-items: center;
   gap: 5rem;
 }
+@media screen and (max-width: 64em) {
+  .joinAsTeacher__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 64em) {
+  .joinAsTeacher__section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+}
 
 .bookShopBanner {
   background-color: rgb(239, 235, 245);
@@ -1104,6 +1477,22 @@ h6 {
   align-items: start;
   gap: 1.25rem;
 }
+.bookPage__left-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.25rem;
+}
+@media screen and (max-width: 43.74875em) {
+  .bookPage__left-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+  }
+}
 .bookPage__left-heading {
   font-family: "Metropolis", sans-serif;
   font-weight: 600;
@@ -1182,6 +1571,7 @@ h6 {
   justify-content: start;
   align-items: start;
   gap: 1.875rem;
+  width: 100vw;
 }
 .shopSection__right-controls {
   display: flex;
@@ -1198,6 +1588,15 @@ h6 {
   align-items: center;
   gap: 1.25rem;
 }
+@media screen and (max-width: 43.74875em) {
+  .shopSection__right-buttonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
 .shopSection__right-searchBarAndDropdown {
   display: flex;
   flex-direction: row;
@@ -1205,6 +1604,15 @@ h6 {
   align-items: center;
   gap: 0.9375rem;
   width: 100%;
+}
+@media screen and (max-width: 43.74875em) {
+  .shopSection__right-searchBarAndDropdown {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
 }
 .shopSection__right-searchBarGroup {
   display: flex;
@@ -1275,10 +1683,20 @@ h6 {
   right: 1.375rem;
 }
 .shopSection__right-cards {
+  width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 0.9375rem;
   row-gap: 1.5625rem;
+}
+@media screen and (max-width: 43.74875em) {
+  .shopSection__right-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 .shopSection__right-pagination {
   display: flex;
@@ -1311,6 +1729,259 @@ h6 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.loginModalForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+.loginModalForm__button-google {
+  width: 21.25rem;
+  height: 3.125rem;
+  border: 1px solid rgb(222, 221, 228);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 0.625rem;
+  background-color: rgb(255, 255, 255);
+}
+.loginModalForm__button-google-text {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: rgb(93, 90, 111);
+}
+.loginModalForm__button-google:hover {
+  cursor: pointer;
+}
+.loginModalForm__option {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+.loginModalForm__option-span {
+  height: 0.0625rem;
+  width: 1.25rem;
+  background-color: rgb(93, 90, 111);
+}
+.loginModalForm__option-p {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: rgb(93, 90, 111);
+}
+.loginModalForm__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.loginModalForm__input-label {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: rgb(10, 3, 60);
+}
+.loginModalForm__input-field {
+  height: 3.125rem;
+  width: 23.125rem;
+  border: 1px solid rgb(222, 221, 228);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+  padding-left: 1.125rem;
+  background-color: rgb(255, 255, 255);
+  gap: 0.9375rem;
+}
+.loginModalForm__input-field:hover {
+  cursor: pointer;
+}
+.loginModalForm__input-email {
+  border-radius: 0.625rem;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.loginModalForm__input-email::placeholder {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: rgb(93, 90, 111);
+  text-justify: center;
+}
+.loginModalForm__input-password {
+  border-radius: 0.625rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+.loginModalForm__input-password::placeholder {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(93, 90, 111);
+}
+.loginModalForm__input-password-img {
+  padding-right: 1.125rem;
+}
+.loginModalForm__input-password-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+  border: 1px solid rgb(222, 221, 228);
+  height: 3.125rem;
+  width: 23.125rem;
+  background-color: rgb(255, 255, 255);
+}
+.loginModalForm__input-password-field-label {
+  width: 23.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+  padding-left: 1.125rem;
+  background-color: rgb(255, 255, 255);
+  gap: 0.9375rem;
+}
+.loginModalForm__input-password-field-label:hover {
+  cursor: pointer;
+}
+.loginModalForm-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.loginModalForm-checkbox-label {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: rgb(93, 90, 111);
+}
+.loginModalForm-forgotPassword {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  text-align: right;
+  color: rgb(93, 90, 111);
+}
+
+.loginModalForm-checkbox-input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+.loginModalForm-checkbox-label {
+  position: relative;
+  display: block;
+  padding-left: 1.875rem;
+  cursor: pointer;
+}
+.loginModalForm-checkbox-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -0.625rem;
+  left: 0;
+  display: block;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: rgb(255, 255, 255);
+  border: 0.125rem solid rgb(156, 77, 244);
+}
+.loginModalForm-checkbox-label::after {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  width: 0.3125rem;
+  height: 0.625rem;
+  border: 0.125rem solid rgb(156, 77, 244);
+  border-width: 0 0.1875rem 0.1875rem 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.loginModalForm-checkbox-input:checked + .loginModalForm-checkbox-label::after {
+  opacity: 1;
+}
+
+.loginModelLeft-heading {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  color: rgb(10, 3, 60);
+  padding-left: 1rem;
+  margin-top: 0.9375rem;
+}
+.loginModelLeft-image {
+  height: 21rem;
+  width: 20.75rem;
+  margin-top: 0.9375rem;
+}
+.loginModelLeft-slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3125rem;
+  margin-top: 0.9375rem;
+}
+.loginModelLeft-slider-end {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: rgba(255, 102, 82, 0.5);
+  outline: none;
+  border: none;
+}
+.loginModelLeft-slider-mid {
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 50%;
+  border: 0.0625rem solid rgb(255, 102, 82);
+  background-color: rgb(255, 255, 255);
+  outline: none;
+}
+
+.loginModal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.loginModal-line {
+  width: 0.0625rem;
+  height: 40.0625rem;
+  background: linear-gradient(180deg, rgba(10, 3, 60, 0) 0%, #0a033c 51.56%, rgba(10, 3, 60, 0) 100%);
 }
 
 .button__btn {

@@ -6,6 +6,22 @@
   @include utils.flexDisplay(row, space-between, center);
   // margin-inline: utils.rem(80);
   margin-top: utils.rem(30);
+  width: 100vw;
+
+  @include utils.media-lg {
+    width: 100%;
+    padding-inline: utils.rem(20);
+  }
+  @include utils.media-sm {
+    width: 100%;
+    @include utils.flexDisplay(row, space-between, center);
+    padding-left: utils.rem(70);
+  }
+  &__logo-hamburger {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .header__logo {
@@ -26,6 +42,18 @@
 .menu__list {
   @include utils.flexDisplay(row, space-between, center);
   min-width: utils.rem(713);
+
+  @include utils.media-lg {
+    @include utils.flexDisplay(column, center, start);
+    gap: utils.rem(40);
+    margin-top: utils.rem(80);
+  }
+  @include utils.media-sm {
+    @include utils.flexDisplay(column, center, start);
+    gap: utils.rem(40);
+    margin-top: utils.rem(80);
+  }
+
   &-item {
     @include utils.font-Metropolis(500, 16, 16);
     color: globals.$text-color;
@@ -45,6 +73,7 @@
 
 .account,
 .cart {
+  z-index: 5;
   display: flex;
   align-items: center;
   gap: utils.rem(10);
@@ -56,6 +85,9 @@
     text-align: right;
     color: globals.$text-color;
   }
+  @include utils.media-lg {
+    @include utils.flexDisplay(flex, start, center);
+  }
 }
 
 .cart-account {
@@ -65,10 +97,16 @@
 
 // text component
 .text__container {
-  width: utils.rem(607);
+  // width: utils.rem(607);
+  max-width: 100%;
   height: utils.rem(510);
   margin-top: utils.rem(131);
   position: relative;
+
+  @include utils.media-sm {
+    max-width: 100vw;
+  }
+
   .text-1 {
     @include utils.flexDisplay;
     width: utils.rem(239);
@@ -81,6 +119,10 @@
 
   .text-heading {
     @include utils.font-Metropolis(700, 65, 75);
+    @include utils.media-sm {
+      @include utils.font-Metropolis(700, 32, 75);
+      text-wrap: wrap;
+    }
   }
 
   .text-description {
@@ -96,6 +138,10 @@
   border-radius: utils.rem(10);
   background-color: rgba(255, 255, 255, 1);
   margin-top: utils.rem(40);
+  padding: utils.rem(5) 0;
+  @include utils.media-sm {
+    max-width: 100vw;
+  }
 
   .search__menu {
     @include utils.flexDisplay;
@@ -135,13 +181,20 @@
 // image section
 
 .image__section {
-  width: utils.rem(668);
+  max-width: 100%;
+  // width: utils.rem(668);
   height: utils.rem(699);
-  // border: utils.rem(2) solid rgba(236, 236, 236, 1);
   position: relative;
-
+  @include utils.media-lg {
+    margin-left: utils.rem(-80);
+  }
+  @include utils.media-sm {
+    max-width: 100vw;
+    transform: scale(0.9);
+  }
   &-gradient {
     position: relative;
+    max-width: 100%;
     height: utils.rem(669);
     width: utils.rem(518);
     margin-left: utils.rem(113);
@@ -159,6 +212,8 @@
     position: absolute;
     top: utils.rem(0);
     left: utils.rem(110);
+    height: utils.rem(669);
+    width: utils.rem(418);
     z-index: 5;
   }
   &-vector {
@@ -179,6 +234,7 @@
     justify-content: center;
     align-items: center;
     z-index: 5;
+
     &.icon-1 {
       position: absolute;
       top: utils.rem(561.5);
@@ -199,5 +255,24 @@
       top: utils.rem(320);
       left: utils.rem(70);
     }
+  }
+}
+
+.drawer {
+  &_menu {
+    @include utils.flexDisplay(column, center, start);
+    gap: utils.rem(40);
+    &-cartAccount {
+      @include utils.flexDisplay(column, center, start);
+      gap: utils.rem(40);
+      padding-left: utils.rem(40);
+    }
+  }
+  &-cross {
+    @include utils.font-Metropolis(500, 30, 30);
+    color: black;
+    position: absolute;
+    right: utils.rem(20);
+    top: utils.rem(15);
   }
 }

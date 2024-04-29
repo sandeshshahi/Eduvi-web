@@ -14,8 +14,6 @@ const VideoCallSection = () => {
             className="videoCallSection__container-boardImage-image"
             src={boardImage}
             alt=" board image"
-            height={570}
-            width={1000}
           />
 
           {/* baby image */}
