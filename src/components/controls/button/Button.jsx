@@ -2,10 +2,10 @@
 
 const Button = ({ children, text, className, style }) => {
   return (
-    <div className={`button__btn ${className}`} style={style}>
+    <button role="button" className={`button__btn ${className}`} style={style}>
       {children}
       <span className="button__btn-text">{text}</span>
-    </div>
+    </button>
   );
 };
 export default Button;

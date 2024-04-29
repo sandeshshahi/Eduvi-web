@@ -623,6 +623,7 @@ h2 {
 }
 .title__button {
   position: absolute;
+  z-index: 10;
   bottom: -2.5rem;
 }
 @media screen and (max-width: 43.74875em) {

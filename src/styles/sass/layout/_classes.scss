@@ -32,6 +32,7 @@
 
   &__button {
     position: absolute;
+    z-index: 10;
     bottom: utils.rem(-40);
     @include utils.media-sm {
       bottom: utils.rem(-80);

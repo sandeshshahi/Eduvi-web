@@ -15,7 +15,12 @@ const Search = () => {
         />
       </div>
       <span className="search__line"></span>
-      <input className="search__input" placeholder="Class/Course" />
+
+      <input
+        role="input"
+        className="search__input"
+        placeholder="Class/Course"
+      />
       <span>
         <Button
           text={"search"}

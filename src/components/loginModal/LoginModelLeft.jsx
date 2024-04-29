@@ -16,9 +16,9 @@ const LoginModelLeft = () => {
       <img className="loginModelLeft-image" src={image} alt="left image" />
 
       <div className="loginModelLeft-slider">
-        <button className="loginModelLeft-slider-end"></button>
-        <button className="loginModelLeft-slider-mid"></button>
-        <button className="loginModelLeft-slider-end"></button>
+        <button role="button" className="loginModelLeft-slider-end"></button>
+        <button role="button" className="loginModelLeft-slider-mid"></button>
+        <button role="button" className="loginModelLeft-slider-end"></button>
       </div>
     </div>
   );

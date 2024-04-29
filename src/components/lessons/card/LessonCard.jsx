@@ -12,7 +12,7 @@ const LessonCard = ({ item }) => {
       />
       <h3 className="lessoncard-h3">{item.title}</h3>
       <p className="lessoncard-p">{item.description}</p>
-      <button className={`lessoncard-button ${item.status}`}>
+      <button role="button" className={`lessoncard-button ${item.status}`}>
         Class Details
       </button>
     </div>

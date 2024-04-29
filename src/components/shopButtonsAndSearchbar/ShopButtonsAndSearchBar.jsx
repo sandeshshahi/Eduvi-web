@@ -22,6 +22,7 @@ const ShopButtonsAndSearchBar = () => {
       <div className="shopSection__right-searchBarAndDropdown">
         <div className="shopSection__right-searchBarGroup">
           <input
+            role="input"
             type="text"
             placeholder="Search Class, Course, Book Name"
             className="shopSection__right-searchBar"
