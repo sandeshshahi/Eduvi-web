@@ -177,6 +177,9 @@
     margin-top: utils.rem(15);
   }
   &-image {
+    @include utils.media-sm {
+      display: none;
+    }
     height: utils.rem(336);
     width: utils.rem(332);
     margin-top: utils.rem(15);
@@ -208,8 +211,17 @@
 
 .loginModal {
   @include utils.flexDisplay(row, space-around, center);
+
+  @include utils.media-sm {
+    @include utils.flexDisplay(column, center, center);
+    padding: utils.rem(30);
+    gap: utils.rem(30);
+  }
   // gap: utils.rem(80);
   &-line {
+    @include utils.media-sm {
+      display: none;
+    }
     width: utils.rem(1);
     height: utils.rem(641);
     background: linear-gradient(
@@ -218,5 +230,28 @@
       #0a033c 51.56%,
       rgba(10, 3, 60, 0) 100%
     );
+  }
+}
+
+.loginModal-box {
+  @include utils.media-sm {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.loginModal-cross {
+  display: none;
+  @include utils.media-sm {
+    display: block;
+    @include utils.font-Metropolis(500, 30, 30);
+    color: black;
+    position: absolute;
+    right: utils.rem(0);
+    top: utils.rem(0);
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

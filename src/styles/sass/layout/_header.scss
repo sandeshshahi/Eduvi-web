@@ -4,9 +4,8 @@
 // navbar components
 .navBar {
   @include utils.flexDisplay(row, space-between, center);
-  // margin-inline: utils.rem(80);
+  margin-inline: utils.rem(80);
   margin-top: utils.rem(30);
-  width: 100vw;
 
   @include utils.media-lg {
     width: 100%;
@@ -274,5 +273,8 @@
     position: absolute;
     right: utils.rem(20);
     top: utils.rem(15);
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

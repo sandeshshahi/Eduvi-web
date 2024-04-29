@@ -10,7 +10,7 @@ const ShopPage = () => {
   return (
     <div className="shopPage">
       <header className="shopPage__header">
-        <UpperNav selected={true} />
+        <UpperNav />
         <BookShopBanner />
       </header>
 

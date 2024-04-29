@@ -106,7 +106,6 @@
 .shopSection__right {
   @include utils.flexDisplay(column, start, start);
   gap: utils.rem(30);
-  width: 100vw;
 
   &-controls {
     @include utils.flexDisplay(column, center, start);
@@ -188,7 +187,6 @@
   }
 
   &-cards {
-    width: 100vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: utils.rem(15);

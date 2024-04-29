@@ -50,7 +50,6 @@ h2 {
 }
 
 .landingPage {
-  width: 100vw;
   margin-inline: 5rem;
 }
 @media screen and (max-width: 64em) {
@@ -188,7 +187,6 @@ h2 {
 }
 
 .shopPage {
-  max-width: 100%;
   margin-inline: 5rem;
   display: flex;
   flex-direction: column;
@@ -246,8 +244,8 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-inline: 5rem;
   margin-top: 1.875rem;
-  width: 100vw;
 }
 @media screen and (max-width: 64em) {
   .navBar {
@@ -580,6 +578,9 @@ h2 {
   position: absolute;
   right: 1.25rem;
   top: 0.9375rem;
+}
+.drawer-cross:hover {
+  cursor: pointer;
 }
 
 .title {
@@ -970,6 +971,20 @@ h2 {
 }
 .subscribe__banner-contents_controls-button:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 43.74875em) {
+  .subscribe__banner-contents_controls-button {
+    border-radius: 0.625rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .subscribe__banner-contents_controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem;
+  }
 }
 .subscribe__banner-image {
   height: 3.75rem;
@@ -1571,7 +1586,6 @@ h2 {
   justify-content: start;
   align-items: start;
   gap: 1.875rem;
-  width: 100vw;
 }
 .shopSection__right-controls {
   display: flex;
@@ -1683,7 +1697,6 @@ h2 {
   right: 1.375rem;
 }
 .shopSection__right-cards {
-  width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 0.9375rem;
@@ -1947,6 +1960,11 @@ h2 {
   width: 20.75rem;
   margin-top: 0.9375rem;
 }
+@media screen and (max-width: 43.74875em) {
+  .loginModelLeft-image {
+    display: none;
+  }
+}
 .loginModelLeft-slider {
   display: flex;
   flex-direction: row;
@@ -1978,10 +1996,53 @@ h2 {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 43.74875em) {
+  .loginModal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem;
+    gap: 1.875rem;
+  }
+}
 .loginModal-line {
   width: 0.0625rem;
   height: 40.0625rem;
   background: linear-gradient(180deg, rgba(10, 3, 60, 0) 0%, #0a033c 51.56%, rgba(10, 3, 60, 0) 100%);
+}
+@media screen and (max-width: 43.74875em) {
+  .loginModal-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 43.74875em) {
+  .loginModal-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.loginModal-cross {
+  display: none;
+}
+@media screen and (max-width: 43.74875em) {
+  .loginModal-cross {
+    display: block;
+    font-family: "Metropolis", sans-serif;
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 1.875rem;
+    color: black;
+    position: absolute;
+    right: 0rem;
+    top: 0rem;
+  }
+  .loginModal-cross:hover {
+    cursor: pointer;
+  }
 }
 
 .button__btn {

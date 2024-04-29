@@ -1,7 +1,6 @@
 @use "../utils/" as utils;
 
 .shopPage {
-  max-width: 100%;
   margin-inline: utils.rem(80);
   @include utils.flexDisplay(column, center, center);
   gap: utils.rem(40);
@@ -9,7 +8,6 @@
     width: 100vw;
     margin-inline: utils.rem(40);
   }
-
   &__header {
     @include utils.flexDisplay(column, stretch, stretch);
     width: 100%;

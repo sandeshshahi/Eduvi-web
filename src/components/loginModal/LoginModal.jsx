@@ -45,7 +45,15 @@ const LoginModal = ({ openloginModal, closeloginModal }) => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
+        <Box className="loginModal-box" sx={style}>
+          <span
+            onClick={() => {
+              closeloginModal(false);
+            }}
+            className="loginModal-cross"
+          >
+            X
+          </span>
           <div className="loginModal">
             <LoginModelLeft />
             <span className="loginModal-line"></span>
