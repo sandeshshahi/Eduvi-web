@@ -8,6 +8,7 @@
     @include utils.flexDisplay(column, center, center);
     width: 100vw;
     gap: utils.rem(120);
+    margin-top: utils.rem(-80);
   }
   &-cards {
     display: grid;

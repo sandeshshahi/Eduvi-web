@@ -92,8 +92,15 @@
   @include utils.flexDisplay(column, center, center);
   gap: utils.rem(150);
   margin-top: utils.rem(150);
+  // @include utils.media-sm {
+  //   row-gap: utils.rem(0);
+  // }
   .section-classes {
     max-width: 100%;
+
+    @include utils.media-sm {
+      margin-top: utils.rem(-200);
+    }
     &-title {
       @include utils.flexDisplay(column, center, center);
       @include utils.media-sm {
@@ -108,9 +115,17 @@
       max-width: 100vw;
     }
   }
+  .section-joinCourses {
+    max-width: 100vw;
+    padding: 0 utils.rem(40);
+    @include utils.media-sm {
+      padding: 0 utils.rem(10);
+    }
+  }
 }
 
 .section-footer {
+  width: 100%;
   @include utils.flexDisplay;
   margin-top: utils.rem(150);
   margin-bottom: utils.rem(60);

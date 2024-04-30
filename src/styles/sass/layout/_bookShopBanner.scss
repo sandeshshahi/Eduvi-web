@@ -5,6 +5,10 @@
   background-color: rgba(239, 235, 245, 1);
   border-radius: utils.rem(20);
 
+  @include utils.media-sm {
+    padding: 0 utils.rem(20);
+  }
+
   &__link {
     @include utils.flexDisplay(row, start, center);
     gap: utils.rem(4);
@@ -27,13 +31,30 @@
   &-p {
     @include utils.font-Metropolis(600, 45, 50);
     color: globals.$text-color;
+    @include utils.media-sm {
+      @include utils.font-Metropolis(600, 32, 32);
+    }
   }
-  &-image {
+
+  &-container {
+    display: block;
     height: utils.rem(210);
     width: utils.rem(374);
-    margin-right: utils.rem(124);
+    object-fit: contain;
+    @include utils.media-sm {
+      width: 100vw;
+    }
+    &-image {
+      @include utils.media-sm {
+        transform: scale(0.6);
+      }
+    }
   }
+
   &-content {
     @include utils.flexDisplay(row, space-around, center);
+    @include utils.media-sm {
+      @include utils.flexDisplay(row, start, center);
+    }
   }
 }

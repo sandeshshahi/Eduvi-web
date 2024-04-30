@@ -41,6 +41,9 @@
   &-h1 {
     @include utils.font-Metropolis(700, 45, 55);
     color: globals.$text-color;
+    @include utils.media-sm {
+      text-align: center;
+    }
   }
   &-p {
     @include utils.font-Metropolis(400, 16, 30);
@@ -56,6 +59,7 @@
   @include utils.media-sm {
     @include utils.flexDisplay(column, center, center);
     gap: utils.rem(80);
+    margin-top: utils.rem(-180);
   }
   @include utils.media-lg {
     width: 100vw;

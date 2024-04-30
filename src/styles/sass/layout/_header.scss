@@ -105,6 +105,7 @@
   @include utils.media-sm {
     max-width: 100vw;
     margin-top: 0;
+    padding: 0 utils.rem(10);
   }
   @include utils.media-md {
     padding: 0 utils.rem(20);
@@ -124,26 +125,31 @@
   .text-heading {
     @include utils.font-Metropolis(700, 65, 75);
     @include utils.media-md {
-      @include utils.font-Metropolis(700, 24, 35);
+      @include utils.font-Metropolis(700, 45, 55);
       text-wrap: wrap;
       margin-top: utils.rem(20);
+      text-align: center;
     }
   }
 
   .text-description {
     @include utils.font-Metropolis(400, 16, 30);
     color: rgba(93, 90, 111, 1);
+
+    @include utils.media-sm {
+      text-align: center;
+    }
   }
 }
 
 .search-container {
-  @include utils.flexDisplay(row, space-around, center);
+  @include utils.flexDisplay(row, space-between, center);
   max-width: utils.rem(607);
   height: utils.rem(60);
   border-radius: utils.rem(10);
   background-color: rgba(255, 255, 255, 1);
   margin-top: utils.rem(40);
-  padding: utils.rem(5) 0;
+  padding: utils.rem(5);
   @include utils.media-md {
     max-width: 100vw;
     @include utils.flexDisplay(column, space-around, center);
@@ -207,7 +213,7 @@
     max-width: 100%;
     transform: scale(0.5);
     @include utils.flexDisplay;
-    margin-top: 0;
+    margin-top: utils.rem(-100);
     left: utils.rem(-35);
   }
   &-gradient {
