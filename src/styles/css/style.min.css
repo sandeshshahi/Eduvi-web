@@ -68,16 +68,12 @@ h2 {
   }
 }
 
-.header {
-  position: relative;
-}
 .header-section {
   margin-top: 6.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 5rem;
 }
 @media screen and (max-width: 64em) {
   .header-section {
@@ -239,36 +235,6 @@ h2 {
   margin-bottom: 6rem;
 }
 
-.navBar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: 5rem;
-  margin-top: 1.875rem;
-}
-@media screen and (max-width: 64em) {
-  .navBar {
-    width: 100%;
-    padding-inline: 1.25rem;
-  }
-}
-@media screen and (max-width: 43.74875em) {
-  .navBar {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 4.375rem;
-  }
-}
-.navBar__logo-hamburger {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .header__logo {
   display: flex;
   flex-direction: row;
@@ -287,50 +253,6 @@ h2 {
   font-weight: 600;
   font-size: 1.875rem;
   line-height: 1.875rem;
-}
-
-.menu__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 44.5625rem;
-}
-@media screen and (max-width: 64em) {
-  .menu__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 2.5rem;
-    margin-top: 5rem;
-  }
-}
-@media screen and (max-width: 43.74875em) {
-  .menu__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 2.5rem;
-    margin-top: 5rem;
-  }
-}
-.menu__list-item {
-  font-family: "Metropolis", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1rem;
-  color: rgb(10, 3, 60);
-  display: flex;
-  align-items: center;
-  gap: 0.125rem;
-}
-.menu__list-item:hover {
-  cursor: pointer;
-}
-.menu__list-link:visited {
-  color: rgb(156, 77, 244);
 }
 
 .account,
@@ -361,14 +283,6 @@ h2 {
     justify-content: start;
     align-items: center;
   }
-}
-
-.cart-account {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1.875rem;
 }
 
 .text__container {
@@ -2086,4 +2000,188 @@ h2 {
 .btn-secondary.background-white {
   border-radius: 0.625rem;
   background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 56.1875em) {
+  .menu {
+    margin-top: 1.875rem;
+    max-width: 100vw;
+  }
+  .menu-btn {
+    position: absolute;
+    z-index: 25;
+    right: 1.25rem;
+    top: 1.875rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    height: 3px;
+    background: #272727;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background: #272727;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: #272727;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-btn__burger.open {
+    transform: rotate(720deg);
+    background: transparent;
+  }
+  .menu-btn__burger.open::before {
+    transform: rotate(45deg) translate(5px, 8px);
+  }
+  .menu-btn__burger.open::after {
+    width: 28px;
+    transform: rotate(-45deg) translate(3px, -7px);
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+    z-index: 20;
+  }
+  .nav.open {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    list-style-type: none;
+    padding-right: 1rem;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+  }
+  .nav .menu-nav.open {
+    transform: translateY(0);
+  }
+  .nav .menu-nav__item {
+    transform: translateX(100vw);
+    transition: all 0.5s ease-in-out;
+  }
+  .nav .menu-nav__item:hover {
+    cursor: pointer;
+  }
+  .nav .menu-nav__item.open {
+    transform: translateX(0);
+  }
+  .nav .menu-nav__item.active > a {
+    color: #272727;
+  }
+  .nav .menu-nav__item-AccountCart {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .nav .menu-nav__link {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav .menu-nav__link:hover {
+    color: #272727;
+  }
+  .menu-nav__item:nth-child(1) {
+    transition-delay: 0.25s;
+  }
+  .menu-nav__item:nth-child(2) {
+    transition-delay: 0.35s;
+  }
+  .menu-nav__item:nth-child(3) {
+    transition-delay: 0.45s;
+  }
+  .menu-nav__item:nth-child(4) {
+    transition-delay: 0.55s;
+  }
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.875rem;
+  max-width: 100vw;
+  position: relative;
+}
+@media screen and (max-width: 64em) {
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 1.875rem;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  width: 100vw;
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.menu-nav__item {
+  font-family: "Metropolis", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: rgb(10, 3, 60);
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+}
+.menu-nav__item:hover {
+  cursor: pointer;
+}
+.menu-nav__item-link:visited {
+  color: rgb(156, 77, 244);
+}
+.menu-nav__item-AccountCart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-left: 2.5rem;
 }/*# sourceMappingURL=style.min.css.map */

@@ -15,11 +15,10 @@
   }
 }
 .header {
-  position: relative;
+  // position: relative;
   &-section {
     margin-top: utils.rem(104);
     @include utils.flexDisplay(row, space-between, center);
-    margin-inline: utils.rem(80);
     @include utils.media-lg {
       @include utils.flexDisplay(column, center, center);
       gap: utils.rem(80);

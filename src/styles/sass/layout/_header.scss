@@ -2,26 +2,26 @@
 @use "../globals/" as globals;
 
 // navbar components
-.navBar {
-  @include utils.flexDisplay(row, space-between, center);
-  margin-inline: utils.rem(80);
-  margin-top: utils.rem(30);
+// .navBar {
+//   @include utils.flexDisplay(row, space-between, center);
+//   margin-inline: utils.rem(80);
+//   margin-top: utils.rem(30);
 
-  @include utils.media-lg {
-    width: 100%;
-    padding-inline: utils.rem(20);
-  }
-  @include utils.media-sm {
-    width: 100%;
-    @include utils.flexDisplay(row, space-between, center);
-    padding-left: utils.rem(70);
-  }
-  &__logo-hamburger {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
+//   @include utils.media-lg {
+//     width: 100%;
+//     padding-inline: utils.rem(20);
+//   }
+//   @include utils.media-sm {
+//     width: 100%;
+//     @include utils.flexDisplay(row, space-between, center);
+//     padding-left: utils.rem(70);
+//   }
+//   &__logo-hamburger {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 100%;
+//   }
+// }
 
 .header__logo {
   @include utils.flexDisplay;
@@ -38,37 +38,37 @@
   }
 }
 
-.menu__list {
-  @include utils.flexDisplay(row, space-between, center);
-  min-width: utils.rem(713);
+// .menu__list {
+//   @include utils.flexDisplay(row, space-between, center);
+//   min-width: utils.rem(713);
 
-  @include utils.media-lg {
-    @include utils.flexDisplay(column, center, start);
-    gap: utils.rem(40);
-    margin-top: utils.rem(80);
-  }
-  @include utils.media-sm {
-    @include utils.flexDisplay(column, center, start);
-    gap: utils.rem(40);
-    margin-top: utils.rem(80);
-  }
+//   @include utils.media-lg {
+//     @include utils.flexDisplay(column, center, start);
+//     gap: utils.rem(40);
+//     margin-top: utils.rem(80);
+//   }
+//   @include utils.media-sm {
+//     @include utils.flexDisplay(column, center, start);
+//     gap: utils.rem(40);
+//     margin-top: utils.rem(80);
+//   }
 
-  &-item {
-    @include utils.font-Metropolis(500, 16, 16);
-    color: globals.$text-color;
-    display: flex;
-    align-items: center;
-    gap: utils.rem(2);
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  &-link {
-    &:visited {
-      color: globals.$button-color-primary;
-    }
-  }
-}
+//   &-item {
+//     @include utils.font-Metropolis(500, 16, 16);
+//     color: globals.$text-color;
+//     display: flex;
+//     align-items: center;
+//     gap: utils.rem(2);
+//     &:hover {
+//       cursor: pointer;
+//     }
+//   }
+//   &-link {
+//     &:visited {
+//       color: globals.$button-color-primary;
+//     }
+//   }
+// }
 
 .account,
 .cart {
@@ -89,10 +89,10 @@
   }
 }
 
-.cart-account {
-  @include utils.flexDisplay;
-  gap: utils.rem(30);
-}
+// .cart-account {
+//   @include utils.flexDisplay;
+//   gap: utils.rem(30);
+// }
 
 // text component
 .text__container {
