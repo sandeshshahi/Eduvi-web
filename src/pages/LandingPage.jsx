@@ -8,7 +8,7 @@ import NavBar from "../components/header/upperNav/NavBar";
 import { JoinAsTeacherSection } from "../components/joinAsTeacher/JoinAsTeacherSection";
 import JoinCoursesSection from "../components/joinCourses/JoinCoursesSection";
 import LessonsSection from "../components/lessons/LessonsSection";
-import BannerImage from "../assets/images/banner.png";
+import HeaderImage from "../assets/images/banner.png";
 
 const LandingPage = () => {
   return (
@@ -17,7 +17,7 @@ const LandingPage = () => {
         <NavBar />
         <section className="header-section">
           <Text />
-          <img src={BannerImage} className="banner-image" />
+          <img src={HeaderImage} className="banner-image" />
         </section>
       </header>
 

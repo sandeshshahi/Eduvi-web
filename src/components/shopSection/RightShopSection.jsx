@@ -25,6 +25,7 @@ const RightShopSection = () => {
           }}
         >
           <img
+            className="btnsvg"
             src={paginationButtonPrev}
             alt="previous button"
             height={13.37}
