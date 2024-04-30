@@ -10,7 +10,8 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "66.25rem",
+  width: "95%",
+  maxWidth: "66.25rem",
   bgcolor: "background.paper",
   borderRadius: "0.938rem",
   boxShadow: 30,
@@ -18,20 +19,6 @@ const style = {
   outline: "none",
   paddingInline: "2.1875rem",
 };
-
-// const styleForSmallDevices = {
-//   position: "fixed",
-//   top: "50%",
-//   left: "50%",
-//   transform: "translate(-50%, -50%)",
-//   width: "100%",
-//   bgcolor: "background.paper",
-//   // borderRadius: "1rem",
-//   boxShadow: 30,
-//   overflowY: "auto",
-//   height: "100%",
-//   outline: "none",
-// };
 
 const LoginModal = ({ openloginModal, closeloginModal }) => {
   return (

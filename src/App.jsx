@@ -12,16 +12,12 @@ const routes = {
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path={routes.landing} element={<LandingPage />} />
-    //     <Route path={routes.shop} element={<ShopPage />} />
-    //   </Routes>
-    // </BrowserRouter>
-    <section className="header-section">
-      <Text />
-      <ImageSection />
-    </section>
+    <BrowserRouter>
+      <Routes>
+        <Route path={routes.landing} element={<LandingPage />} />
+        <Route path={routes.shop} element={<ShopPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

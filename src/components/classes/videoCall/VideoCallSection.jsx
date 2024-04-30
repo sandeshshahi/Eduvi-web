@@ -31,6 +31,7 @@ const VideoCallSection = () => {
             {/* circular call button */}
             <button className="videoCallSection__container-callButton">
               <img
+                className="videoCallSection__container-callButton-image"
                 src={callButton}
                 alt="circular call button"
                 height={60}
@@ -41,6 +42,7 @@ const VideoCallSection = () => {
             {/* circular arrow button */}
             <button className="videoCallSection__container-arrowButton">
               <img
+                className="videoCallSection__container-arrowButton-image"
                 src={arrowButton}
                 alt="circular arrow button"
                 height={60}
