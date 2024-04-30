@@ -4,7 +4,13 @@ import { books } from "../../data/shopData";
 const NewArrivalBooks = () => {
   return (
     <div className="bookPage__left">
-      <h1 className="bookPage__left-heading">New Arrivals</h1>
+      <h1
+        aria-labelledby=" new arrivals heading"
+        aria-describedby="new arrivals heading"
+        className="bookPage__left-heading"
+      >
+        New Arrivals
+      </h1>
       <div className="bookPage__left-items">
         {books.slice(0, 3).map((item) => (
           <BookCard
@@ -16,7 +22,12 @@ const NewArrivalBooks = () => {
         ))}
       </div>
 
-      <a className="bookPage__left-seeMore" href="">
+      <a
+        aria-labelledby=" see more link"
+        aria-describedby="see more link"
+        className="bookPage__left-seeMore"
+        href=""
+      >
         See More
       </a>
     </div>

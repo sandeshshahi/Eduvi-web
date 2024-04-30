@@ -3,7 +3,7 @@ const ShopCard = ({ item }) => {
   return (
     <div className="shopCard__book" key={item.id}>
       <div className="shopCard__book-imageWrapper">
-        <img className="shopCard__book-image" src={item.image} />
+        <img className="shopCard__book-image" src={item.image} alt="img" />
       </div>
       <p className="shopCard__book-title">{item.title}</p>
       <div className="shopCard__book-priceAndStar">

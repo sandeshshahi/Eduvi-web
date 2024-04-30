@@ -9,27 +9,55 @@ const Footer = () => {
     <div className="footer__section">
       {/* left */}
       <ul className="footer__left">
-        <li className="footer__left-logo">
+        <li
+          aria-labelledby=" eduvi logo"
+          aria-describedby="eduvi logo"
+          className="footer__left-logo"
+        >
           <img src={EduviLogo} alt="EduVi logo" height={30} width={25} />
           <span className="footer__left-logo_text">Eduvi</span>
         </li>
 
-        <li className="footer__left-socialIcons">
+        <li
+          aria-labelledby=" social icons"
+          aria-describedby="social icons"
+          className="footer__left-socialIcons"
+        >
           <img src={facebookLogo} alt="fabook icon" />
           <img src={instagramLogo} alt="instagram icon" />
           <img src={twitterLogo} alt="twitter icon" />
           <img src={linkedInIcon} alt="linkedin icon" />
         </li>
 
-        <li className="footer__left-copy_right">©2021 Eduvi.co</li>
-        <li className="footer__left-trademark">
+        <li
+          aria-labelledby=" copy right"
+          aria-describedby="copy right"
+          className="footer__left-copy_right"
+        >
+          ©2021 Eduvi.co
+        </li>
+        <li
+          aria-labelledby=" trademark"
+          aria-describedby="trademark"
+          className="footer__left-trademark"
+        >
           Eduvi is a registered trademark of Eduvi.co
         </li>
       </ul>
 
       {/* 1 */}
-      <ul className="footer__items">
-        <h4 className="footer__items-header">Courses</h4>
+      <ul
+        aria-labelledby=" footer item"
+        aria-describedby="footer item"
+        className="footer__items"
+      >
+        <h4
+          aria-labelledby=" footer heading"
+          aria-describedby="footer heading"
+          className="footer__items-header"
+        >
+          Courses
+        </h4>
         <li className="footer__item">Classroom courses</li>
         <li className="footer__item">Virtual classroom courses</li>
         <li className="footer__item">E-learning courses</li>
@@ -38,8 +66,18 @@ const Footer = () => {
       </ul>
 
       {/* 2 */}
-      <ul className="footer__items">
-        <h4 className="footer__items-header">Community</h4>
+      <ul
+        aria-labelledby=" footer item"
+        aria-describedby="footer item"
+        className="footer__items"
+      >
+        <h4
+          aria-labelledby=" footer heading"
+          aria-describedby="footer heading"
+          className="footer__items-header"
+        >
+          Community
+        </h4>
         <li className="footer__item">Learners</li>
         <li className="footer__item">Parteners</li>
         <li className="footer__item">Developers</li>
@@ -49,8 +87,18 @@ const Footer = () => {
       </ul>
 
       {/* 3 */}
-      <ul className="footer__items">
-        <h4 className="footer__items-header">Quick links</h4>
+      <ul
+        aria-labelledby=" footer item"
+        aria-describedby="footer item"
+        className="footer__items"
+      >
+        <h4
+          aria-labelledby=" footer heading"
+          aria-describedby="footer heading"
+          className="footer__items-header"
+        >
+          Quick links
+        </h4>
         <li className="footer__item">Home</li>
         <li className="footer__item">Professional Education</li>
         <li className="footer__item">Courses</li>
@@ -60,8 +108,18 @@ const Footer = () => {
       </ul>
 
       {/* 4 */}
-      <ul className="footer__items">
-        <h4 className="footer__items-header">More</h4>
+      <ul
+        aria-labelledby=" footer item"
+        aria-describedby="footer item"
+        className="footer__items"
+      >
+        <h4
+          aria-labelledby=" footer heading"
+          aria-describedby="footer heading"
+          className="footer__items-header"
+        >
+          More
+        </h4>
         <li className="footer__item">Press</li>
         <li className="footer__item">Investors</li>
         <li className="footer__item">Terms</li>
