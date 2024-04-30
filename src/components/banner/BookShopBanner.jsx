@@ -18,11 +18,13 @@ const BookShopBanner = () => {
           <p className="bookShopBanner-p">
             Eduvi Online <br /> Book Shop
           </p>
-          <img
-            className="bookShopBanner-image"
-            src={bookcaseImage}
-            alt="bookcase"
-          />
+          <div className="bookShopBanner-container">
+            <img
+              className="bookShopBanner-container-image"
+              src={bookcaseImage}
+              alt="bookcase"
+            />
+          </div>
         </div>
       </div>
     </div>

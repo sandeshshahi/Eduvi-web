@@ -4,7 +4,7 @@
 .text__section {
   height: utils.rem(440);
   max-width: 100%;
-  width: utils.rem(500);
+  // width: utils.rem(500);
   @include utils.flexDisplay(column, start, start);
   margin-left: utils.rem(70);
   @include utils.media-sm {
@@ -23,12 +23,16 @@
     @include utils.font-Metropolis(500, 20, 20);
     @include utils.media-sm {
       padding: utils.rem(10);
+      text-align: center;
     }
   }
   &-heading {
     @include utils.font-Metropolis(700, 45, 55);
     color: globals.$text-color;
     margin-top: utils.rem(15);
+    @include utils.media-sm {
+      text-align: center;
+    }
   }
   &-description {
     @include utils.font-Metropolis(400, 16, 30);
@@ -41,6 +45,9 @@
   }
   &-buttonWrapper {
     margin-top: utils.rem(40);
+
+    @include utils.media-sm {
+    }
   }
 }
 
@@ -54,7 +61,7 @@
     width: 100vw;
     transform: scale(0.6);
     left: utils.rem(-120);
-    margin-top: utils.rem(40);
+    margin-top: utils.rem(100);
   }
 
   &-personImage {
@@ -65,9 +72,13 @@
 
   &-ellipse {
     position: absolute;
-    right: 0;
+    right: utils.rem(0);
     bottom: utils.rem(0);
     border-radius: 50%;
+    @include utils.media-sm {
+      right: utils.rem(-400);
+      transform: scale(0.75);
+    }
   }
   &-pattern {
     position: absolute;
@@ -107,7 +118,6 @@
   @include utils.flexDisplay(row, space-between, center);
   background-color: rgba(237, 233, 242, 1);
   border-radius: utils.rem(20);
-  overflow: hidden;
   z-index: 5;
   @include utils.media-sm {
     width: 100vw;
@@ -117,6 +127,7 @@
   @include utils.media-lg {
     @include utils.flexDisplay(column, center, center);
     gap: utils.rem(60);
-    padding-top: utils.rem(60);
+    // padding-top: utils.rem(60);
+    margin-top: utils.rem(-40);
   }
 }
