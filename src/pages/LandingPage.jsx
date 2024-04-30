@@ -5,6 +5,7 @@ import VideoCallSection from "../components/classes/videoCall/VideoCallSection";
 import Footer from "../components/footer/Footer";
 import ImageSection from "../components/header/imageSection/ImageSection";
 import Text from "../components/header/text/Text";
+import NavBar from "../components/header/upperNav/NavBar";
 import UpperNav from "../components/header/upperNav/UpperNav";
 import { JoinAsTeacherSection } from "../components/joinAsTeacher/JoinAsTeacherSection";
 import JoinCoursesSection from "../components/joinCourses/JoinCoursesSection";
@@ -14,9 +15,7 @@ const LandingPage = () => {
   return (
     <div className="landingPage">
       <header className="header">
-        <nav className="nav">
-          <UpperNav />
-        </nav>
+        <NavBar />
         <section className="header-section">
           <Text />
           <ImageSection />

@@ -17,7 +17,7 @@
   }
 }
 @mixin media-xl {
-  @media screen and (max-width: f.em(1024)) {
+  @media screen and (max-width: f.em(1440)) {
     @content;
   }
 }

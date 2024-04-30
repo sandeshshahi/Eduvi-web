@@ -1,7 +1,7 @@
 import BookShopBanner from "../components/banner/BookShopBanner";
 import SubscribeBanner from "../components/banner/SubscribeBanner";
 import Footer from "../components/footer/Footer";
-import UpperNav from "../components/header/upperNav/UpperNav";
+import NavBar from "../components/header/upperNav/NavBar";
 import NewArrivalBooks from "../components/popularAndNewBooks/NewArrivalBooks";
 import PopularBook from "../components/popularAndNewBooks/PopularBook";
 import RightShopSection from "../components/shopSection/RightShopSection";
@@ -10,7 +10,7 @@ const ShopPage = () => {
   return (
     <div className="shopPage">
       <header className="shopPage__header">
-        <UpperNav />
+        <NavBar />
         <BookShopBanner />
       </header>
 
