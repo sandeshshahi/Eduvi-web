@@ -6,6 +6,10 @@
   width: utils.rem(510);
   position: relative;
   overflow: hidden;
+  object-fit: contain;
+  @include utils.media-sm {
+    transform: scale(0.6);
+  }
   &-bg {
     height: utils.rem(510);
     width: utils.rem(510);
@@ -30,6 +34,10 @@
   width: utils.rem(500);
   border-radius: utils.rem(10);
   gap: utils.rem(20);
+  @include utils.media-sm {
+    width: 100vw;
+    padding-inline: utils.rem(10);
+  }
   &-h1 {
     @include utils.font-Metropolis(700, 45, 55);
     color: globals.$text-color;
@@ -45,7 +53,7 @@
   @include utils.flexDisplay;
   gap: utils.rem(80);
 
-  @include utils.media-lg {
+  @include utils.media-sm {
     @include utils.flexDisplay(column, center, center);
     gap: utils.rem(80);
   }

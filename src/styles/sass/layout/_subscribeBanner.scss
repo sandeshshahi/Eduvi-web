@@ -8,7 +8,7 @@
   background-color: rgba(10, 3, 60, 1);
   border-radius: utils.rem(20);
   @include utils.media-lg {
-    transform: scale(0.5);
+    transform: scale(0.8);
     width: 100vw;
     height: utils.rem(420);
   }
@@ -32,6 +32,7 @@
       margin: 0;
       @include utils.media-sm {
         width: 100%;
+        @include utils.font-Metropolis(700, 32, 45);
       }
     }
     &-p {
@@ -47,6 +48,7 @@
       height: utils.rem(60);
       width: utils.rem(509);
       margin-top: utils.rem(40);
+
       &-input {
         height: utils.rem(60);
         width: utils.rem(367);
@@ -62,9 +64,16 @@
         &::placeholder {
           @include utils.font-Metropolis(500, 16, 30);
           color: globals.$text-color-white;
+          padding-left: utils.rem(20);
         }
         &:focus {
           outline: none;
+        }
+
+        @include utils.media-sm {
+          width: auto;
+          padding: utils.rem(20) 0;
+          border-radius: utils.rem(10);
         }
       }
       &-button {
@@ -81,12 +90,14 @@
         }
         @include utils.media-sm {
           border-radius: utils.rem(10);
+          padding: utils.rem(20) 0;
         }
       }
 
       @include utils.media-sm {
         @include utils.flexDisplay(column, center, center);
         gap: utils.rem(15);
+        width: auto;
       }
     }
   }

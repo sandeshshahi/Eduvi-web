@@ -14,11 +14,15 @@
   // flex-wrap: wrap;
   width: 100%;
   // width: utils.rem(1278);
+
   @include utils.media-lg {
     grid-template-columns: repeat(2, 1fr);
     align-items: start;
     justify-items: start;
     gap: utils.rem(40);
+  }
+  @include utils.media-sm {
+    margin-inline: utils.rem(10);
   }
 }
 .footer__left {

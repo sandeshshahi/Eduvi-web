@@ -5,22 +5,25 @@ import Button from "../../controls/button/Button";
 const Search = () => {
   return (
     <div className="search-container">
-      <div className="search__menu">
-        <span className="search__menu-text">Kindergarden</span>
-        <img
-          className="search__menu-icon"
-          src={downArrow}
-          alt="down arrow"
-          style={{ color: "rgba(156, 77, 244, 1)" }}
+      <div className="search__input">
+        <div className="search__menu">
+          <span className="search__menu-text">Kindergarden</span>
+          <img
+            className="search__menu-icon"
+            src={downArrow}
+            alt="down arrow"
+            style={{ color: "rgba(156, 77, 244, 1)" }}
+          />
+        </div>
+        <span className="search__line"></span>
+
+        <input
+          role="input"
+          className="search__input"
+          placeholder="Class/Course"
         />
       </div>
-      <span className="search__line"></span>
 
-      <input
-        role="input"
-        className="search__input"
-        placeholder="Class/Course"
-      />
       <span>
         <Button
           text={"search"}
