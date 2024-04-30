@@ -1,6 +1,13 @@
 @use "../utils/" as utils;
 @use "../globals/" as globals;
 
+.joinAsTeacher__section-image {
+  height: utils.rem(521);
+
+  @include utils.media-md {
+    height: utils.rem(400);
+  }
+}
 .joinAsTeacherImage__container {
   height: utils.rem(521);
   width: utils.rem(510);
@@ -49,6 +56,15 @@
     @include utils.font-Metropolis(400, 16, 30);
     color: globals.$text-color-light;
     margin-bottom: utils.rem(20);
+    @include utils.media-sm {
+      text-align: center;
+    }
+  }
+
+  &-button {
+    @include utils.media-sm {
+      margin: auto;
+    }
   }
 }
 
@@ -59,7 +75,6 @@
   @include utils.media-sm {
     @include utils.flexDisplay(column, center, center);
     gap: utils.rem(80);
-    margin-top: utils.rem(-180);
   }
   @include utils.media-lg {
     width: 100vw;

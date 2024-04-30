@@ -5,17 +5,23 @@
   // display: grid;
   // grid-template-columns: repeat(5, auto);
   // @include utils.flexDisplay(row, space-between, start);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
-  justify-items: center;
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
   grid: utils.rem(40);
   // align-items: start;
   // flex-wrap: wrap;
   width: 100%;
   // width: utils.rem(1278);
 
+  ul {
+    padding-left: utils.rem(0);
+    width: fit-content;
+  }
+
   @include utils.media-lg {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: start;
     justify-items: start;
@@ -23,6 +29,10 @@
   }
   @include utils.media-sm {
     margin-inline: utils.rem(10);
+  }
+
+  @include utils.media-xsm {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .footer__left {

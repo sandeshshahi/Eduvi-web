@@ -1,5 +1,11 @@
 @use "function" as f;
 
+@mixin media-xsm {
+  @media screen and (max-width: f.em(475)) {
+    @content;
+  }
+}
+
 @mixin media-sm {
   @media screen and (max-width: f.em(699.98)) {
     @content;
@@ -7,7 +13,7 @@
 }
 
 @mixin media-md {
-  @media screen and (max-width: f.em(899)) {
+  @media screen and (max-width: f.em(768)) {
     @content;
   }
 }
@@ -16,7 +22,14 @@
     @content;
   }
 }
+
 @mixin media-xl {
+  @media screen and (max-width: f.em(1200)) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
   @media screen and (max-width: f.em(1440)) {
     @content;
   }

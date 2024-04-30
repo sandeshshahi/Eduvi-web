@@ -1,11 +1,20 @@
 @use "../utils/" as utils;
 
 h1 {
-  // clamp(minimum number it to allow,preferred value,maximum value allowd)
-  font-size: clamp(utils.rem(28), utils.rem(16) + 2vw, utils.rem(40));
-}
+  @media (max-width: 1125px) {
+    font-size: utils.rem(45);
+    line-height: utils.rem(52);
+  }
 
-h2 {
-  // clamp(minimum number it to allow,preferred value,maximum value allowd)
-  font-size: clamp(utils.rem(22), utils.rem(14) + 1.5vw, utils.rem(36));
+  @include utils.media-md {
+    @include utils.font-Metropolis(700, 35, 55);
+    text-wrap: wrap;
+    margin-top: utils.rem(20);
+    text-align: center;
+  }
+
+  @include utils.media-sm {
+    font-size: utils.rem(30);
+    line-height: utils.rem(42);
+  }
 }

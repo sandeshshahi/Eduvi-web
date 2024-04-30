@@ -1,7 +1,16 @@
 @use "../utils/" as utils;
 
 .landingPage {
-  margin-inline: utils.rem(80);
+  padding: utils.rem(30) utils.rem(43) utils.rem(150) utils.rem(80);
+  margin: auto;
+  max-width: utils.rem(1440);
+  // overflow: hidden;
+
+  @media (max-width: 1125px) {
+    padding-left: utils.rem(40);
+    padding-right: utils.rem(40);
+  }
+
   @include utils.flexDisplay(column, center, center);
   @include utils.media-lg {
     max-width: 100%;
@@ -11,6 +20,9 @@
     justify-items: center;
     align-items: center;
   }
+  @include utils.media-lg {
+    padding: utils.rem(16);
+  }
   @include utils.media-sm {
     max-width: 100%;
   }
@@ -18,18 +30,25 @@
 .header {
   @include utils.flexDisplay(column, stretch, stretch);
   width: 100%;
-  gap: utils.rem(30);
+  gap: utils.rem(50);
   // position: relative;
   &-section {
-    margin-top: utils.rem(104);
     @include utils.flexDisplay(row, space-between, center);
-    @include utils.media-lg {
+    @include utils.media-md {
       @include utils.flexDisplay(column, center, center);
       gap: utils.rem(80);
     }
     @include utils.media-sm {
       max-width: 100vw;
       margin-top: utils.rem(0);
+    }
+
+    @media (max-width: 1024px) {
+      padding: 0 utils.rem(20);
+    }
+
+    @media (max-width: 768px) {
+      gap: utils.rem(20);
     }
   }
 }
@@ -91,16 +110,19 @@
 .main {
   @include utils.flexDisplay(column, center, center);
   gap: utils.rem(150);
+  width: 100%;
   margin-top: utils.rem(150);
-  // @include utils.media-sm {
-  //   row-gap: utils.rem(0);
-  // }
+  @include utils.media-md {
+    margin-top: utils.rem(50);
+  }
+
+  .section-lesson {
+    width: 100%;
+  }
   .section-classes {
     max-width: 100%;
+    overflow: hidden;
 
-    @include utils.media-sm {
-      margin-top: utils.rem(-200);
-    }
     &-title {
       @include utils.flexDisplay(column, center, center);
       @include utils.media-sm {
@@ -121,6 +143,14 @@
     @include utils.media-sm {
       padding: 0 utils.rem(10);
     }
+  }
+
+  .section-subscribeBanner {
+    width: 100%;
+    padding: utils.rem(20);
+  }
+  .section-joinAsTeacher {
+    width: 100%;
   }
 }
 
