@@ -384,6 +384,7 @@ h6 {
     width: 95%;
     height: 25rem;
     object-fit: contain;
+    margin-top: 4.375rem;
   }
 }
 
@@ -486,6 +487,7 @@ h6 {
   font-size: 1rem;
   line-height: 1.875rem;
   color: rgb(93, 90, 111);
+  margin-top: 1.875rem;
 }
 @media screen and (max-width: 43.74875em) {
   .text__container .text-description {
@@ -1423,10 +1425,13 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.0625rem solid rgb(156, 77, 244);
 }
 .lessoncard.active {
   border: none;
+}
+.lessoncard:hover {
+  cursor: pointer;
+  outline: 0.0625rem solid rgb(156, 77, 244);
 }
 .lessoncard-h3 {
   font-family: "Metropolis", sans-serif;
@@ -1462,6 +1467,8 @@ h6 {
 }
 .lessoncard-button:hover {
   cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(156, 77, 244);
 }
 .lessoncard-button.active {
   color: rgb(255, 255, 255);
@@ -1667,6 +1674,9 @@ h6 {
   border-radius: 0.625rem;
   padding-inline: 1.5625rem;
 }
+.bookCard__small-wrapper:hover {
+  cursor: pointer;
+}
 .bookCard__small-wrapper-img {
   height: 5.625rem;
   width: 4.73rem;
@@ -1760,6 +1770,9 @@ h6 {
   align-items: start;
   gap: 0.9375rem;
 }
+.shopCard__book:hover {
+  cursor: pointer;
+}
 .shopCard__book-imageWrapper {
   padding: 1.25rem;
   width: 100%;
@@ -1839,6 +1852,12 @@ h6 {
     align-items: center;
     flex-wrap: wrap;
   }
+}
+.shopSection__right-searchBar {
+  outline: none;
+}
+.shopSection__right-searchBar::placeholder {
+  padding-left: 1.875rem;
 }
 .shopSection__right-searchBarAndDropdown {
   display: flex;
@@ -2317,11 +2336,17 @@ h6 {
 }
 
 .btn-secondary {
+  background-color: transparent;
   color: rgb(10, 3, 60);
 }
 .btn-secondary.background-white {
   border-radius: 0.625rem;
   background-color: rgb(255, 255, 255);
+}
+.btn-secondary:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 102, 82);
+  box-shadow: 0px 15px 50px 0px rgba(255, 102, 82, 0.2);
 }
 
 @media (max-width: 1035px) {

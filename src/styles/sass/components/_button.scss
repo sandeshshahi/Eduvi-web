@@ -26,15 +26,22 @@
 }
 .btn-primary {
   background-color: globals.$button-color-primary;
+
   &.inactive {
     background-color: globals.$button-color-primary-inactive;
     color: globals.$button-color-primary;
   }
 }
 .btn-secondary {
+  background-color: transparent;
   color: globals.$text-color;
   &.background-white {
     border-radius: utils.rem(10);
     background-color: globals.$background-color-white;
+  }
+  &:hover {
+    color: globals.$text-color-white;
+    background-color: globals.$button-color-secondary;
+    box-shadow: 0px 15px 50px 0px rgba(255, 102, 82, 0.2);
   }
 }

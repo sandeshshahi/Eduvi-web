@@ -82,9 +82,13 @@
   border-radius: utils.rem(15);
   padding: utils.rem(30) utils.rem(15);
   @include utils.flexDisplay(column, center, center);
-  border: utils.rem(1) solid globals.$button-color-primary;
+
   &.active {
     border: none;
+  }
+  &:hover {
+    cursor: pointer;
+    outline: utils.rem(1) solid globals.$button-color-primary;
   }
   &-icon {
   }
@@ -114,6 +118,8 @@
     margin-top: utils.rem(25);
     &:hover {
       cursor: pointer;
+      color: globals.$text-color-white;
+      background-color: globals.$button-color-primary;
     }
     &.active {
       color: globals.$text-color-white;
