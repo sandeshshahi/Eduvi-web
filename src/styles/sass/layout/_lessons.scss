@@ -5,7 +5,9 @@
   @include utils.flexDisplay(column, center, center);
   gap: utils.rem(50);
   @include utils.media-sm {
+    @include utils.flexDisplay(column, center, center);
     width: 100vw;
+    gap: utils.rem(120);
   }
   &-cards {
     display: grid;
@@ -30,6 +32,7 @@
   width: utils.rem(700);
   @include utils.media-sm {
     width: 100vw;
+    padding: utils.rem(15);
   }
   &-h1 {
     @include utils.font-Metropolis(700, 45, 55);
@@ -53,6 +56,7 @@
       width: 100vw;
       margin-top: utils.rem(80);
       @include utils.flexDisplay(row, center, start);
+      padding: 0;
     }
     &-item {
       color: globals.$text-color;

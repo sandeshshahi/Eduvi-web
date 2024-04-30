@@ -238,18 +238,20 @@
     position: relative;
     width: 100%;
     height: 100%;
+    overflow: hidden;
   }
 }
 
 .loginModal-cross {
+  width: 100%;
   display: none;
   @include utils.media-sm {
     display: block;
     @include utils.font-Metropolis(500, 30, 30);
     color: black;
     position: absolute;
-    right: utils.rem(0);
-    top: utils.rem(0);
+    right: utils.rem(-690);
+    top: utils.rem(10);
     &:hover {
       cursor: pointer;
     }

@@ -10,6 +10,7 @@
   @include utils.media-sm {
     padding: utils.rem(10);
     margin: 0;
+    @include utils.flexDisplay(column, start, start);
   }
 
   &-title {
@@ -20,6 +21,9 @@
     border-radius: utils.rem(10);
     color: rgba(156, 77, 244, 1);
     @include utils.font-Metropolis(500, 20, 20);
+    @include utils.media-sm {
+      padding: utils.rem(10);
+    }
   }
   &-heading {
     @include utils.font-Metropolis(700, 45, 55);
@@ -48,9 +52,9 @@
   z-index: 1;
   @include utils.media-sm {
     width: 100vw;
-    transform: scale(0.9);
-    left: 10px;
-    margin-top: 0;
+    transform: scale(0.6);
+    left: utils.rem(-120);
+    margin-top: utils.rem(40);
   }
 
   &-personImage {
@@ -107,6 +111,7 @@
   z-index: 5;
   @include utils.media-sm {
     width: 100vw;
+    @include utils.flexDisplay(column, center, center);
   }
 
   @include utils.media-lg {
