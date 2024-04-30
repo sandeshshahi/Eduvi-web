@@ -35,6 +35,24 @@
 
   .upperNav__logo-text {
     @include utils.font-Metropolis(600, 30);
+    @media screen and (max-width: 1115px) {
+      font-size: utils.rem(20);
+    }
+  }
+}
+
+.banner-image {
+  width: utils.rem(668);
+  @include utils.media-xl {
+    width: 45%;
+  }
+  @mixin media-xsm {
+    margin-top: utils.rem(60);
+  }
+  @include utils.media-md {
+    width: 95%;
+    height: utils.rem(400);
+    object-fit: contain;
   }
 }
 
@@ -98,8 +116,7 @@
 .text__container {
   // width: utils.rem(607);
   max-width: 100%;
-  height: utils.rem(510);
-  margin-top: utils.rem(131);
+  margin-top: utils.rem(57);
   position: relative;
 
   @include utils.media-sm {
@@ -124,11 +141,23 @@
 
   .text-heading {
     @include utils.font-Metropolis(700, 65, 75);
+    margin-top: utils.rem(15);
+
+    @media (max-width: 1125px) {
+      font-size: utils.rem(45);
+      line-height: utils.rem(52);
+    }
+
     @include utils.media-md {
-      @include utils.font-Metropolis(700, 45, 55);
+      @include utils.font-Metropolis(700, 35, 55);
       text-wrap: wrap;
       margin-top: utils.rem(20);
       text-align: center;
+    }
+
+    @include utils.media-sm {
+      font-size: utils.rem(30);
+      line-height: utils.rem(42);
     }
   }
 
@@ -144,7 +173,6 @@
 
 .search-container {
   @include utils.flexDisplay(row, space-between, center);
-  max-width: utils.rem(607);
   height: utils.rem(60);
   border-radius: utils.rem(10);
   background-color: rgba(255, 255, 255, 1);
@@ -164,7 +192,7 @@
 
   .search__menu {
     @include utils.flexDisplay;
-    max-width: utils.rem(128);
+    // max-width: utils.rem(128);
     margin-left: utils.rem(20);
     margin-top: utils.rem(5);
     :hover {

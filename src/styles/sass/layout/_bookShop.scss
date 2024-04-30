@@ -5,7 +5,6 @@
 .bookCard__small-wrapper {
   @include utils.flexDisplay(row, start, center);
   gap: utils.rem(15);
-  width: utils.rem(400);
   height: utils.rem(140);
   background-color: globals.$background-color-white;
   border-radius: utils.rem(10);
@@ -38,6 +37,10 @@
     @include utils.font-Metropolis(600, 18, 20);
     color: globals.$button-color-secondary;
   }
+
+  @media (max-width: 1035px) {
+    width: 100%;
+  }
 }
 
 .bookPage__left {
@@ -47,6 +50,9 @@
   &-items {
     @include utils.flexDisplay(column, start, start);
     gap: utils.rem(20);
+    @media (max-width: 1035px) {
+      width: 100%;
+    }
     @include utils.media-sm {
       @include utils.flexDisplay(row, center, start);
       flex-wrap: wrap;
@@ -65,20 +71,20 @@
 // shop card
 .shopCard__book {
   height: utils.rem(345);
-  width: utils.rem(270);
   @include utils.flexDisplay(column, center, start);
   gap: utils.rem(15);
   &-imageWrapper {
+    padding: utils.rem(20);
+    width: 100%;
     background-color: globals.$background-color-white;
     height: utils.rem(280);
-    width: utils.rem(270);
     @include utils.flexDisplay;
     border-radius: utils.rem(10);
   }
   &-image {
     border-radius: utils.rem(10);
     height: utils.rem(240);
-    width: utils.rem(230);
+    width: 100%;
   }
   &-title {
     @include utils.font-Metropolis(600, 18, 20);
@@ -125,8 +131,10 @@
     gap: utils.rem(15);
     width: 100%;
     @include utils.media-sm {
-      width: 100%;
-      @include utils.flexDisplay(column, stretch, stretch);
+      flex-direction: column;
+      > div {
+        width: 100%;
+      }
     }
   }
 
@@ -188,12 +196,19 @@
 
   &-cards {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     column-gap: utils.rem(15);
     row-gap: utils.rem(25);
+
+    @media (max-width: 1215px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 1035px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
     @include utils.media-sm {
-      @include utils.flexDisplay(row, center, center);
-      flex-wrap: wrap;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   &-pagination {

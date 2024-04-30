@@ -12,12 +12,22 @@
   }
   &-cards {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     gap: utils.rem(40);
+
+    @include utils.media-xl {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
     @include utils.media-lg {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: utils.rem(40);
+      gap: utils.rem(30);
+      padding: utils.rem(20);
+    }
+    @include utils.media-md {
+      padding: utils.rem(16);
     }
     @include utils.media-sm {
       width: 100vw;
@@ -67,12 +77,10 @@
 }
 
 .lessoncard {
-  height: utils.rem(329);
-  width: utils.rem(290);
   background-color: globals.$background-color-white;
   box-shadow: 0px 50px 80px 0px rgba(0, 0, 0, 0.05);
   border-radius: utils.rem(15);
-  padding: 0 utils.rem(15);
+  padding: utils.rem(30) utils.rem(15);
   @include utils.flexDisplay(column, center, center);
   border: utils.rem(1) solid globals.$button-color-primary;
   &.active {

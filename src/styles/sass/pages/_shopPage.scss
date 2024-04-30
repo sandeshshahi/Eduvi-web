@@ -1,13 +1,22 @@
 @use "../utils/" as utils;
 
 .shopPage {
-  margin-inline: utils.rem(80);
+  padding: utils.rem(30) utils.rem(43) utils.rem(0) utils.rem(80);
+  margin: auto;
+  max-width: utils.rem(1440);
+
+  @media (max-width: 1125px) {
+    padding-left: utils.rem(40);
+    padding-right: utils.rem(40);
+  }
+
+  @include utils.media-sm {
+    padding-left: utils.rem(16);
+    padding-right: utils.rem(16);
+  }
   @include utils.flexDisplay(column, center, center);
   gap: utils.rem(40);
-  @include utils.media-sm {
-    width: 100vw;
-    margin-inline: utils.rem(40);
-  }
+
   &__header {
     @include utils.flexDisplay(column, stretch, stretch);
     width: 100%;
@@ -16,17 +25,32 @@
   &__main {
     @include utils.flexDisplay(row, start, start);
     gap: utils.rem(40);
+    width: 100%;
+
+    &-section {
+      @media (max-width: 1035px) {
+        width: 100%;
+      }
+    }
     &-aside {
       @include utils.flexDisplay(column, start, start);
       gap: utils.rem(40);
     }
-    @include utils.media-sm {
-      width: 100vw;
-      @include utils.flexDisplay(column, start, start);
+    @media (max-width: 1035px) {
+      flex-direction: column;
+
+      &-aside {
+        width: 100%;
+
+        > div {
+          width: 100%;
+        }
+      }
     }
   }
   &__banner {
     margin-top: utils.rem(40);
+    width: 100%;
   }
   &__footer {
     width: 100%;

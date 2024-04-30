@@ -2,8 +2,8 @@
 @use "../globals/" as globals;
 
 .text__section {
-  height: utils.rem(440);
   max-width: 100%;
+  padding: utils.rem(20) 0;
   // width: utils.rem(500);
   @include utils.flexDisplay(column, start, start);
   margin-left: utils.rem(70);
@@ -57,17 +57,26 @@
   height: utils.rem(587);
   width: utils.rem(689);
   z-index: 1;
-  @include utils.media-sm {
-    width: 100vw;
-    transform: scale(0.6);
-    left: utils.rem(-120);
-    margin-top: utils.rem(100);
+
+  @include utils.media-lg {
+    width: 100%;
+  }
+
+  @include utils.media-xsm {
+    height: utils.rem(400);
   }
 
   &-personImage {
     transform: rotateY(-180deg);
     object-fit: cover;
     object-position: 130%;
+
+    @include utils.media-lg {
+      width: 100%;
+    }
+    @include utils.media-xsm {
+      height: 100%;
+    }
   }
 
   &-ellipse {
@@ -115,6 +124,7 @@
 .joinCoursesSection {
   // width: utils.rem(1280);
   max-width: 100%;
+  overflow: hidden;
   @include utils.flexDisplay(row, space-between, center);
   background-color: rgba(237, 233, 242, 1);
   border-radius: utils.rem(20);
