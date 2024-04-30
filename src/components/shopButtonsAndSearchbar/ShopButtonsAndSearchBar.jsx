@@ -22,6 +22,8 @@ const ShopButtonsAndSearchBar = () => {
       <div className="shopSection__right-searchBarAndDropdown">
         <div className="shopSection__right-searchBarGroup">
           <input
+            aria-labelledby=" search Class, Course, Book Name "
+            aria-describedby="search Class, Course, Book Name "
             role="input"
             type="text"
             placeholder="Search Class, Course, Book Name"

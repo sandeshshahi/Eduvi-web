@@ -41,10 +41,18 @@ const SubscribeBanner = () => {
           alt="image 6"
         />
 
-        <h1 className="subscribe__banner-contents-h1">
+        <h1
+          aria-labelledby=" subscribe heading"
+          aria-describedby="subscribe heading"
+          className="subscribe__banner-contents-h1"
+        >
           Subscribe For Get Update <br /> Every New Courses
         </h1>
-        <p className="subscribe__banner-contents-p">
+        <p
+          aria-labelledby=" subscribe detail"
+          aria-describedby="subscribe detail"
+          className="subscribe__banner-contents-p"
+        >
           20k+ students daily learn with Eduvi. Subscribe for new courses.
         </p>
 
@@ -52,12 +60,16 @@ const SubscribeBanner = () => {
 
         <div className="subscribe__banner-contents_controls">
           <input
+            aria-labelledby=" email input"
+            aria-describedby="email input"
             role="input"
             className="subscribe__banner-contents_controls-input"
             placeholder="enter your email"
             type="text"
           />
           <button
+            aria-labelledby=" subscribe button"
+            aria-describedby="subscribe button"
             role="button"
             className="subscribe__banner-contents_controls-button"
           >

@@ -20,7 +20,12 @@ const NavBar = () => {
             </NavLink>
           </div>
 
-          <div onClick={toggleClass} className="menu-btn">
+          <div
+            onClick={toggleClass}
+            className="menu-btn"
+            aria-labelledby="menu button"
+            aria-describedby="menu"
+          >
             <span
               className={
                 isActive ? "menu-btn__burger open" : "menu-btn__burger"
@@ -32,7 +37,11 @@ const NavBar = () => {
         {isActive ? (
           <nav className={isActive ? "nav open" : null}>
             <ul className={isActive ? "menu-nav open" : null}>
-              <li className={isActive ? "menu-nav__item open" : null}>
+              <li
+                aria-labelledby="shop link"
+                aria-describedby="navigate to shop page"
+                className={isActive ? "menu-nav__item open" : null}
+              >
                 <NavLink
                   className={({ isActive, isPending }) =>
                     isPending
@@ -47,6 +56,8 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li
+                aria-labelledby="kindergarden menu"
+                aria-describedby="kindergarden menu dropdown"
                 className={isActive ? "menu-nav__item open" : null}
                 style={{ display: "flex", gap: "4px" }}
               >
@@ -59,6 +70,8 @@ const NavBar = () => {
                 />
               </li>
               <li
+                aria-labelledby="high school menu"
+                aria-describedby="high school menu dropdown"
                 className={isActive ? "menu-nav__item open" : null}
                 style={{ display: "flex", gap: "4px" }}
               >
@@ -71,6 +84,8 @@ const NavBar = () => {
                 />
               </li>
               <li
+                aria-labelledby="for college menu"
+                aria-describedby="for college menu dropdown"
                 className={isActive ? "menu-nav__item open" : null}
                 style={{ display: "flex", gap: "4px" }}
               >
@@ -83,6 +98,8 @@ const NavBar = () => {
                 />
               </li>
               <li
+                aria-labelledby="courses menu"
+                aria-describedby="courses menu dropdown"
                 className={isActive ? "menu-nav__item open" : null}
                 style={{ display: "flex", gap: "4px" }}
               >
@@ -95,10 +112,18 @@ const NavBar = () => {
                 />
               </li>
               <ul className="menu-nav__item-AccountCart">
-                <li className={isActive ? "menu-nav__item open" : null}>
+                <li
+                  aria-labelledby="cart button"
+                  aria-describedby="cart menu button"
+                  className={isActive ? "menu-nav__item open" : null}
+                >
                   <Cart />
                 </li>
-                <li className={isActive ? "menu-nav__item open" : null}>
+                <li
+                  aria-labelledby="account menu"
+                  aria-describedby="open account login modal "
+                  className={isActive ? "menu-nav__item open" : null}
+                >
                   <Account />
                 </li>
               </ul>
@@ -107,7 +132,11 @@ const NavBar = () => {
         ) : (
           <nav className="nav">
             <ul className="menu-nav">
-              <li className="menu-nav__item">
+              <li
+                aria-labelledby="shop link"
+                aria-describedby="navigate to shop page"
+                className="menu-nav__item"
+              >
                 <NavLink
                   className={({ isActive, isPending }) =>
                     isPending
@@ -122,6 +151,8 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li
+                aria-labelledby="kindergarden menu"
+                aria-describedby="kindergarden menu dropdown"
                 className="menu-nav__item"
                 style={{ display: "flex", gap: "4px" }}
               >
@@ -134,6 +165,8 @@ const NavBar = () => {
                 />
               </li>
               <li
+                aria-labelledby="high scholl menu"
+                aria-describedby="high school menu dropdown"
                 className="menu-nav__item"
                 style={{ display: "flex", gap: "4px" }}
               >
@@ -146,6 +179,8 @@ const NavBar = () => {
                 />
               </li>
               <li
+                aria-labelledby="for college menu"
+                aria-describedby="for college menu dropdown"
                 className="menu-nav__item"
                 style={{ display: "flex", gap: "4px" }}
               >
@@ -158,6 +193,8 @@ const NavBar = () => {
                 />
               </li>
               <li
+                aria-labelledby="courses menu"
+                aria-describedby="courses menu dropdown"
                 className="menu-nav__item"
                 style={{ display: "flex", gap: "4px" }}
               >
@@ -170,10 +207,18 @@ const NavBar = () => {
                 />
               </li>
               <ul className="menu-nav__item-AccountCart">
-                <li className="menu-nav__item">
+                <li
+                  aria-labelledby="cart "
+                  aria-describedby="cart menu "
+                  className="menu-nav__item"
+                >
                   <Cart />
                 </li>
-                <li className="menu-nav__item">
+                <li
+                  aria-labelledby="menu button"
+                  aria-describedby="menu"
+                  className="menu-nav__item"
+                >
                   <Account />
                 </li>
               </ul>

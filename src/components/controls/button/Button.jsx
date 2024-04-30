@@ -2,7 +2,13 @@
 
 const Button = ({ children, text, className, style }) => {
   return (
-    <button role="button" className={`button__btn ${className}`} style={style}>
+    <button
+      role="button"
+      aria-labelledby=" button"
+      aria-describedby="button"
+      className={`button__btn ${className}`}
+      style={style}
+    >
       {children}
       <span className="button__btn-text">{text}</span>
     </button>

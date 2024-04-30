@@ -18,6 +18,8 @@ const Search = () => {
         <span className="search__line"></span>
 
         <input
+          aria-labelledby="search input"
+          aria-describedby="search input"
           role="input"
           className="search__input"
           placeholder="Class/Course"
@@ -26,6 +28,8 @@ const Search = () => {
 
       <span>
         <Button
+          aria-labelledby="search button"
+          aria-describedby="search button"
           text={"search"}
           className={"btn-primary"}
           style={{ padding: "15px 30px" }}
