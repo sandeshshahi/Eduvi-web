@@ -19,7 +19,10 @@ const JoinAsTeacherText = () => {
         standard-definition. While there is no standardized meaning for
         high-definition, generally any video.
       </p>
-      <Button className={"btn-primary"} text={"Career Information"}></Button>
+      <Button
+        className={"btn-primary joinAsTeacherText__container-button"}
+        text={"Career Information"}
+      ></Button>
     </div>
   );
 };
