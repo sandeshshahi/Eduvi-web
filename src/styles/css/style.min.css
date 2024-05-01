@@ -981,6 +981,11 @@ h6 {
   background-color: rgb(10, 3, 60);
   border-radius: 1.25rem;
 }
+@media screen and (max-width: 29.6875em) {
+  .subscribe__banner {
+    padding: 0rem;
+  }
+}
 @media screen and (max-width: 43.74875em) {
   .subscribe__banner {
     padding: 1.25rem;
@@ -1063,6 +1068,11 @@ h6 {
   .subscribe__banner-contents_controls-input {
     width: auto;
     flex: 1;
+  }
+}
+@media screen and (max-width: 29.6875em) {
+  .subscribe__banner-contents_controls-input {
+    padding-left: 0rem;
   }
 }
 .subscribe__banner-contents_controls-button {
@@ -1289,15 +1299,6 @@ h6 {
   border-radius: 1.25rem;
   z-index: 5;
 }
-@media screen and (max-width: 43.74875em) {
-  .joinCoursesSection {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
 @media screen and (max-width: 64em) {
   .joinCoursesSection {
     display: flex;
@@ -1306,6 +1307,17 @@ h6 {
     align-items: center;
     gap: 3.75rem;
     margin-top: -2.5rem;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .joinCoursesSection {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding-top: 0.625rem;
   }
 }
 
@@ -1322,7 +1334,6 @@ h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     gap: 7.5rem;
     margin-top: -5rem;
   }
@@ -1401,6 +1412,17 @@ h6 {
   .hobberd__list {
     width: 100vw;
     margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 29.6875em) {
+  .hobberd__list {
+    width: 100vw;
+    margin-top: 8.75rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1643,11 +1665,6 @@ h6 {
     width: 100vw;
   }
 }
-@media screen and (max-width: 43.74875em) {
-  .bookShopBanner-container-image {
-    transform: scale(0.6);
-  }
-}
 .bookShopBanner-content {
   display: flex;
   flex-direction: row;
@@ -1660,6 +1677,11 @@ h6 {
     flex-direction: row;
     justify-content: start;
     align-items: center;
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .bookShopBanner-content {
+    overflow: hidden;
   }
 }
 
@@ -1963,6 +1985,11 @@ h6 {
 @media screen and (max-width: 43.74875em) {
   .shopSection__right-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 43.74875em) {
+  .shopSection__right-cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .shopSection__right-pagination {

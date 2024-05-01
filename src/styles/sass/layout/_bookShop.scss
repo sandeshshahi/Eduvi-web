@@ -223,6 +223,9 @@
     @include utils.media-sm {
       grid-template-columns: repeat(2, 1fr);
     }
+    @include utils.media-sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
   &-pagination {
     @include utils.flexDisplay(row, center, center);

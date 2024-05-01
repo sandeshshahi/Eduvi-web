@@ -45,9 +45,6 @@
       width: 100vw;
     }
     &-image {
-      @include utils.media-sm {
-        transform: scale(0.6);
-      }
     }
   }
 
@@ -55,6 +52,9 @@
     @include utils.flexDisplay(row, space-around, center);
     @include utils.media-sm {
       @include utils.flexDisplay(row, start, center);
+    }
+    @include utils.media-sm {
+      overflow: hidden;
     }
   }
 }
