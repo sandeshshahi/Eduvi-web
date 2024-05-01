@@ -516,15 +516,6 @@ h6 {
     gap: 2.5rem;
   }
 }
-.search-container .search__input {
-  max-width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 0.3125rem;
-  gap: 0.625rem;
-}
 .search-container .search__menu {
   display: flex;
   flex-direction: row;
@@ -553,8 +544,13 @@ h6 {
   background-color: rgb(218, 218, 218);
 }
 .search-container .search__input {
-  height: 100%;
-  margin-top: 0.3125rem;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 0.625rem;
   outline: none;
   border: none;
 }
