@@ -13,6 +13,7 @@ const style = {
   width: "95%",
   maxWidth: "66.25rem",
   bgcolor: "background.paper",
+  // backgroundColor: "rgba(10, 3, 60, 0.5)",
   borderRadius: "0.938rem",
   boxShadow: 30,
   overflowY: "auto",
@@ -28,6 +29,11 @@ const LoginModal = ({ openloginModal, closeloginModal }) => {
         open={openloginModal}
         onClose={() => {
           closeloginModal(false);
+        }}
+        sx={{
+          "& .MuiBackdrop-root": {
+            backgroundColor: "rgba(10, 3, 60, 0.5)", // Adjust the color and opacity here
+          },
         }}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
