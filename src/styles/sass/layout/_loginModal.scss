@@ -175,6 +175,9 @@
     color: globals.$text-color;
     padding-left: utils.rem(16);
     margin-top: utils.rem(15);
+    @include utils.media-sm {
+      @include utils.font-Metropolis(700, 32, 40);
+    }
   }
   &-image {
     @include utils.media-sm {
@@ -189,6 +192,9 @@
     @include utils.flexDisplay;
     gap: utils.rem(5);
     margin-top: utils.rem(15);
+    @include utils.media-sm {
+      display: none;
+    }
 
     &-end {
       height: utils.rem(8);
@@ -250,8 +256,8 @@
     @include utils.font-Metropolis(500, 30, 30);
     color: black;
     position: absolute;
-    right: utils.rem(-690);
-    top: utils.rem(10);
+    right: utils.rem(-500);
+    top: utils.rem(15);
     &:hover {
       cursor: pointer;
     }
