@@ -185,12 +185,6 @@
     @include utils.flexDisplay(column, space-around, center);
     gap: utils.rem(40);
   }
-  .search__input {
-    max-width: 100vw;
-    @include utils.flexDisplay(row, space-around, center);
-    margin-top: utils.rem(5);
-    gap: utils.rem(10);
-  }
 
   .search__menu {
     @include utils.flexDisplay;
@@ -218,8 +212,10 @@
 
   .search__input {
     // max-width: utils.rem(270);
-    height: 100%;
-    margin-top: utils.rem(5);
+    max-width: 100vw;
+    @include utils.flexDisplay(row, space-around, center);
+    gap: utils.rem(10);
+    margin-top: utils.rem(10);
     outline: none;
     border: none;
     &::placeholder {
