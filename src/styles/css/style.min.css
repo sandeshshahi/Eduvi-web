@@ -515,6 +515,11 @@ h6 {
     gap: 2.5rem;
   }
 }
+@media screen and (max-width: 43.74875em) {
+  .search-container {
+    padding: 1.25rem 0;
+  }
+}
 .search-container .search__menu {
   display: flex;
   flex-direction: row;

@@ -185,6 +185,9 @@
     @include utils.flexDisplay(column, space-around, center);
     gap: utils.rem(40);
   }
+  @include utils.media-sm {
+    padding: utils.rem(20) 0;
+  }
 
   .search__menu {
     @include utils.flexDisplay;
