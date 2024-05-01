@@ -150,7 +150,7 @@
     }
 
     @include utils.media-md {
-      @include utils.font-Metropolis(700, 35, 55);
+      @include utils.font-Metropolis(700, 35, 45);
       text-wrap: wrap;
       margin-top: utils.rem(20);
       text-align: center;

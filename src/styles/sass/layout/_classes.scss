@@ -19,6 +19,11 @@
   &__heading {
     @include utils.font-Metropolis(700, 45, 55);
     text-align: center;
+    @include utils.media-md {
+      @include utils.font-Metropolis(700, 35, 45);
+      text-wrap: wrap;
+      text-align: center;
+    }
   }
 
   &__description {
