@@ -500,7 +500,6 @@ h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 3.75rem;
   border-radius: 0.625rem;
   background-color: rgb(255, 255, 255);
   margin-top: 2.5rem;
@@ -516,13 +515,18 @@ h6 {
     gap: 2.5rem;
   }
 }
+@media screen and (max-width: 43.74875em) {
+  .search-container {
+    padding: 1.25rem 0;
+  }
+}
 .search-container .search__menu {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-left: 1.25rem;
-  margin-top: 0.3125rem;
+  margin-top: 0rem;
 }
 .search-container .search__menu :hover {
   cursor: pointer;
@@ -550,7 +554,7 @@ h6 {
   justify-content: space-around;
   align-items: center;
   gap: 0.625rem;
-  margin-top: 0.625rem;
+  margin-top: 0rem;
   outline: none;
   border: none;
 }

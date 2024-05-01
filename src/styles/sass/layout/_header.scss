@@ -175,7 +175,7 @@
 
 .search-container {
   @include utils.flexDisplay(row, space-between, center);
-  height: utils.rem(60);
+  // height: utils.rem(60);
   border-radius: utils.rem(10);
   background-color: rgba(255, 255, 255, 1);
   margin-top: utils.rem(40);
@@ -185,12 +185,15 @@
     @include utils.flexDisplay(column, space-around, center);
     gap: utils.rem(40);
   }
+  @include utils.media-sm {
+    padding: utils.rem(20) 0;
+  }
 
   .search__menu {
     @include utils.flexDisplay;
     // max-width: utils.rem(128);
     margin-left: utils.rem(20);
-    margin-top: utils.rem(5);
+    margin-top: utils.rem(0);
     :hover {
       cursor: pointer;
     }
@@ -215,7 +218,7 @@
     max-width: 100vw;
     @include utils.flexDisplay(row, space-around, center);
     gap: utils.rem(10);
-    margin-top: utils.rem(10);
+    margin-top: utils.rem(0);
     outline: none;
     border: none;
     &::placeholder {
