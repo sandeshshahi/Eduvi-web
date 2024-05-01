@@ -10,6 +10,9 @@
   background-color: rgba(10, 3, 60, 1);
   border-radius: utils.rem(20);
 
+  @include utils.media-xsm {
+    padding: utils.rem(0);
+  }
   @include utils.media-sm {
     padding: utils.rem(20);
   }
@@ -69,6 +72,9 @@
         @include utils.media-sm {
           width: auto;
           flex: 1;
+        }
+        @include utils.media-xsm {
+          padding-left: utils.rem(0);
         }
       }
       &-button {

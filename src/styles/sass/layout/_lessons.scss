@@ -6,7 +6,6 @@
   gap: utils.rem(50);
   @include utils.media-sm {
     @include utils.flexDisplay(column, center, center);
-    width: 100vw;
     gap: utils.rem(120);
     margin-top: utils.rem(-80);
   }
@@ -66,6 +65,12 @@
     @include utils.media-sm {
       width: 100vw;
       margin-top: utils.rem(80);
+      @include utils.flexDisplay(row, center, start);
+      padding: 0;
+    }
+    @include utils.media-xsm {
+      width: 100vw;
+      margin-top: utils.rem(140);
       @include utils.flexDisplay(row, center, start);
       padding: 0;
     }

@@ -46,8 +46,8 @@
   @include utils.media-xl {
     width: 45%;
   }
-  @mixin media-xsm {
-    margin-top: utils.rem(60);
+  @mixin media-sm {
+    margin-top: utils.rem(70);
   }
   @include utils.media-md {
     width: 95%;

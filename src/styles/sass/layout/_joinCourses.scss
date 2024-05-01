@@ -129,15 +129,17 @@
   background-color: rgba(237, 233, 242, 1);
   border-radius: utils.rem(20);
   z-index: 5;
-  @include utils.media-sm {
-    width: 100vw;
-    @include utils.flexDisplay(column, center, center);
-  }
 
   @include utils.media-lg {
     @include utils.flexDisplay(column, center, center);
     gap: utils.rem(60);
     // padding-top: utils.rem(60);
     margin-top: utils.rem(-40);
+  }
+  @include utils.media-sm {
+    width: 100vw;
+    @include utils.flexDisplay(column, center, center);
+    margin: 0px;
+    padding-top: utils.rem(10);
   }
 }
