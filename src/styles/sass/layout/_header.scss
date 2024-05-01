@@ -150,16 +150,16 @@
     }
 
     @include utils.media-md {
-      @include utils.font-Metropolis(700, 35, 55);
+      @include utils.font-Metropolis(700, 35, 45);
       text-wrap: wrap;
       margin-top: utils.rem(20);
       text-align: center;
     }
 
-    @include utils.media-sm {
-      font-size: utils.rem(30);
-      line-height: utils.rem(42);
-    }
+    // @include utils.media-sm {
+    //   font-size: utils.rem(30);
+    //   line-height: utils.rem(42);
+    // }
   }
 
   .text-description {

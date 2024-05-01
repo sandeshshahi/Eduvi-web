@@ -33,6 +33,11 @@
     @include utils.media-sm {
       text-align: center;
     }
+    @include utils.media-md {
+      @include utils.font-Metropolis(700, 35, 45);
+      text-wrap: wrap;
+      text-align: center;
+    }
   }
   &-description {
     @include utils.font-Metropolis(400, 16, 30);
