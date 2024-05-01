@@ -2236,6 +2236,14 @@ h6 {
   padding-left: 1rem;
   margin-top: 0.9375rem;
 }
+@media screen and (max-width: 43.74875em) {
+  .loginModelLeft-heading {
+    font-family: "Metropolis", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
 .loginModelLeft-image {
   height: 21rem;
   width: 20.75rem;
@@ -2253,6 +2261,11 @@ h6 {
   align-items: center;
   gap: 0.3125rem;
   margin-top: 0.9375rem;
+}
+@media screen and (max-width: 43.74875em) {
+  .loginModelLeft-slider {
+    display: none;
+  }
 }
 .loginModelLeft-slider-end {
   height: 0.5rem;
@@ -2320,8 +2333,8 @@ h6 {
     line-height: 1.875rem;
     color: black;
     position: absolute;
-    right: -43.125rem;
-    top: 0.625rem;
+    right: -31.25rem;
+    top: 0.9375rem;
   }
   .loginModal-cross:hover {
     cursor: pointer;
