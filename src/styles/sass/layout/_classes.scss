@@ -24,6 +24,10 @@
       text-wrap: wrap;
       text-align: center;
     }
+    @include utils.media-xsm {
+      font-size: utils.rem(28);
+      line-height: utils.rem(38);
+    }
   }
 
   &__description {

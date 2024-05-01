@@ -477,7 +477,7 @@ h6 {
 }
 @media screen and (max-width: 43.74875em) {
   .text__container .text-heading {
-    font-size: 1.875rem;
+    font-size: 2.1875rem;
     line-height: 2.625rem;
   }
 }
@@ -717,6 +717,12 @@ h6 {
     line-height: 2.8125rem;
     text-wrap: wrap;
     text-align: center;
+  }
+}
+@media screen and (max-width: 29.6875em) {
+  .title__heading {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
   }
 }
 .title__description {
@@ -1032,6 +1038,12 @@ h6 {
     line-height: 2.8125rem;
   }
 }
+@media screen and (max-width: 29.6875em) {
+  .subscribe__banner-contents-h1 {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+  }
+}
 .subscribe__banner-contents-p {
   font-family: "Metropolis", sans-serif;
   font-weight: 400;
@@ -1212,6 +1224,12 @@ h6 {
     line-height: 2.8125rem;
     text-wrap: wrap;
     text-align: center;
+  }
+}
+@media screen and (max-width: 29.6875em) {
+  .text__section-heading {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
   }
 }
 .text__section-description {
@@ -1420,6 +1438,12 @@ h6 {
     text-align: center;
   }
 }
+@media screen and (max-width: 29.6875em) {
+  .title__section-h1 {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
+  }
+}
 .title__section-p {
   font-family: "Metropolis", sans-serif;
   font-weight: 400;
@@ -1601,6 +1625,12 @@ h6 {
     line-height: 2.8125rem;
     text-wrap: wrap;
     text-align: center;
+  }
+}
+@media screen and (max-width: 29.6875em) {
+  .joinAsTeacherText__container-h1 {
+    font-size: 1.75rem;
+    line-height: 2.375rem;
   }
 }
 .joinAsTeacherText__container-p {
