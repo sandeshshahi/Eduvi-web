@@ -475,6 +475,12 @@ h6 {
     text-align: center;
   }
 }
+@media screen and (max-width: 43.74875em) {
+  .text__container .text-heading {
+    font-size: 1.875rem;
+    line-height: 2.625rem;
+  }
+}
 .text__container .text-description {
   font-family: "Metropolis", sans-serif;
   font-weight: 400;

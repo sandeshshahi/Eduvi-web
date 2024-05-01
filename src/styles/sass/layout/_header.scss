@@ -156,10 +156,10 @@
       text-align: center;
     }
 
-    // @include utils.media-sm {
-    //   font-size: utils.rem(30);
-    //   line-height: utils.rem(42);
-    // }
+    @include utils.media-sm {
+      font-size: utils.rem(30);
+      line-height: utils.rem(42);
+    }
   }
 
   .text-description {
